@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=1024, user-scalable=yes">
+
+	<title>Jumpstart Drupal with Linode StackScripts</title>
+
+	<!-- Required stylesheet -->
+	<link rel="stylesheet" href="core/deck.core.css">
+
+	<!-- Extension CSS files go here. Remove or add as needed. -->
+	<link rel="stylesheet" href="extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="extensions/status/deck.status.css">
+	<link rel="stylesheet" href="extensions/hash/deck.hash.css">
+	<link rel="stylesheet" href="extensions/scale/deck.scale.css">
+
+	<!-- Style theme. More available in /themes/style/ or create your own. -->
+	<link rel="stylesheet" href="themes/style/neon.css">
+
+	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+	<link rel="stylesheet" href="themes/transition/horizontal-slide.css">
+
+	<!-- Required Modernizr file -->
+	<script src="modernizr.custom.js"></script>
+</head>
+<body class="deck-container on-slide-markup on-slide-2">
+
+<!-- Begin slides. Just make elements with a class of slide. -->
+
+<section id="introduction" class="slide">
+	<h1>JumpStart Drupal with Linode StackScripts<p>Kevin Bridges (cyberswat)</p></h1>
+</section>
+
+<section id="problem" class="slide deck-child-current deck-before">
+	<h2>What are the issues?</h2>
+	<h3 class="slide deck-current">Reliably provisioning a base server to work with can introduce unexpected manual steps or complexity in automated environments.</h3>
+	<ul>
+		<li class="slide deck-after">I'm running the open source version of a provisioner and they just changed the Ruby version requirements.</li>
+		<li class="slide deck-after">I'd like to make sure that the machine is 100% up to date in regards to it's managed packages before provisioning.</li>
+		<li class="slide deck-after">I have a setup I understand and I don't want to involve the complexity of a provisioner.</li>
+		<li class="slide deck-after">I could use a launch wizard that collects information to pass to the instance as it is launching.</li>
+	</ul>
+</section>
+
+<section id="solution" class="slide deck-child-current deck-before">
+	<h2>What can be done?</h2>
+	<h3 class="slide deck-current">There must be a solution ...</h3>
+	<h3 class="slide deck-after">and there is ...</h3>
+	<img height=50% class="slide deck-after" src="assets/automate-all-the-things.png">
+	<p class="slide deck-after">with Linode StackScripts</h3>
+</section>
+
+<section id="stackscript" class="slide deck-child-current deck-before">
+	<h2>What is a StackScript?</h2>
+	<p class="slide deck-current">StackScripts provide Linode Platform users with the ability to automate the deployment of custom systems without requiring maintenance on static images. Linodes deployed with a StackScript run the script as part of the first boot process.</p>
+	<p class="slide deck-next">StackScripts are like a bash script with an additional syntax that allow you to request variables from a user.</p>
+	<h2 class="slide deck-next">Let's install LAMP</h2>
+	<ul class="code deck-child-current">
+		<li class="slide deck-current">#!/bin/bash -x</li>
+		<li class="slide deck-next"># &lt;UDF name="db_password" Label="MySQL root Password" /&gt;</li>
+		<li class="slide deck-next">source &lt;ssinclude <a href="https://www.linode.com/stackscripts/view/?StackScriptID=1" target="_blank">StackScriptID=1</a>&gt;</li>
+		<li class="slide deck-next">system_update</li>
+		<li class="slide deck-next">postfix_install_loopback_only</li>
+		<li class="slide deck-next">mysql_install "$DB_PASSWORD" && mysql_tune 40</li>
+		<li class="slide deck-next">php_install_with_apache && php_tune</li>
+		<li class="slide deck-next">apache_install && apache_tune 40 && apache_virtualhost_from_rdns</li>
+		<li class="slide deck-next">goodstuff</li>
+		<li class="slide deck-next">restartServices</li>
+	</ul>
+</section>
+
+<section id="create-stackscript" class="slide deck-current">
+		<h2>Create a StackScript in the Linode Manager</h2>
+		<iframe src="http://player.vimeo.com/video/79351699" width="500" height="438" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</section>
+
+<section id="execute-stackscript" class="slide deck-current">
+	<h2>Launch an instance using the Drupal LAMP StackScript</h2>
+	<iframe src="http://player.vimeo.com/video/79438899" width="500" height="438" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</section>
+
+
+<!-- End slides. -->
+
+
+<!-- Begin extension snippets. Add or remove as needed. -->
+
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- End extension snippets. -->
+
+
+<!-- Required JS files. -->
+<script src="jquery-1.7.2.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>
