@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=1024, user-scalable=yes">
+
+	<title>Introcuction to Jenkins from a Drupal Perspective</title>
+
+	<!-- Required stylesheet -->
+	<link rel="stylesheet" href="core/deck.core.css">
+
+	<!-- Extension CSS files go here. Remove or add as needed. -->
+	<link rel="stylesheet" href="extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="extensions/status/deck.status.css">
+	<link rel="stylesheet" href="extensions/hash/deck.hash.css">
+	<link rel="stylesheet" href="extensions/scale/deck.scale.css">
+
+	<!-- Style theme. More available in /themes/style/ or create your own. -->
+	<link rel="stylesheet" href="themes/style/web-2.0.css">
+
+	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+	<link rel="stylesheet" href="themes/transition/horizontal-slide.css">
+
+	<!-- Required Modernizr file -->
+	<script src="modernizr.custom.js"></script>
+</head>
+<body class="deck-container on-slide-markup on-slide-2">
+
+<!-- Begin slides. Just make elements with a class of slide. -->
+
+<section id="introduction" class="slide">
+	<h1>An Introduction to Jenkins from a Drupal Perspective</h1>
+	<p>Brandon Williams (crazysix)</p>
+</section>
+
+<section id="disclaimer" class="slide deck-child-current deck-before">
+	<h2>Disclaimer</h2>
+	<p class="slide deck-current">This is a noob's explaination of how a simple idea using helpful tools could be a powerful altenative, potentially improving the methods currently in place by exploring alternatives.</p>
+	<h3 class="slide deck-next">What does this mean?</h3>
+	<ul class="slide deck-after">
+		<li>I am not a expert in the topics covered in this presentaion.</li>
+		<li>The methods covered in this presentation are not being presented as best practices.</li>
+		<li>This presentation is intended to initiate a conversation around using the methods presented to improve efficiency, effectiveness, and reliability in processes, while assisting developers in accruately tracking any issues.</li>
+		<li>It is up to the community to take these ideas and determine the practicallity and usefullness in general implementation, noting that individual cirumstances and the need for specialized processes is not the primary focus of this presentation.</li>
+	</ul>
+</section>
+
+<section id="problem" class="slide deck-child-current deck-before">
+	<h2>What are the issues?</h2>
+	<h3 class="slide deck-current">Drupal cron job has many areas we believe can be improved.</h3>
+	<ul>
+		<li class="slide deck-after">It dies silently.</li>
+		<li class="slide deck-after">A Drupal cron job can be a massive task, integrated with various modules and running those jobs in one bulk process.</li>
+		<li class="slide deck-after">All cron jobs of all modules combined should not exceed the 240s timeout limit.</li>
+		<li class="slide deck-after">Memory can be an issue when running massive, combined jobs.</li>
+		<li class="slide deck-after">When cron jobs fail multiple sources may need to be accessed to understand what happened (watchdog, logs, etc.). This could even go as far as disabling individual modules in an attempt to identify the issue.</li>
+		<li class="slide deck-after">The failure of one cron job can affect the success of others.</li>
+	</ul>
+</section>
+
+<section id="solution" class="slide deck-child-current deck-before">
+	<h2>What can be done?</h2>
+	<h3 class="slide deck-current">Create a process that will execute specific cron jobs, notify maintainers of any issues, document anyoutput during the process, and be easily accessible. While there are likely many solutions for this particular issue, we believe...</h3>
+	<p class="slide deck-after">Drush</p>
+	<p class="slide deck-after"> + Jenkins</p>
+	<img src="assets/images/AWESOMESAUCE.png" class="slide deck-after">
+</section>
+
+<section id="plan" class="slide deck-child-current deck-before">
+	<h2>The Plan</h2>
+	<h3 class="slide deck-current">We use Drush to manage cron.</h3>
+	<p class="slide deck-after">This allows us to:</p>
+	<ul>
+		<li class="slide deck-after">Specify the jobs we want to run.</li>
+		<li class="slide deck-after">[Add more here]</li>
+	</ul>
+</section>
+
+<section id="plan2" class="slide deck-child-current deck-before">
+	<h2>The Plan (cont.)</h2>
+	<h3 class="slide deck-current">Use Jenkins to execute the jobs, allowing:</h3>
+	<ul>
+		<li class="slide deck-after">Specify the jobs we want to run.</li>
+		<li class="slide deck-after">Notify via email, ping in irc, etc.</li>
+		<li class="slide deck-after">[Add more here]</li>
+	</ul>
+</section>
+
+<section id="jenkins" class="slide deck-child-current deck-before">
+	<h2>What is Jenkins?</h2>
+	<div class="slide deck-current">
+		<p>Jenkins is an award-winning application that monitors executions of repeated jobs, such as building a software project or jobs run by cron. Among those things, current Jenkins focuses on the following two jobs:</p>
+		<ul>
+			<li>Building/testing software projects continuously, just like CruiseControl or DamageControl. In a nutshell, Jenkins provides an easy-to-use so-called continuous integration system, making it easier for developers to integrate changes to the project, and making it easier for users to obtain a fresh build. The automated, continuous build increases the productivity.</li>
+			<li>Monitoring executions of externally-run jobs, such as cron jobs and procmail jobs, even those that are run on a remote machine. For example, with cron, all you receive is regular e-mails that capture the output, and it is up to you to look at them diligently and notice when it broke. Jenkins keeps those outputs and makes it easy for you to notice when something is wrong.</li>
+		</ul>
+		<p>https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins</p>
+	</div>
+	<h3 class="slide deck-current">In short...</h3>
+	<p class="slide deck-current">Jenkins is a dumb butler. It only executes your existing jobs, records output, and appropriate actions as dictacted by you.</p>
+</section>
+
+<section id="steps" class="slide deck-child-current deck-before">
+	<h3>Step 1</h3>
+	<p class="slide deck-current">Find a drush command that needs to be run.</p>
+	<p class="slide deck-next">For testing purposes, we will use drush cc all.</p>
+	<h2 class="slide deck-next">Let's install LAMP</h2>
+	<ul class="code deck-child-current">
+		<li class="slide deck-current">#!/bin/bash -x</li>
+		<li class="slide deck-next"># &lt;UDF name="db_password" Label="MySQL root Password" /&gt;</li>
+		<li class="slide deck-next">source &lt;ssinclude <a href="https://www.linode.com/stackscripts/view/?StackScriptID=1" target="_blank">StackScriptID=1</a>&gt;</li>
+		<li class="slide deck-next">system_update</li>
+		<li class="slide deck-next">postfix_install_loopback_only</li>
+		<li class="slide deck-next">mysql_install "$DB_PASSWORD" && mysql_tune 40</li>
+		<li class="slide deck-next">php_install_with_apache && php_tune</li>
+		<li class="slide deck-next">apache_install && apache_tune 40 && apache_virtualhost_from_rdns</li>
+		<li class="slide deck-next">goodstuff</li>
+		<li class="slide deck-next">restartServices</li>
+	</ul>
+</section>
+
+<!--<section id="create-stackscript" class="slide deck-current">
+		<h2>Create a StackScript in the Linode Manager</h2>
+		<iframe src="http://player.vimeo.com/video/79351699" width="500" height="438" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</section>
+
+<section id="execute-stackscript" class="slide deck-current">
+	<h2>Launch an instance using the Drupal LAMP StackScript</h2>
+	<iframe src="http://player.vimeo.com/video/79438899" width="500" height="438" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</section>-->
+
+<section id="our-goal" class="slide deck-child-current">
+	<h2>Next Steps</h2>
+	<div class="slide deck-current">
+		<p>As mentioned before, the goal of this presentation is to spark a conversation in the community that will lead to a collaborative solution for some of the problems many of us face.</p>
+		<img src="assets/images/critical-thinking.jpg" />
+		<img src="assets/images/collaboration1.jpg" />
+	</div>
+</section>
+
+<section id="your-solution" class="slide deck-child-current">
+	<h2>This is okay too...</h2>
+	<div class="slide deck-current">
+		<img src="assets/images/noob.jpg" />
+		<img src="assets/images/noob-star-wars.jpg" />
+		<p>But tell us how to do it better. We are open to any suggestion or criticism, but we expect you to contribute to a workable, acceptable solution!</p>
+	</div>
+</section>
+
+
+<!-- End slides. -->
+
+
+<!-- Begin extension snippets. Add or remove as needed. -->
+
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- End extension snippets. -->
+
+
+<!-- Required JS files. -->
+<script src="jquery-1.7.2.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>
