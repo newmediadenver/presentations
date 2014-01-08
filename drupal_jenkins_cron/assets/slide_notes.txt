@@ -1,0 +1,77 @@
+/**
+* Slide Notes
+*/
+
+1. Disclaimer
+- Get the conversation started!
+	- initiate a conversation 
+	- improve efficiency, effectiveness, and reliability in processes 
+	- easy to access output and notifications
+- Do-ocracy
+	- Create a panel
+	- encourage participation
+	- choose a role or task and jump in
+
+2. What are the issues?
+- none
+
+3. What can be done?
+- none
+
+4. What is Drush?
+- shell-based
+- Learn it now!!!
+- Reference learning resources
+
+5. What is Jenkins?
+- Dumb butler
+
+6. Plan
+- drush for cron jobs
+	- core-cron
+		- alias: cron
+	- run specific jobs with drush commands
+- Jenkins
+	- specify drush commands to run
+	- notifications
+	- track builds
+
+7. Assumptions
+- jenkins setup
+- jenkins connected to server
+- no details
+
+8. Drush Command
+- none
+
+9. Jenkins Dashboard
+- job list
+- click new job to start a new one
+
+10. Create a Jenkins job
+- name
+- freestyle software
+
+11. Configure
+- Discard old builds and set max build. Jenkins will eventually die if you do not.
+- point out buil history, we will go to most recent after config
+
+12. Configure 2
+- git integration
+- trigger from another job
+
+13. Configure 3
+- bash code
+
+14. Build
+- none
+
+15. Build Output
+- something went wrong with permissions
+- user who ran
+- view code
+	- success!
+
+16. Recognize the Connection
+- recognize the job name from the trigger in config
+

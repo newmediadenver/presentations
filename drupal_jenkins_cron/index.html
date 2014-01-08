@@ -26,10 +26,28 @@
 
 	<!-- Required Modernizr file -->
 	<script src="modernizr.custom.js"></script>
+
+	<!-- Custom styling for this presentation -->
+	<style type="text/css">
+		#drush-command .code-display {
+			background-color: black;
+			padding: .5em 1em;
+			margin-bottom: 1em;
+		}
+		#drush-command .code-display p {
+			color: white;
+			padding: 0;
+			margin: .25em 0;
+		}
+		#step1 .code-display p.lvl1 {
+			margin-left: 2em;
+		}
+	</style>
 </head>
 <body class="deck-container on-slide-markup on-slide-2">
 
 <!-- Begin slides. Just make elements with a class of slide. -->
+<!-- !!!Slide notes are in assets folder!!! -->
 
 <section id="introduction" class="slide">
 	<h1>An Introduction to Jenkins from a Drupal Perspective</h1>
@@ -38,55 +56,45 @@
 
 <section id="disclaimer" class="slide deck-child-current deck-before">
 	<h2>Disclaimer</h2>
-	<p class="slide deck-current">This is a noob's explaination of how a simple idea using helpful tools could be a powerful altenative, potentially improving the methods currently in place by exploring alternatives.</p>
+	<p class="slide deck-current">This is a noob's explaination of how new tools could be used to improve current methods.</p>
 	<h3 class="slide deck-next">What does this mean?</h3>
 	<ul class="slide deck-after">
-		<li>I am not a expert in the topics covered in this presentaion.</li>
-		<li>The methods covered in this presentation are not being presented as best practices.</li>
-		<li>This presentation is intended to initiate a conversation around using the methods presented to improve efficiency, effectiveness, and reliability in processes, while assisting developers in accruately tracking any issues.</li>
-		<li>It is up to the community to take these ideas and determine the practicallity and usefullness in general implementation, noting that individual cirumstances and the need for specialized processes is not the primary focus of this presentation.</li>
+		<li>The methods covered in this presentation are not being represented as best practices.</li>
+		<li>Get the conversation started!</li>
+		<li><a href="http://www.communitywiki.org/cw/DoOcracy" target="_blank">Do-ocracy</a></li>
 	</ul>
 </section>
 
 <section id="problem" class="slide deck-child-current deck-before">
 	<h2>What are the issues?</h2>
-	<h3 class="slide deck-current">Drupal cron job has many areas we believe can be improved.</h3>
+	<h3 class="slide deck-current">Drupal cron is a good area to focus on.</h3>
 	<ul>
-		<li class="slide deck-after">It dies silently.</li>
-		<li class="slide deck-after">A Drupal cron job can be a massive task, integrated with various modules and running those jobs in one bulk process.</li>
-		<li class="slide deck-after">All cron jobs of all modules combined should not exceed the 240s timeout limit.</li>
-		<li class="slide deck-after">Memory can be an issue when running massive, combined jobs.</li>
-		<li class="slide deck-after">When cron jobs fail multiple sources may need to be accessed to understand what happened (watchdog, logs, etc.). This could even go as far as disabling individual modules in an attempt to identify the issue.</li>
-		<li class="slide deck-after">The failure of one cron job can affect the success of others.</li>
+		<li class="slide deck-after">Reference: <a href="https://drupal.org/node/553430" target="_blank">https://drupal.org/node/553430</a></li>
+		<li class="slide deck-after">It dies silently to the untrained eye.</li>
+		<li class="slide deck-after">It can be a massive task, integrated with various modules and running those jobs in one bulk process.</li>
+		<li class="slide deck-after">All module cron jobs combined should not exceed the 240s timeout limit.</li>
+		<li class="slide deck-after">PHP memory can be an issue.</li>
+		<li class="slide deck-after">When cron jobs fail multiple sources may need to be accessed to understand what happened (watchdog, logs, etc.).</li>
+		<li class="slide deck-after">Troubleshooting could require disabling individual modules in an attempt to identify the issue.</li>
 	</ul>
 </section>
 
 <section id="solution" class="slide deck-child-current deck-before">
 	<h2>What can be done?</h2>
-	<h3 class="slide deck-current">Create a process that will execute specific cron jobs, notify maintainers of any issues, document anyoutput during the process, and be easily accessible. While there are likely many solutions for this particular issue, we believe...</h3>
+	<h3 class="slide deck-current">Create a solution that will execute specific cron jobs, notify maintainers of issues, document output during the process, and be easily accessible. While there are likely many solutions for this particular issue, we believe...</h3>
 	<p class="slide deck-after">Drush</p>
 	<p class="slide deck-after"> + Jenkins</p>
-	<img src="assets/images/AWESOMESAUCE.png" class="slide deck-after">
+	<img src="assets/images/awesomesauce-drupal.png" class="slide deck-after" />
 </section>
 
-<section id="plan" class="slide deck-child-current deck-before">
-	<h2>The Plan</h2>
-	<h3 class="slide deck-current">We use Drush to manage cron.</h3>
-	<p class="slide deck-after">This allows us to:</p>
-	<ul>
-		<li class="slide deck-after">Specify the jobs we want to run.</li>
-		<li class="slide deck-after">[Add more here]</li>
-	</ul>
-</section>
-
-<section id="plan2" class="slide deck-child-current deck-before">
-	<h2>The Plan (cont.)</h2>
-	<h3 class="slide deck-current">Use Jenkins to execute the jobs, allowing:</h3>
-	<ul>
-		<li class="slide deck-after">Specify the jobs we want to run.</li>
-		<li class="slide deck-after">Notify via email, ping in irc, etc.</li>
-		<li class="slide deck-after">[Add more here]</li>
-	</ul>
+<section id="drush" class="slide deck-child-current deck-before">
+	<h2>What is Drush?</h2>
+	<div class="slide deck-current">
+		<p>Drush is a shell-based application used to manage Drupal sites.</p>
+		<p>Stop! Learn Drush now!</p>
+		<p><a href="https://github.com/drush-ops/drush" target="_blank">https://github.com/drush-ops/drush</a></p>
+		<p><a href="http://drush.ws/" target="_blank">http://drush.ws/</a></p>
+	</div>
 </section>
 
 <section id="jenkins" class="slide deck-child-current deck-before">
@@ -103,34 +111,87 @@
 	<p class="slide deck-current">Jenkins is a dumb butler. It only executes your existing jobs, records output, and appropriate actions as dictacted by you.</p>
 </section>
 
-<section id="steps" class="slide deck-child-current deck-before">
-	<h3>Step 1</h3>
-	<p class="slide deck-current">Find a drush command that needs to be run.</p>
-	<p class="slide deck-next">For testing purposes, we will use drush cc all.</p>
-	<h2 class="slide deck-next">Let's install LAMP</h2>
-	<ul class="code deck-child-current">
-		<li class="slide deck-current">#!/bin/bash -x</li>
-		<li class="slide deck-next"># &lt;UDF name="db_password" Label="MySQL root Password" /&gt;</li>
-		<li class="slide deck-next">source &lt;ssinclude <a href="https://www.linode.com/stackscripts/view/?StackScriptID=1" target="_blank">StackScriptID=1</a>&gt;</li>
-		<li class="slide deck-next">system_update</li>
-		<li class="slide deck-next">postfix_install_loopback_only</li>
-		<li class="slide deck-next">mysql_install "$DB_PASSWORD" && mysql_tune 40</li>
-		<li class="slide deck-next">php_install_with_apache && php_tune</li>
-		<li class="slide deck-next">apache_install && apache_tune 40 && apache_virtualhost_from_rdns</li>
-		<li class="slide deck-next">goodstuff</li>
-		<li class="slide deck-next">restartServices</li>
+<section id="plan" class="slide deck-child-current deck-before">
+	<h2>The Plan</h2>
+	<h3 class="slide deck-current">Use Drush to run cron jobs.</h3>
+	<ul>
+		<li class="slide deck-after">Specify the jobs to run</li>
+	</ul>
+	<h3 class="slide deck-current">Use Jenkins to execute the jobs, allowing:</h3>
+	<ul>
+		<li class="slide deck-after">Specify the drush commands to run.</li>
+		<li class="slide deck-after">Notify via email, ping in irc, etc.</li>
+		<li class="slide deck-after">Track a builds (job output)</li>
 	</ul>
 </section>
 
-<!--<section id="create-stackscript" class="slide deck-current">
-		<h2>Create a StackScript in the Linode Manager</h2>
-		<iframe src="http://player.vimeo.com/video/79351699" width="500" height="438" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<section id="assumptions" class="slide deck-child-current deck-before">
+	<h2>Assumptions</h2>
+	<ul>
+		<li class="slide deck-current">Jenkins is setup</li>
+		<li class="slide deck-after">Jenkins can communicate with the machine</li>
+	</ul>
+	<p class="slide deck-after">There are many ways to accomplish this, but the details are beyond the scope of this presentation.</p>
 </section>
 
-<section id="execute-stackscript" class="slide deck-current">
-	<h2>Launch an instance using the Drupal LAMP StackScript</h2>
-	<iframe src="http://player.vimeo.com/video/79438899" width="500" height="438" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</section>-->
+<section id="drush-command" class="slide deck-child-current deck-before">
+	<h2>Drush Command</h2>
+	<p class="slide deck-current">Find a drush command that needs to be run.</p>
+	<p class="slide deck-next">For testing purposes, we will use drush cc all.</p>
+	<div class="slide deck-next code-display">
+		<p>#!/bin/bash</p>
+		<p>knife search node "chef_environment:production && role:drupal" | grep "Node Name" | sed "s/^.* //"  | sort -r |while read machine</p>
+		<p>do</p>
+		<p class="lvl1">echo "Machine $machine"</p>
+		<p class="lvl1">set -e</p>
+		<p class="lvl1">cmd="ssh -n chef@$machine /usr/bin/drush cc all -r /srv/www/html/drupal/current && /usr/bin/drush -r /srv/www/html/drupal/current php-eval 'drupal_flush_all_caches();'"</p>
+		<p class="lvl1">echo "$cmd"</p>
+		<p class="lvl1">$cmd</p>
+		<p class="lvl1">set +e</p>
+		<p>done</p>
+	</div>
+</section>
+
+<section id="jenkins-joblist" class="slide deck-child-current deck-before">
+	<h2>Jenkins Dashboard</h2>
+	<img class="slide deck-current" src="assets/images/jenkins-jobslist.jpg" />
+</section>
+
+<section id="jenkins-newjob" class="slide deck-child-current deck-before">
+	<h2>Create a Jenkins Job</h2>
+	<img class="slide deck-current" src="assets/images/jenkins-newjob.jpg" />
+</section>
+
+<section id="jenkins-configure1" class="slide deck-child-current deck-before">
+	<h2>Configure the Jenkins Job</h2>
+	<img class="slide deck-current" src="assets/images/jenkins-configure1.jpg" />
+</section>
+
+<section id="jenkins-configure2" class="slide deck-child-current deck-before">
+	<h2>Configure the Jenkins Job (cont.)</h2>
+	<img class="slide deck-current"src="assets/images/jenkins-configure2.jpg" />
+</section>
+
+<section id="jenkins-configure3" class="slide deck-child-current deck-before">
+	<h2>Configure the Jenkins Job (cont.)</h2>
+	<img class="slide deck-current"src="assets/images/jenkins-configure3.jpg" />
+</section>
+
+<section id="jenkins-build" class="slide deck-child-current deck-before">
+	<h2>Build</h2>
+	<img class="slide deck-current"src="assets/images/jenkins-build.jpg" />
+</section>
+
+<section id="jenkins-buildoutput" class="slide deck-child-current deck-before">
+	<h2>Build Output</h2>
+	<img class="slide deck-current"src="assets/images/jenkins-buildoutput.jpg" />
+	<p class="slide deck-next"><a href="assets/build_output.html" target="_blank">A closer look.</a></p>
+</section>
+
+<section id="jenkins-jobconnection" class="slide deck-child-current deck-before">
+	<h2>Jenkins Job List: Recognize the Connection</h2>
+	<img class="slide deck-current" src="assets/images/jenkins-jobslist.jpg" />
+</section>
 
 <section id="our-goal" class="slide deck-child-current">
 	<h2>Next Steps</h2>
@@ -146,8 +207,13 @@
 	<div class="slide deck-current">
 		<img src="assets/images/noob.jpg" />
 		<img src="assets/images/noob-star-wars.jpg" />
-		<p>But tell us how to do it better. We are open to any suggestion or criticism, but we expect you to contribute to a workable, acceptable solution!</p>
+		<p>Tell us how to do it better. We are open to any suggestion or criticism, but we expect you to contribute to a workable, acceptable solution!</p>
 	</div>
+</section>
+
+<section id="lets-talk" class="slide deck-child-current">
+	<h2>Let's Talk</h2>
+	<p class="slide deck-current">Thank You!</p>
 </section>
 
 
