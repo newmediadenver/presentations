@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=1024, user-scalable=yes">
 
-	<title>Introcuction to Jenkins from a Drupal Perspective</title>
+	<title>Jenkins 101: from a Drupal Perspective</title>
 
 	<!-- Required stylesheet -->
 	<link rel="stylesheet" href="core/deck.core.css">
@@ -38,32 +38,35 @@
 <!-- !!!Slide notes are in assets folder!!! -->
 
 <section id="introduction" class="slide">
-	<h1>Jenkins 101: from a Drupal Perspective</h1>
+	<h1>Jenkins 101:<span style="font-size:.75em;"><br/> A Drupal Perspective</span></h1>
 	<p>Brandon Williams (crazysix)</p>
 </section>
 
 <section id="problem" class="slide deck-child-current deck-before">
-	<h2>What are the issues or processes that can be improved?</h2>
-	<ul>
-		<li class="slide deck-current">Scrub the database</li>
-		<li class="slide deck-after">Data Processing</li>
-		<li class="slide deck-after">Clear Cache</li>
-		<li class="slide deck-after">Cron</li>
-		<li class="slide deck-after">Deploy</li>
-		<li class="slide deck-after">Multiple Server</li>
-		<li class="slide deck-after">Testing</li>
-		<li class="slide deck-after">Triggers Follow-up jobs</li>
+	<h2>Improve and Simplify</h2>
+	<ul class="slide deck-current">
+		<li>Scrub the database</li>
+		<li>Data Processing</li>
+		<li>Clear Cache</li>
+		<li>Cron</li>
+		<li>Deploy</li>
+		<li>Multiple Server</li>
+		<li>Testing</li>
+		<li>Triggers Follow-up jobs</li>
+		<li>Selenium Testing</li>
 	</ul>
 </section>
 
 <section id="solution" class="slide deck-child-current deck-before">
-	<h2>What can be done?</h2>
+	<h2>What should a solution provide?</h2>
 	<ul class="slide deck-current">
-		<li>Scalable</li>
+		<li>Scalability</li>
 		<li>Notifications</li>
 		<li>Reusable</li>
 		<li>Collaborative Effort</li>
 		<li>Troubleshooting</li>
+		<li>Simplicity</li>
+		<li>Scheduling</li>
 	</ul>
 </section>
 
@@ -114,19 +117,20 @@
 	<img src="assets/images/tools.png" style="border: 1px solid black;" />
 </section>
 
-<section id="awesomesauce" class="slide">
-	<h2>Drush + Chef + Jenkins</h2>
-	<img src="assets/images/awesomesauce-drupal.png" />
+<section id="awesomesauce" class="slide deck-child-current deck-before">
+	<h2>The Takeaway</h2>
+	<h3>Drush + Chef + Jenkins</h3>
+	<img class="slide deck-current" src="assets/images/awesomesauce-drupal.png" />
 </section>
 
 <section id="plan" class="slide deck-child-current deck-before">
 	<h2>The Plan</h2>
-	<ul>
-		<li class="slide deck-current">Create Jenkins jobs</li>
-		<li class="slide deck-after">Chef for web server credentials</li>
-		<li class="slide deck-after">Execute command on the web server from the Jenkins job</li>
-		<li class="slide deck-after">Record output</li>
-		<li class="slide deck-after">Follow up</li>
+	<ul class="slide deck-current">
+		<li>Create Jenkins jobs</li>
+		<li>Chef for web server credentials</li>
+		<li>Execute command on the web server from the Jenkins job</li>
+		<li>Record output</li>
+		<li>Follow up</li>
 	</ul>
 </section>
 
@@ -144,6 +148,21 @@
 		<li><a href="assets/jenkins_gui/jenkins_build/index.html" target="_blank">Build</a></li>
 		<li><a href="assets/jenkins_gui/jenkins_build_output/index.html" target="_blank">Build Output</a></li>
 	</ol>
+</section>
+
+<section id="problem-revisit" class="slide deck-child-current deck-before">
+	<h2>Improve and Simplify</h2>
+	<ul class="slide deck-current">
+		<li>Scrub the database</li>
+		<li>Data Processing</li>
+		<li>Clear Cache</li>
+		<li>Cron</li>
+		<li>Deploy</li>
+		<li>Multiple Server</li>
+		<li>Testing</li>
+		<li>Triggers Follow-up jobs</li>
+		<li>Selenium Testing</li>
+	</ul>
 </section>
 
 <section id="our-goal" class="slide deck-child-current">
