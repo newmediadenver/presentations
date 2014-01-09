@@ -29,19 +29,7 @@
 
 	<!-- Custom styling for this presentation -->
 	<style type="text/css">
-		#drush-command .code-display {
-			background-color: black;
-			padding: .5em 1em;
-			margin-bottom: 1em;
-		}
-		#drush-command .code-display p {
-			color: white;
-			padding: 0;
-			margin: .25em 0;
-		}
-		#step1 .code-display p.lvl1 {
-			margin-left: 2em;
-		}
+		
 	</style>
 </head>
 <body class="deck-container on-slide-markup on-slide-2">
@@ -54,52 +42,57 @@
 	<p>Brandon Williams (crazysix)</p>
 </section>
 
-<section id="disclaimer" class="slide deck-child-current deck-before">
-	<h2>Disclaimer</h2>
-	<p class="slide deck-current">This is a noob's explaination of how new tools could be used to improve current methods.</p>
-	<h3 class="slide deck-next">What does this mean?</h3>
-	<ul class="slide deck-after">
-		<li>The methods covered in this presentation are not being represented as best practices.</li>
-		<li>Get the conversation started!</li>
-		<li><a href="http://www.communitywiki.org/cw/DoOcracy" target="_blank">Do-ocracy</a></li>
-	</ul>
-</section>
-
 <section id="problem" class="slide deck-child-current deck-before">
-	<h2>What are the issues?</h2>
-	<h3 class="slide deck-current">Drupal cron is a good area to focus on.</h3>
+	<h2>What are the issues or processes that can be improved?</h2>
 	<ul>
-		<li class="slide deck-after">Reference: <a href="https://drupal.org/node/553430" target="_blank">https://drupal.org/node/553430</a></li>
-		<li class="slide deck-after">It dies silently to the untrained eye.</li>
-		<li class="slide deck-after">It can be a massive task, integrated with various modules and running those jobs in one bulk process.</li>
-		<li class="slide deck-after">All module cron jobs combined should not exceed the 240s timeout limit.</li>
-		<li class="slide deck-after">PHP memory can be an issue.</li>
-		<li class="slide deck-after">When cron jobs fail multiple sources may need to be accessed to understand what happened (watchdog, logs, etc.).</li>
-		<li class="slide deck-after">Troubleshooting could require disabling individual modules in an attempt to identify the issue.</li>
+		<li class="slide deck-current">Scrub the database</li>
+		<li class="slide deck-after">Data Processing</li>
+		<li class="slide deck-after">Clear Cache</li>
+		<li class="slide deck-after">Cron</li>
+		<li class="slide deck-after">Deploy</li>
+		<li class="slide deck-after">Multiple Server</li>
+		<li class="slide deck-after">Testing</li>
+		<li class="slide deck-after">Triggers Follow-up jobs</li>
 	</ul>
 </section>
 
 <section id="solution" class="slide deck-child-current deck-before">
 	<h2>What can be done?</h2>
-	<h3 class="slide deck-current">Create a solution that will execute specific cron jobs, notify maintainers of issues, document output during the process, and be easily accessible. While there are likely many solutions for this particular issue, we believe...</h3>
-	<p class="slide deck-after">Drush</p>
-	<p class="slide deck-after"> + Jenkins</p>
-	<img src="assets/images/awesomesauce-drupal.png" class="slide deck-after" />
+	<ul class="slide deck-current">
+		<li>Scalable</li>
+		<li>Notifications</li>
+		<li>Reusable</li>
+		<li>Collaborative Effort</li>
+		<li>Troubleshooting</li>
+	</ul>
 </section>
 
-<section id="drush" class="slide deck-child-current deck-before">
-	<h2>What is Drush?</h2>
+<section id="tools" class="slide deck-child-current deck-before">
+	<h2>Tools</h2>
 	<div class="slide deck-current">
-		<p>Drush is a shell-based application used to manage Drupal sites.</p>
-		<p>Stop! Learn Drush now!</p>
-		<p><a href="https://github.com/drush-ops/drush" target="_blank">https://github.com/drush-ops/drush</a></p>
-		<p><a href="http://drush.ws/" target="_blank">http://drush.ws/</a></p>
+		<h3>Drush</h3>
+		<ul>
+			<li>Drush is a shell-based application used to manage Drupal sites.</li>
+			<li><a href="https://github.com/drush-ops/drush" target="_blank">https://github.com/drush-ops/drush</a></li>
+			<li><a href="http://drush.ws/" target="_blank">http://drush.ws/</a></li>
+		</ul>
+	</div>
+	<div class="slide deck-next">
+		<h3>Chef</h3>
+		<ul>
+			<li>Hub for configuration data</li>
+			<li>Cookbooks and recipes</li>
+		</ul>
+	</div>
+	<div class="slide deck-next">
+		<h3>Jenkins</h3>
+		<p>What is Jenkins?</p>
 	</div>
 </section>
 
 <section id="jenkins" class="slide deck-child-current deck-before">
 	<h2>What is Jenkins?</h2>
-	<div class="slide deck-current">
+	<div class="slide deck-current" style="background: url('assets/images/jenkins.png') right top no-repeat;">
 		<p>Jenkins is an award-winning application that monitors executions of repeated jobs, such as building a software project or jobs run by cron. Among those things, current Jenkins focuses on the following two jobs:</p>
 		<ul>
 			<li>Building/testing software projects continuously, just like CruiseControl or DamageControl. In a nutshell, Jenkins provides an easy-to-use so-called continuous integration system, making it easier for developers to integrate changes to the project, and making it easier for users to obtain a fresh build. The automated, continuous build increases the productivity.</li>
@@ -108,57 +101,49 @@
 		<p>https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins</p>
 	</div>
 	<h3 class="slide deck-current">In short...</h3>
-	<p class="slide deck-current">Jenkins is a dumb butler. It only executes your existing jobs, records output, and appropriate actions as dictacted by you.</p>
+	<p class="slide deck-next">Jenkins is a simple butler.</p>
+	<ul class="slide deck-next">
+		<li>Executes existing jobs</li>
+		<li>Records output</li>
+		<li>Follow-up actions</li>
+	</ul>
+</section>
+
+<section id="tool-diagram" class="slide">
+	<h2>Tools Working Together</h2>
+	<img src="assets/images/tools.png" style="border: 1px solid black;" />
+</section>
+
+<section id="awesomesauce" class="slide">
+	<h2>Drush + Chef + Jenkins</h2>
+	<img src="assets/images/awesomesauce-drupal.png" />
 </section>
 
 <section id="plan" class="slide deck-child-current deck-before">
 	<h2>The Plan</h2>
-	<h3 class="slide deck-current">Use Drush to run cron jobs.</h3>
 	<ul>
-		<li class="slide deck-after">Specify the jobs to run</li>
-	</ul>
-	<h3 class="slide deck-current">Use Jenkins to execute the jobs, allowing:</h3>
-	<ul>
-		<li class="slide deck-after">Specify the drush commands to run.</li>
-		<li class="slide deck-after">Notify via email, ping in irc, etc.</li>
-		<li class="slide deck-after">Track a builds (job output)</li>
+		<li class="slide deck-current">Create Jenkins jobs</li>
+		<li class="slide deck-after">Chef for web server credentials</li>
+		<li class="slide deck-after">Execute command on the web server from the Jenkins job</li>
+		<li class="slide deck-after">Record output</li>
+		<li class="slide deck-after">Follow up</li>
 	</ul>
 </section>
 
-<section id="assumptions" class="slide deck-child-current deck-before">
-	<h2>Assumptions</h2>
-	<ul>
-		<li class="slide deck-current">Jenkins is setup</li>
-		<li class="slide deck-after">Jenkins can communicate with the machine</li>
-	</ul>
-	<p class="slide deck-after">There are many ways to accomplish this, but the details are beyond the scope of this presentation.</p>
-</section>
-
-<section id="drush-command" class="slide deck-child-current deck-before">
-	<h2>Drush Command</h2>
-	<p class="slide deck-current">Find a drush command that needs to be run.</p>
-	<p class="slide deck-next">For testing purposes, we will use drush cc all.</p>
-	<div class="slide deck-next code-display">
-		<p>#!/bin/bash</p>
-		<p>knife search node "chef_environment:production && role:drupal" | grep "Node Name" | sed "s/^.* //"  | sort -r |while read machine</p>
-		<p>do</p>
-		<p class="lvl1">echo "Machine $machine"</p>
-		<p class="lvl1">set -e</p>
-		<p class="lvl1">cmd="ssh -n chef@$machine /usr/bin/drush cc all -r /srv/www/html/drupal/current && /usr/bin/drush -r /srv/www/html/drupal/current php-eval 'drupal_flush_all_caches();'"</p>
-		<p class="lvl1">echo "$cmd"</p>
-		<p class="lvl1">$cmd</p>
-		<p class="lvl1">set +e</p>
-		<p>done</p>
-	</div>
-</section>
-
-<section id="jenkins-joblist" class="slide deck-child-current deck-before">
-	<h2>Jenkins Dashboard</h2>
-	<div class="slide deck-current">
-		<ul>
-			<li></li>
-		</ul>
-	</div>
+<section id="jenkins-gui" class="slide deck-child-current deck-before">
+	<h2>Jenkins GUI</h2>
+	<p>Let's dive in!</p>
+	<ol class="slide deck-current">
+		<li><a href="assets/jenkins_gui/jenkins_login/index.html" target="_blank">Login</a></li>
+		<li><a href="assets/jenkins_gui/jenkins_dashboard/dashboard.html" target="_blank">Dashboard</a></li>
+		<li><a href="assets/jenkins_gui/jenkins_new_job/index.html" target="_blank">New Job</a></li>
+		<li><a href="assets/jenkins_gui/jenkins_job_configure/create.html" target="_blank">Configure New Job</a></li>
+		<li><a href="assets/jenkins_gui/jenkins_dashboard/index.html" target="_blank">Dashboard w/ New Job</a></li>
+		<li><a href="assets/jenkins_gui/jenkins_job/index.html" target="_blank">Job Status</a></li>
+		<li><a href="assets/jenkins_gui/jenkins_job_configure/index.html" target="_blank">Configure Job</a></li>
+		<li><a href="assets/jenkins_gui/jenkins_build/index.html" target="_blank">Build</a></li>
+		<li><a href="assets/jenkins_gui/jenkins_build_output/index.html" target="_blank">Build Output</a></li>
+	</ol>
 </section>
 
 <section id="our-goal" class="slide deck-child-current">
@@ -168,11 +153,6 @@
 		<img src="assets/images/critical-thinking.jpg" />
 		<img src="assets/images/collaboration1.jpg" />
 	</div>
-</section>
-
-<section id="lets-talk" class="slide deck-child-current">
-	<h2>Let's Talk</h2>
-	<p class="slide deck-current">Thank You!</p>
 </section>
 
 

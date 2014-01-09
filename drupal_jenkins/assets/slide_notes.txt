@@ -2,76 +2,96 @@
 * Slide Notes
 */
 
-1. Disclaimer
+1. Intro - Before we dive in
+- Who am I
+- Not best practices, just a method that could be helpful
 - Get the conversation started!
-	- initiate a conversation 
-	- improve efficiency, effectiveness, and reliability in processes 
-	- easy to access output and notifications
+	- open source
+	- contributions
 - Do-ocracy
-	- Create a panel
 	- encourage participation
 	- choose a role or task and jump in
+	- http://www.communitywiki.org/cw/DoOcracy
+
+
 
 2. What are the issues?
-- none
+- alternatives exists: standby for benefits of this method
+- restricting users
+	- remove human error
+	- allow access to specific jobs
+- scrubbing the database
+- data processing
+- clearing cache
+- cron
+	- https://drupal.org/node/553430
+	- can die silently to the untrained eye
+	- massive bul process
+	- timout and memorey issues
+	- troubleshooting
+		- need watchdog, logs, etc.
+		- diabling modules
+- deploy
+
+
 
 3. What can be done?
-- none
+- want a solution that is
+	- Scalable
+	- Sends me notifications
+	- Reusable
+	- Collaborative Effort
+	- ability to troubleshoot
 
-4. What is Drush?
-- shell-based
-- Learn it now!!!
-- Reference learning resources
+
+
+4. Tools
+- drush
+- chef
+- jenkins
+
+
 
 5. What is Jenkins?
-- Dumb butler
+- Simple butler
+	- dictated by you
+	- any command line can be executed
+	- schedule
+	- button
 
-6. Plan
-- drush for cron jobs
-	- core-cron
-		- alias: cron
-	- run specific jobs with drush commands
-- Jenkins
-	- specify drush commands to run
-	- notifications
-	- track builds
 
-7. Assumptions
-- jenkins setup
-- jenkins connected to server
-- no details
 
-8. Drush Command
-- none
+6. Tool Diagram
+
+
+
+7. Awesomesquace
+
+
+
+8. Plan
+	- Create Jenkins jobs
+	- Ping chef for web server credentials
+	- Execute command on the web server from the Jenkins job
+	- Record output
+	- Follow up
+
+
 
 9. Jenkins Dashboard
-- job list
-- click new job to start a new one
+- assumptions
+	- jenkins is setup
+	- jenkins can communicate with web server and chef
+- dive in
+- knife
+	- chef via api
+	- Knife is a command-line tool that provides an interface between a local chef-repo and the server
+	- manage node, environments, roles, etc.
+	- 1000 production sites
 
-10. Create a Jenkins job
-- name
-- freestyle software
 
-11. Configure
-- Discard old builds and set max build. Jenkins will eventually die if you do not.
-- point out buil history, we will go to most recent after config
-
-12. Configure 2
-- git integration
-- trigger from another job
-
-13. Configure 3
-- bash code
-
-14. Build
-- none
-
-15. Build Output
-- something went wrong with permissions
-- user who ran
-- view code
-	- success!
-
-16. Recognize the Connection
-- recognize the job name from the trigger in config
+Exposing to tools and ideas
+Get on Google
+Reach out: twitter irc
+using jenkins?
 
