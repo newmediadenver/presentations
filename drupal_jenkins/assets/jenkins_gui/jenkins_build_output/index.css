@@ -1,0 +1,81 @@
+/* ::::: http://wscs-deliv01/static/5829722b/css/style.css ::::: */
+
+body { margin: 0px; padding: 0px; background: none repeat scroll 0% 0% white; }
+body, table, form, input, td, th, p, textarea, select { font-family: Verdana,Helvetica,sans serif; font-size: 11px; }
+FORM { margin: 0px; }
+td { vertical-align: top; }
+#main-table { padding: 0px; border-collapse: collapse; }
+#top-panel { margin-bottom: 3pt; height: 34px; background: url('topbar.png') repeat-x scroll 0% 0% transparent; }
+#top-panel a { text-decoration: none; }
+#main-panel { padding: 0px 10px 10px; }
+#side-panel { padding: 4px; width: 220px; }
+#footer { text-align: right; font-size: 8pt; margin-top: 10em; padding: 10px; border-top: 1px solid rgb(187, 187, 187); }
+#tasks { padding: 4px; }
+.skiplink { position: absolute; left: -20000px; }
+a:link { text-decoration: underline; color: rgb(32, 74, 135); }
+a:visited { text-decoration: underline; color: rgb(92, 53, 102); }
+img { vertical-align: middle; border: 0px none; }
+pre { white-space: pre-wrap; word-wrap: break-word; margin: 0px; }
+.task { white-space: nowrap; }
+.subtasks { padding-left: 1em; }
+#login-field { vertical-align: middle; padding-right: 1em; width: 1px; }
+#login-field SPAN { white-space: nowrap; color: white; }
+#login-field A { color: white; }
+.top-sticker, #top-sticker { width: 100%; z-index: 999; }
+.top-sticker-inner { background: none repeat scroll 0% 0% white; padding: 1em; }
+.top-sticker-edge { height: 16px; background-image: url('top-sticker-bottom-edge.png'); background-repeat: repeat-x; }
+.top-sticker.noedge > .top-sticker-edge { display: none; }
+.top-sticker.noedge > .top-sticker-inner { padding: 0px; }
+.yui-tt { border: 1px solid black ! important; background-color: rgb(255, 255, 255) ! important; padding: 2px ! important; font-family: inherit ! important; color: inherit ! important; }
+.yui-skin-sam .yui-tt .bd { border: medium none ! important; background-color: rgb(255, 255, 255) ! important; }
+#search-box { background: url('search.gif') no-repeat scroll 2px center white; padding-left: 20px; width: 15em; position: static; }
+#search-box.defaulted { color: gray; }
+#search-box-completion { text-align: left; width: 25em; position: absolute; z-index: 1000; }
+#search-box-completion .yui-ac-content { border: 1px solid black; width: 25em; background-color: white; overflow: hidden; }
+#search-box-completion UL { padding: 0px; width: 100%; margin: 0px; list-style: none outside none; }
+#search-box-completion LI { padding-left: 20px; white-space: nowrap; }
+#search-box-minWidth { position: absolute; visibility: hidden; width: 15em; }
+#search-box-sizer { position: absolute; visibility: hidden; }
+/* ::::: http://wscs-deliv01/static/5829722b/css/color.css ::::: */
+
+/* ::::: http://wscs-deliv01/static/5829722b/scripts/yui/container/assets/container.css ::::: */
+
+.yui-overlay, .yui-panel-container { visibility: hidden; position: absolute; z-index: 2; }
+.yui-tt { visibility: hidden; position: absolute; color: rgb(51, 51, 51); background-color: rgb(253, 255, 180); padding: 2px; border: 1px solid rgb(252, 201, 13); font: 100% sans-serif; width: auto; }
+.hide-scrollbars, .hide-scrollbars * { overflow: hidden; }
+/* ::::: http://wscs-deliv01/static/5829722b/scripts/yui/assets/skins/sam/skin.css ::::: */
+
+.yui-skin-sam .yui-ac { position: relative; font-family: arial; font-size: 100%; }
+.yui-skin-sam .yui-ac-input { position: absolute; width: 100%; }
+.yui-skin-sam .yui-ac-container { position: absolute; top: 1.6em; width: 100%; }
+.yui-skin-sam .yui-ac-content { position: absolute; width: 100%; border: 1px solid rgb(128, 128, 128); background: none repeat scroll 0% 0% rgb(255, 255, 255); overflow: hidden; z-index: 9050; }
+.yui-skin-sam .yui-ac-content ul { margin: 0px; padding: 0px; width: 100%; }
+.yui-skin-sam .yui-ac-content li { margin: 0px; padding: 2px 5px; cursor: default; white-space: nowrap; list-style: none outside none; }
+.yui-overlay, .yui-panel-container { visibility: hidden; position: absolute; z-index: 2; }
+.hide-scrollbars, .hide-scrollbars * { overflow: hidden; }
+.yui-skin-sam .yui-tt .bd { position: relative; top: 0px; left: 0px; z-index: 1; color: rgb(0, 0, 0); padding: 2px 5px; border-color: rgb(212, 194, 55) rgb(166, 152, 43) rgb(166, 152, 43); border-width: 1px; border-style: solid; background-color: rgb(255, 238, 105); }
+.hide-scrollbars * { overflow: hidden; }
+/* ::::: http://wscs-deliv01/static/5829722b/scripts/yui/container/assets/skins/sam/container.css ::::: */
+
+.yui-overlay, .yui-panel-container { visibility: hidden; position: absolute; z-index: 2; }
+.hide-scrollbars, .hide-scrollbars * { overflow: hidden; }
+.yui-skin-sam .yui-tt .bd { position: relative; top: 0px; left: 0px; z-index: 1; color: rgb(0, 0, 0); padding: 2px 5px; border-color: rgb(212, 194, 55) rgb(166, 152, 43) rgb(166, 152, 43); border-width: 1px; border-style: solid; background-color: rgb(255, 238, 105); }
+/* ::::: http://wscs-deliv01/static/5829722b/scripts/yui/button/assets/skins/sam/button.css ::::: */
+
+/* ::::: http://wscs-deliv01/static/5829722b/scripts/yui/menu/assets/skins/sam/menu.css ::::: */
+
+.hide-scrollbars * { overflow: hidden; }
+/* ::::: http://wscs-deliv01/adjuncts/5829722b/lib/layout/breadcrumbs.css ::::: */
+
+#left-top-nav { text-align: left; color: rgb(34, 34, 34); }
+#right-top-nav { float: right; margin-right: 1em; height: 2em; line-height: 2em; }
+#left-top-nav a { color: black; }
+#breadcrumbs { list-style-type: none; padding: 0px; margin: 0px; height: 2em; border-bottom: 1px solid rgb(211, 215, 207); }
+#breadcrumbs LI { float: left; line-height: 2em; padding-left: 0.75em; color: rgb(85, 87, 83); }
+#breadcrumbs LI A { display: block; padding: 0px 15px 0px 0px; background: url('breadcrumb.gif') no-repeat scroll right center transparent; }
+#breadcrumbs LI A:link, #breadcrumbs LI A:visited { text-decoration: none; color: rgb(85, 87, 83); }
+#breadcrumbs LI A:hover, #crumbs LI A:focus { color: rgb(52, 101, 164); }
+/* ::::: http://wscs-deliv01/descriptor/hudson.tasks._ant.AntOutcomeNote/style.css ::::: */
+
+/* ::::: http://wscs-deliv01/descriptor/hudson.console.ExpandableDetailsNote/style.css ::::: */
+

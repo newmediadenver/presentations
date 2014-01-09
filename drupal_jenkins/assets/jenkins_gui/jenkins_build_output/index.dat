@@ -1,0 +1,7 @@
+id	20140107144205
+type	
+title	Jenkins executed job console output
+chars	UTF-8
+icon	favicon_001.ico
+source	../jenkins_build/index.htmlconsole
+comment	

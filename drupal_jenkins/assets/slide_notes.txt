@@ -1,0 +1,97 @@
+/**
+* Slide Notes
+*/
+
+1. Intro - Before we dive in
+- Who am I
+- Not best practices, just a method that could be helpful
+- Get the conversation started!
+	- open source
+	- contributions
+- Do-ocracy
+	- encourage participation
+	- choose a role or task and jump in
+	- http://www.communitywiki.org/cw/DoOcracy
+
+
+
+2. What are the issues?
+- alternatives exists: standby for benefits of this method
+- restricting users
+	- remove human error
+	- allow access to specific jobs
+- scrubbing the database
+- data processing
+- clearing cache
+- cron
+	- https://drupal.org/node/553430
+	- can die silently to the untrained eye
+	- massive bul process
+	- timout and memorey issues
+	- troubleshooting
+		- need watchdog, logs, etc.
+		- diabling modules
+- deploy
+
+
+
+3. What can be done?
+- want a solution that is
+	- Scalable
+	- Sends me notifications
+	- Reusable
+	- Collaborative Effort
+	- ability to troubleshoot
+
+
+
+4. Tools
+- drush
+- chef
+- jenkins
+
+
+
+5. What is Jenkins?
+- Simple butler
+	- dictated by you
+	- any command line can be executed
+	- schedule
+	- button
+
+
+
+6. Tool Diagram
+
+
+
+7. Awesomesquace
+
+
+
+8. Plan
+	- Create Jenkins jobs
+	- Ping chef for web server credentials
+	- Execute command on the web server from the Jenkins job
+	- Record output
+	- Follow up
+
+
+
+9. Jenkins Dashboard
+- assumptions
+	- jenkins is setup
+	- jenkins can communicate with web server and chef
+- dive in
+- knife
+	- chef via api
+	- Knife is a command-line tool that provides an interface between a local chef-repo and the server
+	- manage node, environments, roles, etc.
+	- 1000 production sites
+
+
+Exposing to tools and ideas
+Get on Google
+Reach out: twitter irc
+using jenkins?
+

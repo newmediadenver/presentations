@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=1024, user-scalable=yes">
+
+	<title>Introcuction to Jenkins from a Drupal Perspective</title>
+
+	<!-- Required stylesheet -->
+	<link rel="stylesheet" href="core/deck.core.css">
+
+	<!-- Extension CSS files go here. Remove or add as needed. -->
+	<link rel="stylesheet" href="extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="extensions/status/deck.status.css">
+	<link rel="stylesheet" href="extensions/hash/deck.hash.css">
+	<link rel="stylesheet" href="extensions/scale/deck.scale.css">
+
+	<!-- Style theme. More available in /themes/style/ or create your own. -->
+	<link rel="stylesheet" href="themes/style/web-2.0.css">
+
+	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+	<link rel="stylesheet" href="themes/transition/horizontal-slide.css">
+
+	<!-- Required Modernizr file -->
+	<script src="modernizr.custom.js"></script>
+
+	<!-- Custom styling for this presentation -->
+	<style type="text/css">
+		
+	</style>
+</head>
+<body class="deck-container on-slide-markup on-slide-2">
+
+<!-- Begin slides. Just make elements with a class of slide. -->
+<!-- !!!Slide notes are in assets folder!!! -->
+
+<section id="introduction" class="slide">
+	<h1>Jenkins 101: from a Drupal Perspective</h1>
+	<p>Brandon Williams (crazysix)</p>
+</section>
+
+<section id="problem" class="slide deck-child-current deck-before">
+	<h2>What are the issues or processes that can be improved?</h2>
+	<ul>
+		<li class="slide deck-current">Scrub the database</li>
+		<li class="slide deck-after">Data Processing</li>
+		<li class="slide deck-after">Clear Cache</li>
+		<li class="slide deck-after">Cron</li>
+		<li class="slide deck-after">Deploy</li>
+		<li class="slide deck-after">Multiple Server</li>
+		<li class="slide deck-after">Testing</li>
+		<li class="slide deck-after">Triggers Follow-up jobs</li>
+	</ul>
+</section>
+
+<section id="solution" class="slide deck-child-current deck-before">
+	<h2>What can be done?</h2>
+	<ul class="slide deck-current">
+		<li>Scalable</li>
+		<li>Notifications</li>
+		<li>Reusable</li>
+		<li>Collaborative Effort</li>
+		<li>Troubleshooting</li>
+	</ul>
+</section>
+
+<section id="tools" class="slide deck-child-current deck-before">
+	<h2>Tools</h2>
+	<div class="slide deck-current">
+		<h3>Drush</h3>
+		<ul>
+			<li>Drush is a shell-based application used to manage Drupal sites.</li>
+			<li><a href="https://github.com/drush-ops/drush" target="_blank">https://github.com/drush-ops/drush</a></li>
+			<li><a href="http://drush.ws/" target="_blank">http://drush.ws/</a></li>
+		</ul>
+	</div>
+	<div class="slide deck-next">
+		<h3>Chef</h3>
+		<ul>
+			<li>Hub for configuration data</li>
+			<li>Cookbooks and recipes</li>
+		</ul>
+	</div>
+	<div class="slide deck-next">
+		<h3>Jenkins</h3>
+		<p>What is Jenkins?</p>
+	</div>
+</section>
+
+<section id="jenkins" class="slide deck-child-current deck-before">
+	<h2>What is Jenkins?</h2>
+	<div class="slide deck-current" style="background: url('assets/images/jenkins.png') right top no-repeat;">
+		<p>Jenkins is an award-winning application that monitors executions of repeated jobs, such as building a software project or jobs run by cron. Among those things, current Jenkins focuses on the following two jobs:</p>
+		<ul>
+			<li>Building/testing software projects continuously, just like CruiseControl or DamageControl. In a nutshell, Jenkins provides an easy-to-use so-called continuous integration system, making it easier for developers to integrate changes to the project, and making it easier for users to obtain a fresh build. The automated, continuous build increases the productivity.</li>
+			<li>Monitoring executions of externally-run jobs, such as cron jobs and procmail jobs, even those that are run on a remote machine. For example, with cron, all you receive is regular e-mails that capture the output, and it is up to you to look at them diligently and notice when it broke. Jenkins keeps those outputs and makes it easy for you to notice when something is wrong.</li>
+		</ul>
+		<p>https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins</p>
+	</div>
+	<h3 class="slide deck-current">In short...</h3>
+	<p class="slide deck-next">Jenkins is a simple butler.</p>
+	<ul class="slide deck-next">
+		<li>Executes existing jobs</li>
+		<li>Records output</li>
+		<li>Follow-up actions</li>
+	</ul>
+</section>
+
+<section id="tool-diagram" class="slide">
+	<h2>Tools Working Together</h2>
+	<img src="assets/images/tools.png" style="border: 1px solid black;" />
+</section>
+
+<section id="awesomesauce" class="slide">
+	<h2>Drush + Chef + Jenkins</h2>
+	<img src="assets/images/awesomesauce-drupal.png" />
+</section>
+
+<section id="plan" class="slide deck-child-current deck-before">
+	<h2>The Plan</h2>
+	<ul>
+		<li class="slide deck-current">Create Jenkins jobs</li>
+		<li class="slide deck-after">Chef for web server credentials</li>
+		<li class="slide deck-after">Execute command on the web server from the Jenkins job</li>
+		<li class="slide deck-after">Record output</li>
+		<li class="slide deck-after">Follow up</li>
+	</ul>
+</section>
+
+<section id="jenkins-gui" class="slide deck-child-current deck-before">
+	<h2>Jenkins GUI</h2>
+	<p>Let's dive in!</p>
+	<ol class="slide deck-current">
+		<li><a href="assets/jenkins_gui/jenkins_login/index.html" target="_blank">Login</a></li>
+		<li><a href="assets/jenkins_gui/jenkins_dashboard/dashboard.html" target="_blank">Dashboard</a></li>
+		<li><a href="assets/jenkins_gui/jenkins_new_job/index.html" target="_blank">New Job</a></li>
+		<li><a href="assets/jenkins_gui/jenkins_job_configure/create.html" target="_blank">Configure New Job</a></li>
+		<li><a href="assets/jenkins_gui/jenkins_dashboard/index.html" target="_blank">Dashboard w/ New Job</a></li>
+		<li><a href="assets/jenkins_gui/jenkins_job/index.html" target="_blank">Job Status</a></li>
+		<li><a href="assets/jenkins_gui/jenkins_job_configure/index.html" target="_blank">Configure Job</a></li>
+		<li><a href="assets/jenkins_gui/jenkins_build/index.html" target="_blank">Build</a></li>
+		<li><a href="assets/jenkins_gui/jenkins_build_output/index.html" target="_blank">Build Output</a></li>
+	</ol>
+</section>
+
+<section id="our-goal" class="slide deck-child-current">
+	<h2>Next Steps</h2>
+	<div class="slide deck-current">
+		<p>As mentioned before, the goal of this presentation is to spark a conversation in the community that will lead to a collaborative solution for some of the problems many of us face.</p>
+		<img src="assets/images/critical-thinking.jpg" />
+		<img src="assets/images/collaboration1.jpg" />
+	</div>
+</section>
+
+
+<!-- End slides. -->
+
+
+<!-- Begin extension snippets. Add or remove as needed. -->
+
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- End extension snippets. -->
+
+
+<!-- Required JS files. -->
+<script src="jquery-1.7.2.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>
