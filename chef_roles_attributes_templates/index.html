@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Your deck.js Presentation</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/swiss.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section id="introduction" class="slide">
+      <h2>Balancing Infrastructure Flexibility and Standardization Using Chef Roles, Attributes, and Templates.</h2>
+      <p>Rick Manelius (@rickmanelius)<br />
+      Drupal DevOps Meetup<br />
+      12/19/2013</p>
+    </section>
+
+    <section class="slide">
+      <h2>Drupal DevOps Meetup Goals</h2>
+      <ul>
+        <li class="slide deck-after">Elevate the discussion.</li>
+        <li class="slide deck-after">Provide usable tools & next actions.</li>
+        <li class="slide deck-after">Reach beyond the Drupal community.</li>
+        <li class="slide deck-after">Distribute the information.</li>
+        <li class="slide deck-after">Become better badasses in DevOps.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>The Talk: Breaking it Down</h2>
+      <ul>
+        <li class="slide deck-after">The Tension: How Can I Standardize AND Be Flexible?</li>
+        <li class="slide deck-after">The Tutorial: How Do I Do It?</li>
+        <li class="slide deck-after">The Take Away: Can We Have It All?</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>The Tension: Standarization</h2>
+      <ul>
+        <li class="slide deck-after">The Rise Of Higher Order Systems</li>
+        <li class="slide deck-after">Example: Transistor, Logic Gates, CPUs, Circuit Boards, Computers, Cloud, ???</li>
+        <li class="slide deck-after">Goal: Leave the monkey work to the machines.</li>
+        <li class="slide deck-after">Goal: Focus as much time on creating value.</li>
+        <li class="slide deck-after">Standardization is a "Good Thing"<sup>TM</sup></li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Infrastructure as Code</h2>
+      <h3 class="slide deck-after">Configuration Management</h3>
+      <ul>
+        <li class="slide deck-after">Reproducible</li>
+        <li class="slide deck-after">Testable</li>
+        <li class="slide deck-after">Reliable</li>
+        <li class="slide deck-after">Abstract-able</li>
+      </ul>
+      <h3 class="slide deck-after">Tools: Chef, Puppet, CFEngine, Ansible.</h3>
+    </section>
+
+    <section class="slide">
+      <h2>Tension: "But We're a Snowflake!"</h2>
+      <img src="assets/snowflake.png" />
+      <ul>
+        <li class="slide deck-after">Business Needs</li>
+        <li class="slide deck-after">Differentiation</li>
+        <li class="slide deck-after">Creativity</li>
+        <li class="slide deck-after">Standardization is a "Good Thing"<sup>TM</sup></li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>What Do We Do?</h2>
+      <ul>
+        <li>Do we take the factory approach to achieve consistency?</li>
+        <li>Do we take the blank canvas approach to achieve flexibility?</li>
+        <li>Or can we take the best of both worlds?</li>
+      </ul>
+      <img src="assets/assembly-line.jpg" />
+      <img src="assets/canvas.jpg" />
+    </section>
+
+    <section class="slide">
+      <h2>Standardization vs Flexibility</h2>
+      <h3>Example: iOS vs Android.</h3>
+      <img src="assets/iOS-vs-android.png" />
+      <p>Is iOS to rigid?</p>
+      <p>Is Android to fragmented?</p>
+    </section>
+
+    <section class="slide">
+      <h2>Standardization vs Flexibility</h2>
+      <h3>Example: GI Joe vs Mr. Potato Head vs Legos</h3>
+      <ul>
+        <li>One you just buy (GI Joe)</li>
+        <li>One you build (Legos)</li>
+        <li>One you buy and build (Mr Potato Head)</li>
+      </ul>
+      <img src="assets/GI-joe.png" style="float:left;height:311px;"/>
+      <img src="assets/mr-potato-head.png" style="float:left;height:311px;"/>
+      <img src="assets/legos.png" style="float:left;height:311px;"/>
+    </section>
+
+    <section class="slide">
+      <h2>We’ve Been Here Before…</h2>
+      <ul>
+        <li class="slide deck-after">Package Management vs Makefiles</li>
+        <li class="slide deck-after">Framework vs Products</li>
+        <li class="slide deck-after">Version Control vs FTP</li>
+        <li class="slide deck-after">Code vs Configuration vs Content</li>
+        <li class="slide deck-after">Drupal Distributions vs Standard Install</li>
+        <li class="slide deck-after">Drupal Features vs UI Changes</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>So… Why Should I Care?</h2>
+      <ul>
+        <li class="slide deck-after">"Works on my machine" is not acceptable.</li>
+        <li class="slide deck-after">10-20% of developer time wasted on LAMP.</li>
+        <li class="slide deck-after">Complexity is increasing.</li>
+        <li class="slide deck-after">Expectations are rising.</li>
+        <li class="slide deck-after">Short term: competitive advantage.</li>
+        <li class="slide deck-after">Long term: survival.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>HOWTO</h2>
+      <p>Let’s zoom in from the big picture…</p>
+    </section>
+
+    <section class="slide">
+      <h2>Chef 101</h2>
+      <ul>
+        <li class="slide deck-after">Configuration, Deployment Tool</li>
+        <li class="slide deck-after">Cookbooks
+          <ul>
+            <li class="slide deck-after">Recipes</li>
+            <li class="slide deck-after">Attributes</li>
+            <li class="slide deck-after">Templates</li>
+          </ul>
+        </li>
+        <li class="slide deck-after">Roles + Databags</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Recipes (what can I build?)</h2>
+      <ul>
+        <li>Analogy:  a meal consist of multiple recipes.</li>
+        <li>Pick and choose from a cookbook.</li>
+        <li>Selections placed in a role file.</li>
+        <li>Examples:
+          <ul>
+            <li>“recipe[sudo]”</li>
+            <li>"recipe[openssh]"</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Attributes (how can I change?)</h2>
+      <ul>
+        <li>Life would be boring without variables.</li>
+        <li>Defined in a cookbook</li>
+        <li>Overridable by cookbooks, roles, data-bags</li>
+        <li>Examples: 
+          <ul>
+            <li>default[:drupal][:drush][:dir] = “/opt/d“</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Templates (how can I express a change?)</h2>
+      <ul>
+        <li>Overridable (same file name)</li>
+        <li>Alternatives (different file name)</li>
+        <li>Examples: php.ini, my.cnf</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Roles (how can I combine?)</h2>
+      <h3>Roles allow us to combine and layer.</h3>
+      <ul>
+        <li>Base (LAMP)</li>
+        <li>Drupal (Application foundation)</li>
+        <li>Site (Site specific customization)</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Data-bags (what are my credentials?)</h2>
+      <ul>
+        <li>Typically usernames, passwords, keys, etc</li>
+      </ul>
+      <img src="assets/databags.png" />
+    </section>
+
+    <section class="slide">
+      <h2>Walkthrough: drupal-lamp</h2>
+      <ul>
+        <li>URL: https://github.com/cyberswat/drupal-lamp</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Going Further</h2>
+      <h3>Here we are tuning apache based on the server's ram.</h3>
+      <img src="assets/apache-tuning.png" />
+    </section>
+
+    <section class="slide">
+      <h2>And Beyond...</h2>
+      <ul>
+        <li>This is just the beginning.</li>
+        <li>Start: github.comcyberswat/drupal-lamp</li>
+        <li>Give us feedback!</li>
+        <li>Share your results!</li>
+        <li>Contribute!</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>The Takeaways</h2>
+      <ul>
+        <li>Configuration management/provisioning tools are awesome.</li>
+        <li>Chef cookbooks contain the pieces.</li>
+        <li>Recipes are the basic building blocks.</li>
+        <li>Attributes, templates, and roles allow you to sculpt things further.</li>
+        <li>Data-bags provide credentials, etc.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>The Takeaways</h2>
+      <ul>
+        <li>Layering effect at all layers of abstraction.</li>
+        <li>Stay uniform or vary it up</li>
+        <li>Everything still all in code and trackable</li>
+        <li>Just don't go *too* crazy!</li>
+        <li>Automate provisioning and deployments.</li>
+        <li>Reduce overhead, focus on creativity!</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Questions</h2>
+      <ul>
+        <li>Thank you for your time!</li>
+        <li>PS
+          <ul>
+            <li>Sign up for the next meet-up.</li>
+            <li>Visit gitub.com/cyberswat/drupal-lamp</li>
+            <li>Follow us on twitter @newmediadenver</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
