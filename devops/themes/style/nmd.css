@@ -96,41 +96,43 @@ h1 {
   font-size: 6rem;
   font-weight: normal;
   text-align: center;
+  line-height: 1.5;
 }
 
-/* line 142, nmd.scss */
+/* line 143, nmd.scss */
 h2,
 h3 {
   font-family: "open_sansregular";
   font-weight: normal;
+  line-height: 1.5;
 }
 
-/* line 148, nmd.scss */
+/* line 150, nmd.scss */
 h1,
 h2 {
   color: #fff;
 }
-/* line 150, nmd.scss */
+/* line 152, nmd.scss */
 .cssreflections h1, .cssreflections
 h2 {
-  line-height: 1;
+  line-height: 1.5;
   -webkit-box-reflect: none;
   -moz-box-reflect: none;
 }
 
-/* line 157, nmd.scss */
+/* line 159, nmd.scss */
 h2 {
   color: #fff;
   border-bottom: 1px solid #282828;
 }
 
-/* line 162, nmd.scss */
+/* line 164, nmd.scss */
 h3 {
   color: #fff;
   border-bottom: 0;
 }
 
-/* line 167, nmd.scss */
+/* line 169, nmd.scss */
 .author {
   position: absolute;
   left: 0;
@@ -140,7 +142,7 @@ h3 {
   color: #a31d22;
 }
 
-/* line 176, nmd.scss */
+/* line 178, nmd.scss */
 .deck-container {
   background: url(../../assets/background.jpg) no-repeat;
   background-attachment: fixed;
@@ -156,25 +158,25 @@ h3 {
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 189, nmd.scss */
+/* line 191, nmd.scss */
 .deck-container > .slide {
   padding: 0 48px;
 }
 
-/* line 195, nmd.scss */
+/* line 197, nmd.scss */
 .slide .deck-before, .slide .deck-previous {
   opacity: 0.4;
 }
-/* line 199, nmd.scss */
+/* line 201, nmd.scss */
 .slide .deck-before:not(.deck-child-current) .deck-before, .slide .deck-before:not(.deck-child-current) .deck-previous, .slide .deck-previous:not(.deck-child-current) .deck-before, .slide .deck-previous:not(.deck-child-current) .deck-previous {
   opacity: 1;
 }
-/* line 205, nmd.scss */
+/* line 207, nmd.scss */
 .slide .deck-child-current {
   opacity: 1;
 }
 
-/* line 211, nmd.scss */
+/* line 213, nmd.scss */
 .deck-prev-link,
 .deck-next-link {
   background: #666666;
@@ -198,7 +200,7 @@ h3 {
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
 }
-/* line 230, nmd.scss */
+/* line 232, nmd.scss */
 .deck-prev-link, .deck-prev-link:hover, .deck-prev-link:focus, .deck-prev-link:active, .deck-prev-link:visited,
 .deck-next-link,
 .deck-next-link:hover,
@@ -207,7 +209,7 @@ h3 {
 .deck-next-link:visited {
   color: #666666;
 }
-/* line 234, nmd.scss */
+/* line 236, nmd.scss */
 .deck-prev-link:hover, .deck-prev-link:focus,
 .deck-next-link:hover,
 .deck-next-link:focus {
@@ -217,7 +219,7 @@ h3 {
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
 }
-/* line 239, nmd.scss */
+/* line 241, nmd.scss */
 .deck-prev-link:before,
 .deck-next-link:before {
   font-family: icomoon;
@@ -227,27 +229,27 @@ h3 {
   color: #fff;
 }
 
-/* line 248, nmd.scss */
+/* line 250, nmd.scss */
 .deck-prev-link {
   left: 0;
 }
-/* line 250, nmd.scss */
+/* line 252, nmd.scss */
 .deck-prev-link:before {
   content: "\e3b3";
   left: 5px;
 }
 
-/* line 256, nmd.scss */
+/* line 258, nmd.scss */
 .deck-next-link {
   right: 0;
 }
-/* line 258, nmd.scss */
+/* line 260, nmd.scss */
 .deck-next-link:before {
   content: "\e3b1";
   right: 5px;
 }
 
-/* line 268, nmd.scss */
+/* line 270, nmd.scss */
 .icon-nmd {
   position: absolute;
   bottom: 0;

@@ -136,19 +136,21 @@ h1 {
   @include rem(6);
   font-weight: normal;
   text-align: center;
+  line-height: 1.5;
 }
 
 h2,
 h3 {
   font-family: "open_sansregular";
   font-weight: normal;
+  line-height: 1.5;
 }
 
 h1,
 h2 {
   color: #fff;
   .cssreflections & {
-    line-height:1;
+    line-height:1.5;
     -webkit-box-reflect: none;
     -moz-box-reflect: none;
   }
