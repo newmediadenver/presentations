@@ -144,7 +144,7 @@ h3 {
 
 /* line 178, nmd.scss */
 .deck-container {
-  background: url(../../assets/background.jpg) no-repeat;
+  background: url(images/background.jpg) no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
