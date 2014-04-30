@@ -1,0 +1,593 @@
+@charset "UTF-8";
+/* Resets and base styles from HTML5 Boilerplate */
+/* line 10, _reset.scss */
+div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, _reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 24, _reset.scss */
+blockquote, q {
+  quotes: none;
+}
+/* line 27, _reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 33, _reset.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 39, _reset.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 46, _reset.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 50, _reset.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 55, _reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 60, _reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 69, _reset.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/* line 73, _reset.scss */
+select, input, textarea, button {
+  font: 99% sans-serif;
+}
+
+/* line 77, _reset.scss */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+/* line 81, _reset.scss */
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* line 84, _reset.scss */
+a:hover, a:active {
+  outline: none;
+}
+
+/* line 89, _reset.scss */
+ul, ol {
+  margin-left: 2em;
+  vertical-align: top;
+}
+
+/* line 94, _reset.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 99, _reset.scss */
+nav ul, nav li {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+}
+
+/* line 106, _reset.scss */
+small {
+  font-size: 85%;
+}
+
+/* line 110, _reset.scss */
+strong, th {
+  font-weight: bold;
+}
+
+/* line 114, _reset.scss */
+td {
+  vertical-align: top;
+}
+
+/* line 118, _reset.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+/* line 124, _reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 128, _reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 130, _reset.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 134, _reset.scss */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* line 138, _reset.scss */
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+/* line 146, _reset.scss */
+label,
+input[type="button"],
+input[type="submit"],
+input[type="image"],
+button {
+  cursor: pointer;
+}
+
+/* line 150, _reset.scss */
+button, input, select, textarea {
+  margin: 0;
+}
+
+/* line 155, _reset.scss */
+input:invalid, textarea:invalid {
+  border-radius: 1px;
+  -moz-box-shadow: 0px 0px 5px red;
+  -webkit-box-shadow: 0px 0px 5px red;
+  box-shadow: 0px 0px 5px red;
+}
+/* line 161, _reset.scss */
+input:invalid .no-boxshadow, textarea:invalid .no-boxshadow {
+  background-color: #f0dddd;
+}
+
+/* line 167, _reset.scss */
+button {
+  width: auto;
+  overflow: visible;
+}
+
+/* line 172, _reset.scss */
+select, input, textarea {
+  color: #444444;
+}
+
+/* line 176, _reset.scss */
+a {
+  color: #607890;
+}
+/* line 179, _reset.scss */
+a:hover, a:focus {
+  color: #036;
+}
+/* line 183, _reset.scss */
+a:link {
+  -webkit-tap-highlight-color: #fff;
+}
+
+/* End HTML5 Boilerplate adaptations */
+/* line 189, _reset.scss */
+h1 {
+  font-size: 4.5em;
+}
+
+/* line 193, _reset.scss */
+h1, .vcenter {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1em;
+  max-height: 100%;
+}
+/* line 199, _reset.scss */
+.csstransforms h1, .csstransforms .vcenter {
+  padding: 0 48px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+/* line 213, _reset.scss */
+.vcenter h1 {
+  position: relative;
+  top: auto;
+  padding: 0;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+/* line 224, _reset.scss */
+h2 {
+  font-size: 2.25em;
+  font-weight: bold;
+  padding-top: .5em;
+  margin: 0 0 .66666em 0;
+  border-bottom: 3px solid #888;
+}
+
+/* line 232, _reset.scss */
+h3 {
+  font-size: 1.4375em;
+  font-weight: bold;
+  margin-bottom: .30435em;
+}
+
+/* line 238, _reset.scss */
+h4 {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: .25em;
+}
+
+/* line 244, _reset.scss */
+h5 {
+  font-size: 1.125em;
+  font-weight: bold;
+  margin-bottom: .2222em;
+}
+
+/* line 250, _reset.scss */
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* line 255, _reset.scss */
+img, iframe, video {
+  display: block;
+  max-width: 100%;
+}
+
+/* line 260, _reset.scss */
+video, iframe, img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 265, _reset.scss */
+p, blockquote, iframe, img, ul, ol, pre, video {
+  margin-bottom: 1em;
+}
+
+/* line 269, _reset.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 1em;
+  border: 1px solid #888;
+}
+
+/* line 277, _reset.scss */
+em {
+  font-style: italic;
+}
+
+/* line 281, _reset.scss */
+li {
+  padding: .25em 0;
+  vertical-align: middle;
+}
+/* line 285, _reset.scss */
+li > ol, li > ul {
+  margin-bottom: inherit;
+}
+
+/* line 290, _reset.scss */
+.deck-container {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #444;
+}
+
+/* line 296, _reset.scss */
+.slide {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* line 9, web-2.0.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+}
+
+/* line 13, web-2.0.scss */
+h1 {
+  color: #08455f;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+}
+
+/* line 21, web-2.0.scss */
+h2 {
+  color: #0b7495;
+  border-bottom: 0;
+}
+/* line 25, web-2.0.scss */
+.cssreflections h2 {
+  line-height: 1;
+  -webkit-box-reflect: below -0.5555em -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.3, transparent), color-stop(0.7, rgba(255, 255, 255, 0.1)), to(transparent));
+  -moz-box-reflect: below -0.5555em -moz-linear-gradient(top, transparent 0%, transparent 30%, rgba(255, 255, 255, 0.3) 100%);
+}
+
+/* line 32, web-2.0.scss */
+h3 {
+  color: #000;
+}
+
+/* line 36, web-2.0.scss */
+pre {
+  border-color: #cde;
+  background: #fff;
+  position: relative;
+  z-index: auto;
+  border-radius: 5px;
+  /* http://nicolasgallagher.com/css-drop-shadows-without-images/ */
+}
+/* line 45, web-2.0.scss */
+.csstransforms.boxshadow pre > :first-child:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #fff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 56, web-2.0.scss */
+.csstransforms.boxshadow pre:before, .csstransforms.boxshadow pre:after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  bottom: 15px;
+  width: 50%;
+  height: 20%;
+  max-width: 300px;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+}
+/* line 67, web-2.0.scss */
+.csstransforms.boxshadow pre:before {
+  left: 10px;
+  -webkit-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+/* line 72, web-2.0.scss */
+.csstransforms.boxshadow pre:after {
+  right: 10px;
+  -webkit-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+/* line 79, web-2.0.scss */
+code {
+  color: #789;
+}
+
+/* line 83, web-2.0.scss */
+blockquote {
+  font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 2em;
+  padding: 1em 2em .5em 2em;
+  color: #000;
+  background: #fff;
+  position: relative;
+  border: 1px solid #cde;
+  z-index: auto;
+  border-radius: 5px;
+}
+/* line 95, web-2.0.scss */
+.boxshadow blockquote > :first-child:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #fff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 106, web-2.0.scss */
+.boxshadow blockquote:after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  right: 50%;
+  -moz-border-radius: 10px / 100px;
+  border-radius: 10px / 100px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+/* line 120, web-2.0.scss */
+blockquote p {
+  margin: 0;
+}
+/* line 124, web-2.0.scss */
+blockquote cite {
+  font-size: .5em;
+  font-style: normal;
+  font-weight: bold;
+  color: #888;
+}
+/* line 131, web-2.0.scss */
+blockquote:before {
+  content: "“";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 5em;
+  line-height: 1;
+  color: #ccf0f0;
+  z-index: 1;
+}
+
+/* line 143, web-2.0.scss */
+::-moz-selection {
+  background: #08455f;
+  color: #fff;
+}
+
+/* line 144, web-2.0.scss */
+::selection {
+  background: #08455f;
+  color: #fff;
+}
+
+/* line 147, web-2.0.scss */
+a, a:hover, a:focus, a:active, a:visited {
+  color: #599;
+  text-decoration: none;
+}
+/* line 152, web-2.0.scss */
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+/* line 157, web-2.0.scss */
+.deck-container {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 1.75em;
+  background: #f4fafe;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f4fafe 0%, #ccf0f0 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4fafe), color-stop(100%, #ccf0f0));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f4fafe 0%, #ccf0f0 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f4fafe 0%, #ccf0f0 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #f4fafe 0%, #ccf0f0 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #f4fafe 0%, #ccf0f0 100%);
+  /* W3C */
+  background-attachment: fixed;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+/* line 170, web-2.0.scss */
+.deck-container > .slide {
+  padding: 0 48px;
+}
+
+/* line 176, web-2.0.scss */
+.slide .deck-before, .slide .deck-previous {
+  opacity: 0.4;
+}
+/* line 180, web-2.0.scss */
+.slide .deck-before:not(.deck-child-current) .deck-before, .slide .deck-before:not(.deck-child-current) .deck-previous, .slide .deck-previous:not(.deck-child-current) .deck-before, .slide .deck-previous:not(.deck-child-current) .deck-previous {
+  opacity: 1;
+}
+/* line 186, web-2.0.scss */
+.slide .deck-child-current {
+  opacity: 1;
+}
+
+/* line 191, web-2.0.scss */
+.deck-prev-link, .deck-next-link {
+  background: #fff;
+  opacity: 0.5;
+}
+/* line 195, web-2.0.scss */
+.deck-prev-link, .deck-prev-link:hover, .deck-prev-link:focus, .deck-prev-link:active, .deck-prev-link:visited, .deck-next-link, .deck-next-link:hover, .deck-next-link:focus, .deck-next-link:active, .deck-next-link:visited {
+  color: #599;
+}
+/* line 199, web-2.0.scss */
+.deck-prev-link:hover, .deck-prev-link:focus, .deck-next-link:hover, .deck-next-link:focus {
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* line 205, web-2.0.scss */
+.deck-status {
+  font-size: 0.6666em;
+}
+
+/* line 210, web-2.0.scss */
+.deck-menu .slide {
+  background: transparent;
+  border-radius: 5px;
+}
+/* line 214, web-2.0.scss */
+.rgba .deck-menu .slide {
+  background: rgba(0, 0, 0, 0.1);
+}
+/* line 218, web-2.0.scss */
+.deck-menu .slide.deck-current, .rgba .deck-menu .slide.deck-current, .no-touch .deck-menu .slide:hover {
+  background: #fff;
+}
+
+/* line 224, web-2.0.scss */
+.goto-form {
+  background: #fff;
+  border: 1px solid #cde;
+  border-radius: 5px;
+}
+/* line 229, web-2.0.scss */
+.boxshadow .goto-form {
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
