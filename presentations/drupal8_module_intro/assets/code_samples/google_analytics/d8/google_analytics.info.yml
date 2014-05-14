@@ -1,0 +1,12 @@
+name: 'Google Analytics'
+type: module
+description: 'Allows your site to be tracked by Google Analytics by adding a Javascript tracking code to every page.'
+package: Statistics
+version: VERSION
+core: 8.x
+configure: google_analytics.settings
+test_dependencies:
+  - token
+
+# Information NOT added by Drupal.org packaging script
+project: google_analytics
