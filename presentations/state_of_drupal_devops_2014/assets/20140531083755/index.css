@@ -1,0 +1,830 @@
+/* ::::: https://abs.twimg.com/a/1401399173/css/t1/highline_rosetta_gotham_core.bundle.css ::::: */
+
+html { font-family: sans-serif; }
+body { margin: 0px; }
+audio:not([controls]) { display: none; height: 0px; }
+a { background: none repeat scroll 0% 0% transparent; }
+a:active, a:hover { outline: 0px none; }
+b, strong { font-weight: bold; }
+h1 { font-size: 2em; margin: 0.67em 0px; }
+small { font-size: 80%; }
+img { border: 0px none; }
+svg:not(:root) { overflow: hidden; }
+hr { box-sizing: content-box; height: 0px; }
+button, input, optgroup, select, textarea { color: inherit; font: inherit; margin: 0px; }
+button { overflow: visible; }
+button, select { text-transform: none; }
+button, html input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; }
+button[disabled], html input[disabled] { cursor: default; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0px none; padding: 0px; }
+input { line-height: normal; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0px; }
+fieldset { border: 1px solid rgb(192, 192, 192); margin: 0px 2px; padding: 0.35em 0.625em 0.75em; }
+legend { border: 0px none; padding: 0px; }
+textarea { overflow: auto; }
+table { border-collapse: collapse; border-spacing: 0px; }
+td, th { padding: 0px; }
+body { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+body { background: none repeat scroll 0% 0% rgb(255, 255, 255); color: rgb(41, 47, 51); font-size: 14px; line-height: 18px; overflow-y: scroll; }
+a { color: rgb(59, 136, 195); text-decoration: none; }
+a:hover, a:focus, a:active { text-decoration: underline; }
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, figure, p, pre { margin: 0px; }
+button { background: none repeat scroll 0% 0% transparent; border: 0px none; padding: 0px; }
+button:focus { outline: 1px dotted; }
+fieldset { border: 0px none; margin: 0px; padding: 0px; }
+iframe { border: 0px none; }
+ol, ul { margin: 0px; list-style: none outside none; padding: 0px; }
+[tabindex="-1"]:focus { outline: medium none ! important; }
+a:focus { outline: 0px none; }
+a:focus > img:first-child:last-child { outline: 1px dotted rgb(102, 102, 102); }
+h1, h2, h3, h4, h5, h6 { text-rendering: optimizelegibility; }
+h1 { font-size: 24px; line-height: 0.8; }
+h2 { color: rgb(102, 117, 127); font-size: 22px; font-weight: 300; line-height: 22px; }
+h3 { color: rgb(102, 117, 127); font-size: 20px; font-weight: 300; line-height: 22px; }
+small { font-size: 12px; }
+ol { list-style: decimal outside none; margin-left: 20px; }
+ol > li { line-height: 20px; }
+hr { border-right: 0px none; border-width: 1px 0px 0px; border-style: solid none none; border-color: rgb(238, 238, 238) -moz-use-text-color -moz-use-text-color; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; height: 0px; margin: 14px 0px 0px; padding: 0px; }
+.u-cf:before, .u-cf:after { content: " "; display: table; }
+.u-cf:after { clear: both; }
+.u-isHidden { display: none ! important; visibility: hidden ! important; }
+.u-isHiddenVisually { position: absolute ! important; overflow: hidden ! important; width: 1px ! important; height: 1px ! important; padding: 0px ! important; border: 0px none ! important; clip: rect(1px, 1px, 1px, 1px) ! important; }
+@font-face {
+	font-family: "rosettaicons";
+	font-style: normal;
+	font-weight: normal;
+	src: url('rosetta-icons-regular.eot') format("embedded-opentype"), url('rosetta-icons-regular.woff') format("woff"), url('rosetta-icons-regular.ttf') format("truetype");
+}
+.Icon { background: none repeat scroll 0% 0% transparent; display: inline-block; font-style: normal; vertical-align: baseline; }
+.Icon:before { display: block; font-family: "rosettaicons"; font-weight: normal; font-style: normal; text-align: center; }
+.Icon--smallest { font-size: 12px; line-height: 12px; }
+.Icon--small { font-size: 16px; line-height: 15px; }
+.Icon--medium { font-size: 18px; line-height: 18px; }
+.Icon--large { font-size: 21px; line-height: 1; }
+.Icon--bird:before { content: ""; }
+.Icon--camera:before { content: ""; }
+.Icon--caretLeft:before { content: ""; }
+.Icon--caretRight:before { content: ""; }
+.Icon--close:before { content: ""; }
+.Icon--cog:before { content: ""; }
+.Icon--delete:before { content: ""; }
+.Icon--dm:before { content: ""; }
+.Icon--discover:before { content: ""; }
+.Icon--dots:before { content: ""; }
+.Icon--favorite:before { content: ""; }
+.Icon--follow:before { content: ""; }
+.Icon--geo:before { content: ""; }
+.Icon--home:before { content: ""; }
+.Icon--logo:before { content: ""; }
+.Icon--markAllRead:before { content: ""; }
+.Icon--me:before { content: ""; }
+.Icon--notifications:before { content: ""; }
+.Icon--reply:before { content: ""; }
+.Icon--retweet:before { content: ""; }
+.Icon--search:before { content: ""; }
+.Icon--summary:before { content: ""; }
+.Icon--tweet:before { content: ""; }
+.Icon--unfollow:before { content: ""; }
+.Icon--verified:before { content: ""; }
+.Icon--verified { color: rgb(136, 201, 249); }
+button { border: 0px none; }
+.btn { background-color: rgb(204, 214, 221); background-repeat: no-repeat; border: 1px solid rgb(225, 232, 237); border-radius: 4px; color: rgb(102, 117, 127); cursor: pointer; display: inline-block; font-size: 14px; font-weight: bold; line-height: normal; padding: 8px 16px; position: relative; }
+.btn .Icon { background: none repeat scroll 0% 0% transparent; }
+.btn.focus, .btn:focus, .btn:active, .Button:focus { outline: 0px none ! important; }
+.btn { background-color: rgb(245, 248, 250); background-image: linear-gradient(rgb(255, 255, 255), rgb(245, 248, 250)); }
+.btn:focus, .btn.focus { background: none repeat scroll 0% 0% rgb(255, 255, 255); border-color: rgb(255, 255, 255); text-decoration: none; }
+.btn:hover, .follow-combo.open .btn-user-actions, .dropdown.open .user-dropdown { color: rgb(41, 47, 51); text-decoration: none; background-color: rgb(225, 232, 237); background-image: linear-gradient(rgb(255, 255, 255), rgb(225, 232, 237)); border-color: rgb(225, 232, 237); }
+.btn.active, .btn:active, .follow-combo.open .btn-user-actions, .dropdown.open .user-dropdown, .btn.open, .open > .btn { color: rgb(41, 47, 51); background: none repeat scroll 0% 0% rgb(225, 232, 237); border-color: rgb(204, 214, 221); box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2) inset; }
+.btn.disabled, .btn.disabled:hover, .btn[disabled], .btn[aria-disabled="true"] { color: rgb(102, 117, 127); cursor: default; background-color: rgb(204, 214, 221); background-image: linear-gradient(rgb(255, 255, 255), rgb(245, 248, 250)); border-color: rgb(204, 214, 221); opacity: 0.5; }
+.btn.small { color: rgb(41, 47, 51); font-size: 13px; padding: 3px 11px 5px; }
+.primary-btn, .following.first-hover .follow-btn:hover, .following .follow-btn, .following .follow-button.cancel-hover-style:hover, .following .follow-button, .email-following .email-follow-button.cancel-hover-style:hover, .email-following .email-follow-button, .notifying .device-follow-button, .button-group-item .content.selected { color: rgb(255, 255, 255); background-color: rgb(85, 172, 238); background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05)); border: 1px solid rgb(59, 136, 195); box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1) inset; }
+.primary-btn:hover, .primary-btn:focus { color: rgb(255, 255, 255); }
+.primary-btn:focus, .primary-btn.focus, .following .follow-btn:focus, .following .follow-button:focus, .email-following .email-follow-button:focus, .notifying .device-follow-button:focus, .button-group-item .content.selected:focus { background: none repeat scroll 0% 0% rgb(85, 172, 238); border-color: rgb(255, 255, 255); }
+.primary-btn:hover { background-color: rgb(85, 172, 238); background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.15)); border-color: rgb(59, 136, 195); }
+.primary-btn:active { background-color: rgb(59, 136, 195); background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)); border-color: rgb(59, 136, 195); }
+.primary-btn.btn.disabled, .primary-btn.btn.disabled:hover, .primary-btn.btn[disabled], .primary-btn[aria-disabled="true"] { background-color: rgb(85, 172, 238); background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05)); border-color: rgb(59, 136, 195); color: rgb(255, 255, 255); text-shadow: none; opacity: 0.5; }
+.primary-btn .messaging-text { display: none; }
+.primary-btn.messaging .messaging-text { display: inline; }
+.caution-btn { background-color: rgb(190, 25, 49); background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05)); border: 1px solid rgb(160, 4, 30); color: rgb(255, 255, 255); }
+.caution-btn, .caution-btn:focus { background: none repeat scroll 0% 0% rgb(190, 25, 49); border-color: rgb(255, 255, 255); color: rgb(255, 255, 255); text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.2); }
+.caution-btn, .caution-btn:hover, .caution-btn:focus, .following .follow-btn:hover, .following .follow-button:hover, .email-following .email-follow-button:hover { background-color: rgb(190, 25, 49); background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.15)); border: 1px solid rgb(160, 4, 30); color: rgb(255, 255, 255); }
+.caution-btn:active, .following:hover .follow-btn:active, .following:hover .follow-button:active, .email-following:hover .email-follow-button:active { background-color: rgb(190, 25, 49); background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)); color: rgb(255, 255, 255); border-color: rgb(149, 47, 42); }
+.icon-btn { background: none repeat scroll 0% 0% transparent; border: 1px solid transparent; color: rgb(0, 132, 180); opacity: 0.8; padding: 4px 10px; }
+.icon-btn .Icon { font-size: 20px; }
+.icon-btn:focus, .icon-btn.focus { background: none repeat scroll 0% 0% rgb(255, 255, 255); border-color: rgb(255, 255, 255); box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+.icon-btn:hover { background-color: rgba(255, 255, 255, 0.25); background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 132, 180, 0.1)); border-color: rgb(0, 132, 180); color: rgb(0, 132, 180); }
+.icon-btn:active, .icon-btn.active { background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.15); border-color: rgb(0, 132, 180); box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15) inset; color: rgb(0, 132, 180); }
+.icon-btn .text { font-size: 12px; font-weight: normal; margin-left: 3px; position: relative; top: -6px; }
+.plain-btn, .plain-btn:hover { background: none repeat scroll 0% 0% transparent; border-color: transparent; }
+.plain-btn:hover { color: rgb(0, 132, 180); }
+.plain-btn:focus, .plain-btn.focus, .plain-btn.active, .plain-btn:active, .plain-btn.open, .dropdown.open .user-dropdown.plain-btn, .open > .plain-btn { background: none repeat scroll 0% 0% transparent; border-color: rgb(255, 255, 255); box-shadow: none; color: rgb(0, 132, 180); }
+.btn-group { position: relative; }
+.btn-user-actions, .user-dropdown, .btn-search-actions { padding: 8px 11px 8px 10px; }
+.follow-button { padding: 4px 12px 9px; color: rgb(41, 47, 51); }
+.button-text.following-text, .button-text.unfollow-text { padding-top: 5px; }
+.follow-button .Icon { font-size: 18px; line-height: 17px; padding-right: 3px; position: relative; top: 3px; color: rgb(85, 172, 238); }
+.btn-group .dropdown-menu { right: -1px; border-width: 1px; }
+.user-actions { position: relative; }
+.user-actions .dropdown { display: inline-block; }
+.email-follow-state-button .button-text, .follow-button .button-text, .edit-button .button-text { min-width: 73px; padding: 0px; text-align: center; }
+.email-follow-state-button .button-text, .follow-button .button-text { display: none; }
+.not-following .follow-button .follow-text, .following .follow-button .following-text, .following .follow-button:hover .unfollow-text, .following .follow-button.cancel-hover-style:hover .following-text, .blocked .follow-button .blocked-text, .blocked .follow-button:hover .unblock-text, .pending .follow-button .pending-text, .pending .follow-button:hover .cancel-text, .pending .follow-button.cancel-hover-style:hover .pending-text, .email-follow-button .email-follow-text, .email-following .email-follow-button .email-following-text, .email-following .email-follow-button:hover .email-unfollow-text, .email-following .email-follow-button.cancel-hover-style:hover .email-following-text, .email-follow-disabled .email-follow-state-button .email-follow-text, .email-follow-enabled .email-follow-state-button .disable-email-follow-text, .email-follow-disabled .explanation .email-follow-text, .email-follow-enabled .explanation .email-following-text { display: block; }
+.user-actions .dropdown-menu .dropdown-caret, .user-actions .dropdown-menu .mention-text, .user-actions .dropdown-menu .list-text, .user-actions .dropdown-menu .block-text, .user-actions .dropdown-menu .report-spam-text, .user-actions .dropdown-menu .not-blocked, .user-actions .dropdown-menu .is-embeddable, .user-actions .dropdown-menu .embed-profile, .user-actions .dropdown-menu .email-follow, .user-actions .dropdown-menu .email-follow-text, .user-actions .dropdown-menu .mute-user-item, .following .dropdown-menu .retweet-on-text, .following .dropdown-menu .device-notifications-on-text, .following .dropdown-menu .is-following, .including .dropdown-menu .retweet-off-text, .notifying .dropdown-menu .device-notifications-off-text, .email-following .dropdown-menu .email-unfollow-text, .dismissable .dropdown-menu .hide-suggestion-text, .blocked .dropdown-menu .unblock-text, .muting .dropdown-menu .unmute-user-item, .dropdown-menu .mute-user-item, .can-dm .dropdown-menu .dm-text { display: block; }
+.user-actions .dropdown-menu li, .blocked .dropdown-menu .not-blocked, .including .dropdown-menu .retweet-on-text, .notifying .dropdown-menu .device-notifications-on-text, .email-following .dropdown-menu .email-follow-text, .unmute-button, .first-load.mute-button, .muting .mute-button, .dropdown-menu .unmute-user-item, .muting .dropdown-menu .mute-user-item, .blocked .unmute-button, .blocked .mute-button, .blocked .dropdown-menu .mute-user-item, .blocked .dropdown-menu .unmute-user-item, .blocked .dropdown-menu .mention-text, .blocked .dropdown-menu .list-text, .blocked .dropdown-menu .block-text, .blocked .dropdown-menu .report-spam-text, .protected .dropdown-menu .is-embeddable, .protected .dropdown-menu .embed-profile { display: none; }
+.user-actions .dropdown-menu { right: -1px; border-width: 1px; border-radius: 4px; }
+.user-actions .dropdown-menu span { font-size: 12px; }
+.tweet-btn { background: none repeat scroll 0% 0% rgba(0, 132, 180, 0.8); border: 1px solid transparent; color: rgb(255, 255, 255); display: block; padding: 9px 16px 8px 17px; text-align: center; }
+.tweet-btn .Icon { font-size: 19px; height: 19px; position: relative; vertical-align: middle; width: 17px; }
+.tweet-btn .Icon--tweet { left: -2px; top: -5px; }
+.tweet-btn .Icon--dm { font-size: 17px; left: -3px; top: -2px; }
+.tweet-btn:focus { background: none repeat scroll 0% 0% rgba(0, 132, 180, 0.8); border: 1px solid rgb(255, 255, 255); }
+.tweet-btn:hover { background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.15)); border-color: transparent; }
+.tweet-btn:active { background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)); border-color: transparent; box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3) inset; color: rgb(255, 255, 255); }
+.tweet-btn:hover, .tweet-btn:active, .tweet-btn.active { background-color: rgb(0, 132, 180); }
+.tweet-btn.btn.disabled, .tweet-btn.btn.disabled:hover, .tweet-btn.btn[disabled], .tweet-btn.btn[aria-disabled="true"] { background: none repeat scroll 0% 0% rgb(0, 132, 180); border-color: transparent; color: white; opacity: 0.2; text-shadow: none; }
+.btn-link { padding: 0px; background-color: transparent; background-image: none; border: 0px none; cursor: pointer; border-radius: 0px; box-shadow: none; }
+.btn-link:hover, .btn-link:focus { outline: 0px none; text-decoration: underline; box-shadow: none; }
+.twttr-dialog-header .dm-toolbar { margin-top: -3px; }
+.tweet-form .tweet-btn { display: inline-block; }
+.tweet-form .tweet-counter { top: 10px; }
+.global-nav, .global-nav .well, .nav .active > a, .btn-tweet, .btn-tweet:hover, .btn-tweet:active, .card-soccer .cover { background-image: url('twitter_web_sprite_bgs.png'); background-repeat: repeat-x; }
+.global-nav, .global-nav .well, .nav .active > a { background: none repeat scroll 0% 0% transparent; }
+.icon { display: inline-block; vertical-align: text-top; background-image: url('twitter_web_sprite_icons.png'); background-position: 0px 0px; background-repeat: no-repeat; }
+.bird-topbar-etched, .bird-topbar-blue, .bird-topbar-white { width: 24px; height: 21px; }
+.bird-topbar-etched { background-position: -40px 0px; }
+.nav-home, .nav-topics, .nav-people, .nav-me, .nav-tweet { height: 22px; }
+.nav-tweet { background-position: -200px -50px; width: 22px; height: 18px; }
+.sm-reply, .sm-rt, .sm-fav, .sm-image, .sm-video, .sm-audio, .sm-geo, .sm-in, .sm-lock, .sm-trash, .sm-page, .sm-embed, .sm-summary, .sm-chat, .sm-bird, .sm-top-tweet, .sm-gear, .sm-more { height: 13px; background-color: rgb(136, 153, 166); }
+.sm-reply, .opened-tweet:hover .sm-reply, .open .conversation-module .tweet:hover .sm-reply, .opened-tweet.focus .sm-reply, .stream-item-activity .original-tweet:hover .sm-reply { background-position: 0px -190px; width: 12px; }
+.close { background-position: -20px -510px; width: 9px; height: 9px; }
+.dismiss:hover .close { background-position: -40px -510px; }
+.close-medium, .error-x, .dismiss-white { width: 10px; height: 12px; }
+.error-x { background-position: -100px -510px; }
+.dismiss-white { background-position: -120px -510px; }
+.tweet-hash, .tweet-at, .tweet-camera, .tweet-geo, .tweet-alert { height: 17px; }
+.tweet-camera { background-position: -60px -530px; width: 20px; }
+.nav-search, .generic-search { width: 12px; height: 14px; }
+.nav-search { background-position: -20px -710px; }
+.generic-search { background-position: -40px -710px; }
+.with-icn { font-size: 12px; color: rgb(136, 153, 166); }
+.with-icn .icon, .with-icn .Icon { margin-right: 4px; }
+.with-icn b { font-weight: normal; color: inherit; }
+.with-icn:hover, .with-icn:focus { text-decoration: none; }
+.with-icn:hover b, .with-icn:focus b { text-decoration: underline; }
+.add-photo-icon, .inline-photo-drop-icon, .add-photo-white, .add-photo-white-transparent, .add-photo-blue, .add-photo-blue-transparent, .add-photo-gray, .add-photo-white-shadow, .add-photo-white-shadow-transparent { width: 27px; height: 21px; }
+.add-photo-icon { background-position: -139px -1260px; }
+.stream-item-footer .with-icn span:last-child { margin-right: 4px; }
+.stream-item-footer .with-icn .Icon--summary:last-child, .stream-item-footer .with-icn .Icon--geo:last-child, .stream-item-footer .with-icn .Icon--conversation:last-child { margin-right: 0px; }
+.tweet-camera { height: auto; width: auto; }
+.dropdown { position: relative; }
+.dropdown-menu { position: absolute; top: 100%; z-index: 900; display: none; float: left; padding: 10px 0px; margin: 2px 0px 0px; background: none repeat scroll 0% 0% padding-box rgba(255, 255, 255, 0.98); border: 0px solid rgba(0, 0, 0, 0.25); border-radius: 4px; box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25); }
+.dropdown-menu ul:focus { outline: 0px none; }
+.dropdown-menu li { display: block; float: none; line-height: inherit; }
+.dropdown-divider { padding-top: 1px; margin: 5px 1px 6px; border-bottom: 1px solid rgb(225, 232, 237); }
+.dropdown-menu li > a, .dropdown-menu .dropdown-link { clear: both; color: rgb(102, 117, 127); cursor: pointer; display: block; font-size: 13px; font-weight: normal; float: none; line-height: 18px; margin: 0px; padding: 5px 20px; position: relative; text-shadow: none; white-space: nowrap; }
+.dropdown button.dropdown-link { background: none repeat scroll 0% 0% transparent; min-width: 100%; text-align: left; }
+.dropdown-menu li > a:focus .account-group b { text-decoration: none; }
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-menu .dropdown-link:hover, .dropdown-menu .dropdown-link:focus, .dropdown-menu li:hover .dropdown-link, .dropdown-menu li:focus .dropdown-link, .dropdown-menu .typeahead-recent-search-item.selected, .dropdown-menu .typeahead-saved-search-item.selected, .dropdown-menu .selected a, .dropdown-menu .dropdown-link.selected { color: rgb(255, 255, 255); background: none repeat scroll 0% 0% rgb(59, 136, 195); text-decoration: none; }
+.dropdown-menu li > a s, .dropdown-menu .dropdown-link s { color: rgb(102, 117, 127); }
+.dropdown-menu li > a:hover s, .dropdown-menu li > a:focus s, .dropdown-menu .selected > a s, .dropdown-menu .dropdown-link:hover s, .dropdown-menu .dropdown-link:focus s { color: rgb(255, 255, 255); }
+.dropdown-menu li button:focus { outline: 0px none; }
+.dropdown-menu .dropdown-caret { position: absolute; top: -10px; left: 12px; width: 18px; height: 10px; float: left; overflow: hidden; }
+.dropdown-caret.center, .dropdown.center .dropdown-menu .dropdown-caret { left: 50%; margin-left: -6px; }
+.dropdown-caret .caret-outer, .dropdown-caret .caret-inner { position: absolute; top: 0px; left: 0px; display: inline-block; margin-left: -1px; }
+.dropdown-caret .caret-outer { border-bottom: 10px solid rgba(0, 0, 0, 0.1); border-left: 10px solid transparent; border-right: 10px solid transparent; height: auto; left: 0px; top: 0px; width: auto; }
+.dropdown-caret .caret-inner { top: 1px; left: 1px; border-left: 9px solid transparent; border-right: 9px solid transparent; border-bottom: 9px solid rgba(255, 255, 255, 0.98); }
+.session .dropdown-menu .dropdown-caret { left: auto; right: 30px; }
+.onebox .follow-combo .dropdown-caret, .stream-item .account .btn-group .dropdown-caret, .permalink-tweet .btn-group .dropdown-caret { left: auto; right: 13px; }
+.session .dropdown-menu, .global-nav .pull-right .dropdown-menu, .global-nav .secondary-nav .dropdown-menu { margin: 9px -7px 0px 0px; }
+.typeahead { padding: 5px 0px; }
+.typeahead-items li > a { padding: 7px 15px 7px 10px; font-size: 14px; }
+.dropdown-account:hover .fullname, .dropdown-account:hover .username, .dropdown-account:hover .pretty-link s, .dropdown-menu .account-summary:focus .fullname, .dropdown-menu .account-summary:focus .metadata, .dropdown-account.selected .fullname, .dropdown-account.selected .username, .dropdown-account.selected .pretty-link s { color: rgb(255, 255, 255); }
+.more-tweet-actions .action-more-container, .more-tweet-actions .action-more-container .dropdown { display: inline-block; }
+.more-tweet-actions .dropdown .dropdown-menu { margin: 8px 0px 0px; right: 0px; }
+.more-tweet-actions .dropdown .dropdown-menu .dropdown-caret { left: auto; right: 25px; }
+.permalink-tweet .more-tweet-actions .dropdown .dropdown-menu .dropdown-caret { left: auto; }
+html, body, #doc, #page-outer { height: 100%; }
+.wrapper, .wrapper-narrow, .wrapper-permalink { margin: 0px auto; min-height: 0px; padding: 56px 23px 15px; position: relative; width: 890px; }
+.wrapper { padding-bottom: 0px; }
+.wrapper-permalink { width: 540px; }
+.container { position: relative; width: 890px; margin: 0px auto; }
+.content-inner, .content-narrow, .page-canvas, .permalink { background-clip: padding-box; }
+.content-main, .content-narrow, .page-canvas, .permalink { border-radius: 6px; }
+.permalink { padding: 0px; background-color: rgb(245, 248, 250); border: 1px solid rgba(0, 0, 0, 0.1); }
+.permalink-inner { position: relative; }
+.pushstate-spinner { display: none; height: 26px; margin: 11px 0px 0px -26px; vertical-align: top; width: 26px; }
+.module { background-clip: padding-box; border: 0px none; border-radius: 6px; line-height: 16px; position: relative; margin-bottom: 10px; }
+.module .flex-module { background-color: rgb(255, 255, 255); border: 1px solid rgb(225, 232, 237); padding: 15px; line-height: 16px; }
+.flex-module-inner, .flex-module-footer { color: rgb(136, 153, 166); font-size: 12px; }
+.flex-module-inner ul, .flex-module-inner ol { color: rgb(41, 47, 51); }
+.module ul:first-child li:first-child .list-link, .module .flex-module:first-child, .module .contrast-flex-module:first-child { border-top-left-radius: 5px; border-top-right-radius: 5px; }
+.module ul:last-child li:last-child .list-link, .module ul:last-child li.last-item .list-link, .module .list-link.last, .module .flex-module:last-child, .module .contrast-flex-module:last-child { border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; }
+.topbar { border-bottom: 1px solid rgba(0, 0, 0, 0.05); position: fixed; top: 0px; right: 0px; left: 0px; z-index: 1000; }
+.global-nav, .global-nav-outer { height: 40px; }
+.global-nav { border-bottom: 1px solid rgba(0, 0, 0, 0.15); height: 46px; position: relative; width: 100%; }
+.global-nav-inner { background: none repeat scroll 0% 0% rgb(255, 255, 255); height: 46px; }
+.global-nav .container { max-width: 1190px; text-align: center; width: auto; }
+@media screen and (max-width: 865px) {
+	.global-nav #global-nav-search .search-input { width: 100px; }
+	.global-nav #global-actions li span.text { display: none; }
+	.global-nav .container { width: auto; min-width: 520px; }
+}
+@media screen and (max-width: 700px) {
+	.global-nav #global-nav-search .search-input { width: 50px; }
+	.global-nav form.js-search-form { width: 50px; }
+}
+@media screen and (max-width: 1190px) {
+	.global-nav .container { min-width: 590px; }
+}
+@media screen and (max-width: 938px) {
+	.global-nav .container { padding: 0px; }
+}
+.global-nav [role="navigation"], .nav, .nav > li { float: left; }
+#global-actions > li { height: 46px; overflow: hidden; }
+#global-actions > li > a { border-bottom: 4px solid rgb(0, 132, 180); transition: all 0.15s ease-in-out 0s; }
+#global-actions > li:hover > a, #global-actions > li.active > a { height: 42px; }
+#global-actions > li:hover { color: rgb(0, 132, 180); }
+.nav { margin-right: 12px; text-align: left; }
+.nav li { position: relative; }
+.nav > li { color: rgb(102, 117, 127); }
+.nav > li .Icon { float: left; margin: 11px 0px 0px 10px; width: 23px; height: 23px; }
+.nav li a { position: relative; font-size: 12px; }
+.nav > li > a .text { float: left; margin-left: 3px; margin-top: 17px; padding: 0px; }
+.nav > li > a, .nav > li > button { color: inherit; display: block; font-size: 13px; font-weight: 500; height: 46px; line-height: 1; padding: 0px 14px 0px 4px; }
+.nav .active > a, .nav > li > a:hover { color: inherit; text-decoration: none; }
+.nav > li > a:focus { color: inherit; text-decoration: underline; }
+.nav small { font-weight: normal; }
+.global-nav .account-summary { min-height: 32px; padding-top: 5px; padding-bottom: 5px; margin-bottom: 0px; }
+.global-nav .account-summary .avatar { top: 5px; left: 22px; box-shadow: none; }
+.global-nav .account-summary .content { padding-right: 15px; margin-top: 1px; margin-right: 0px; line-height: 14px; }
+.global-nav .current-user .fullname { font-size: 13px; }
+.global-nav .account-summary:hover .fullname { color: rgb(255, 255, 255); text-decoration: none; }
+.global-nav .account-summary:hover .metadata { color: rgb(255, 255, 255); }
+.global-nav .current-user .metadata { display: block; font-size: 11px; }
+.global-nav .people .count { background-color: rgb(255, 255, 255); border-radius: 8px; color: white; display: none; font-size: 11px; height: 20px; left: 24px; line-height: 17px; margin: 0px; opacity: 1; position: absolute; text-align: center; text-shadow: none; top: 3px; z-index: 100; }
+.global-nav .people.notifications .count { left: 21px; top: 6px; }
+.global-nav .people .count .count-inner { border: 2px solid rgb(255, 255, 255); border-radius: 7px; display: block; opacity: 0.6; background-color: rgb(102, 117, 127); line-height: 16px; width: 16px; height: 16px; }
+.global-nav .people:hover .count .count-inner, .global-nav .people:focus .count .count-inner { opacity: 1; }
+.pull-right { float: right; text-align: left; }
+.global-nav .pull-right .nav { position: relative; z-index: 5; margin: 0px -12px; }
+.global-nav .pull-right .dropdown-toggle { overflow: hidden; padding: 0px; }
+.global-nav .pull-right .Icon--cog { margin-top: 11px; }
+.global-nav .pull-right .right-actions { margin: 0px; }
+.nav.right-actions > li > a, .nav.right-actions > li > button { height: 100%; margin-right: 15px; opacity: 0.6; padding-right: 0px; transition: all 0.15s ease-in-out 0s; }
+.nav.right-actions > li > a:hover, .nav.right-actions > li > button:hover { color: rgb(0, 132, 180); opacity: 1; }
+.nav.right-actions .Icon { margin-left: 5px; margin-right: 5px; }
+.bird-topbar-etched { color: rgb(85, 172, 238); font-size: 21px; margin-top: 14px; margin-left: -24px; display: inline-block; transition: all 0.25s ease-in-out 0s; }
+@media screen and (max-width: 865px) {
+	.bird-topbar-etched { margin-left: 48px; }
+}
+@media screen and (max-width: 700px) {
+	.bird-topbar-etched { margin-left: -48px; }
+}
+.dm-nav { float: left; margin: 0px; height: 40px; padding: 0px; }
+.global-dm-nav { padding: 0px; background-color: transparent; cursor: pointer; overflow: visible; }
+.nav.right-actions .global-dm-nav .Icon { line-height: 29px; margin-top: 0px; }
+.global-dm-nav .dm-new { display: none; }
+.global-dm-nav:hover, .global-dm-nav:focus { color: rgb(102, 117, 127); text-decoration: none; opacity: 1; outline: 0px none; }
+#global-new-tweet-button { color: rgb(255, 255, 255); cursor: pointer; height: 32px; margin-top: 7px; opacity: 0.7; padding: 0px 7px 0px 8px; }
+#global-new-tweet-button .Icon { font-size: 24px; left: 0px; margin: 0px; opacity: 1; position: relative; top: -2px; }
+.topbar-tweet-btn { float: left; }
+.global-nav [role="search"] { float: left; }
+.global-nav .form-search { float: left; height: 33px; margin: 7px 15px 0px 0px; font-size: 12px; width: 221px; }
+.global-nav .search-icon { position: absolute; top: 4px; right: -3px; display: block; width: 26px; height: 26px; cursor: pointer; }
+.global-nav .search-icon .Icon { color: rgb(255, 255, 255); font-size: 13px; height: auto; margin: 3px 0px 0px; padding: 0px; width: auto; }
+.global-nav .nav-search { margin-top: 3px; margin-left: 7px; background-color: transparent; }
+.global-nav .search-input { display: block; width: 182px; height: 21px; padding: 5px 27px 6px 12px; font-size: 12px; line-height: 1; color: rgb(102, 117, 127); background-color: rgb(204, 214, 221); border: 0px none; border-radius: 21px; transition: all 0.2s ease-in-out 0s; }
+.global-nav .search-input::-moz-placeholder { color: rgb(255, 255, 255); }
+.global-nav .search-input:focus::-moz-placeholder { color: rgb(204, 214, 221); }
+.global-nav .search-input:focus, .global-nav .search-input.focus { color: rgb(102, 117, 127); text-shadow: none; background-color: rgb(255, 255, 255); box-shadow: none; }
+.global-nav .form-search .search-input { position: absolute; top: 0px; right: 0px; z-index: 2; color: rgb(255, 255, 255); background-color: transparent; background-image: url('undefined'); opacity: 0.6; }
+.global-nav .form-search .search-hinting-input { background-color: rgb(102, 117, 127); position: absolute; right: 0px; z-index: 1; color: rgb(136, 153, 166); }
+.global-nav .form-search .search-icon { z-index: 3; }
+.form-search { position: relative; }
+.typeahead { box-sizing: border-box; width: 100%; right: auto; left: 0px; display: none; margin-top: -3px; padding: 5px 0px; border-radius: 0px 0px 4px 4px; }
+.typeahead .dropdown-caret { display: none; left: 16px; }
+.form-search .dropdown-caret { display: block; }
+.form-search .typeahead { width: 316px; margin-top: 9px; border-radius: 4px; }
+.typeahead-items { width: 100%; margin: 0px; overflow: hidden; }
+.typeahead-items li { width: 100%; white-space: nowrap; float: left; clear: left; }
+.typeahead-items li > a { display: block; padding: 7px 15px 7px 10px; overflow: hidden; color: rgb(102, 117, 127); text-overflow: ellipsis; white-space: nowrap; font-size: 14px; line-height: 24px; }
+.typeahead a, .typeahead .fullname { color: rgb(41, 47, 51); }
+.typeahead .username, .typeahead-social-context { color: rgb(136, 153, 166); }
+.typeahead .username s { color: rgb(204, 214, 221); }
+.typeahead .selected a, .typeahead .selected strong, .typeahead .selected .fullname, .typeahead .selected .username, .typeahead .selected .typeahead-social-context, .typeahead a:hover, .typeahead a:hover strong, .typeahead a:hover .fullname, .typeahead a:hover .username, .typeahead a:hover .typeahead-social-context { color: rgb(255, 255, 255); }
+.typeahead .avatar { float: left; margin-right: 6px; }
+.typeahead .social-context .avatar { margin-right: 10px; }
+.typeahead-accounts li > a { line-height: 24px; }
+.typeahead .typeahead-user-item-info { display: block; overflow: hidden; text-overflow: ellipsis; }
+.typeahead-item:hover .typeahead-user-item-info .fullname { color: inherit; }
+.typeahead-accounts .typeahead-social-context { color: rgb(136, 153, 166); font-size: 12px; font-weight: normal; text-overflow: ellipsis; overflow: hidden; }
+.typeahead .typeahead-user-item-info .Icon--verified { position: relative; top: 2px; }
+.typeahead-accounts.social-context .typeahead-account-item .typeahead-user-item-info { margin-top: 8px; line-height: 15px; }
+.typeahead-accounts.social-context li > a { line-height: 16px; padding: 7px 15px 6px 10px; }
+.typeahead-accounts.social-context .typeahead-accounts-shortcut > a { padding-top: 10px; padding-bottom: 10px; }
+.typeahead-recent-search-item .close, .typeahead-saved-search-item .close { float: right; margin: 13px; cursor: pointer; height: 12px; width: 12px; }
+.typeahead-recent-search-item .close:hover, .typeahead-saved-search-item .close:hover { background-position: -120px -510px; }
+li.typeahead-recent-search-item > a, li.typeahead-saved-search-item > a { clear: none; }
+.typeahead button.clear-recent-searches { float: right; padding: 15px 13px 3px 3px; color: rgb(0, 132, 180); }
+.recent-searches-title { float: left; margin-right: 30px; }
+.typeahead-items.recent-searches-list { clear: both; }
+.typeahead-category-title { font-size: 14px; font-weight: bold; height: 24px; padding-top: 10px; padding-left: 10px; }
+.saved-searches-title { display: none; }
+.typeahead-saved-search-item span, .typeahead-recent-search-item span { margin-left: 0px; }
+.typeahead a, .typeahead .fullname { color: rgb(41, 47, 51); }
+.session .dropdown-menu, .global-nav .pull-right .dropdown-menu, .global-nav .secondary-nav .dropdown-menu { right: 0px; }
+.global-nav .dropdown-link { font-size: 12px; background-color: transparent; }
+#signout-form { display: none; }
+.hidden { display: none; }
+.visuallyhidden { border: 0px none; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; }
+.clearfix:before, .clearfix:after, .control-group:before, .control-group:after, .stream-item > div:before, .stream-item > div:after, .module:after, .module:before, .follow-card header:after, .follow-card header:before, .follow-bar:after, .follow-bar:before, .search-header:after, .search-header:before, .tweet-form:after, .tweet-form:before, .modal-footer:after, .modal-footer:before, .local-trends-breadcrumb:after, .local-trends-breadcrumb:before, .input-prepend .add-on, .input-append .add-on, .wrapper:after, .wrapper:before, .expanded-content:before, .expanded-content:after, .stream-item:before, .stream-item:after { content: " "; display: table; }
+.clearfix:after, .control-group:after, .stream-item > div:after, .module:after, .follow-card header:after, .follow-bar:after, .search-header:after, .tweet-form:after, .modal-footer:after, .local-trends-breadcrumb:after, .wrapper:after, .expanded-content:after, .stream-item:after { clear: both; }
+.user-dropdown { height: 35px; padding: 0px 0px 0px 5px; }
+.user-dropdown .user-dropdown-icon { margin: 0px 8px 0px 3px; }
+.user-actions-follow-button, .favorite-user-button { vertical-align: top; }
+.avatar { width: 48px; height: 48px; border-radius: 5px; -moz-force-broken-image-icon: 1; }
+.size32 { width: 32px; height: 32px; border-radius: 4px; }
+.size24 { width: 24px; height: 24px; border-radius: 3px; }
+s { text-decoration: none; }
+b { font-weight: normal; }
+.pretty-link b { color: inherit; }
+.pretty-link:hover, .pretty-link:hover s, .pretty-link:focus, .pretty-link:focus s { text-decoration: none; }
+.username-link:hover, .pretty-link:hover b, .username-link:focus, .pretty-link:focus b { text-decoration: underline; }
+.account-group:hover, .account-summary:focus .account-group { text-decoration: none; }
+.account-group:hover .fullname, .account-group:focus .fullname, .account-summary:focus .fullname { text-decoration: underline; }
+.account-group:hover .username, .account-group:focus .username, .account-summary:focus .username { text-decoration: none; color: rgb(136, 153, 166); }
+.fullname { font-weight: bold; color: rgb(41, 47, 51); }
+.username, .time, .time a, .metadata, .metadata button.btn-link, .metadata a { font-size: 13px; color: rgb(136, 153, 166); }
+.username s, .account-group-inner s { color: rgb(177, 187, 195); }
+.dismiss { float: right; width: 10px; height: 10px; margin-top: 5px; cursor: pointer; }
+button.dismiss { background: none repeat scroll 0% 0% transparent; }
+.flex-table-form { float: left; width: 100%; }
+.account-summary { position: relative; display: block; min-height: 48px; }
+.account-summary:hover, .account-summary:focus, .account-group:focus { text-decoration: none; }
+.account-summary .avatar { position: absolute; top: 0px; left: 0px; }
+.account-summary .content { margin-left: 58px; margin-right: 20px; }
+.account-summary .account-group, .account-summary .account-action { display: block; line-height: 16px; }
+.account-summary .account-group-inner, .account-summary .metadata { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.account-summary-small { min-height: 32px; }
+.account-summary-small .content { margin-left: 42px; }
+.alert-messages { position: fixed; top: 46px; left: 0px; right: 0px; z-index: 999; }
+.message { position: relative; width: 600px; padding: 20px; margin: 0px auto; background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.97); border-radius: 0px 0px 6px 6px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); }
+.message .message-text { display: block; margin-right: 20px; color: rgba(102, 117, 127, 0.6); font-size: 14px; line-height: 16px; text-align: center; }
+.message .close, .message .dismiss { position: absolute; top: 7px; }
+.message .close:hover, .message .dismiss:hover { opacity: 1; }
+.message .dismiss { font-size: 12px; font-weight: bold; margin-top: 0px; text-decoration: none; }
+.message .close, .message .dismiss { color: rgb(102, 117, 127); opacity: 0.6; right: 12px; }
+.tweet.permalink-tweet { cursor: default; }
+.modal { position: relative; top: 160px; width: 520px; margin: 0px; padding-bottom: 30px; z-index: 6000; }
+.stream, .stream-container, .stream-items { position: relative; margin-left: 0px; list-style: none outside none; }
+.in-reply-to > ol, .tweets-wrapper, .recent-tweets, .activity-popup-users, .activity-supplement { margin-left: 0px; list-style: none outside none; }
+.in-reply-to > ol > li, li.stream-item, .tweets-wrapper li, .recent-tweets li { line-height: inherit; }
+.stream-item-header .avatar, .permalink-header .avatar { float: left; margin-top: 3px; margin-left: -58px; }
+.stream-item .content, .permalink-tweet .content { margin-left: 58px; }
+.stream-item-header .account-group { color: rgb(136, 153, 166); }
+.account, .interest-category, .list, .custom-timeline, .saved-search, .tweet, .app, .discover-item { position: relative; min-height: 51px; padding: 9px 12px; border-bottom: 1px solid rgb(225, 232, 237); }
+.before-module:not(.separation-module), .before-module .tweet { border-bottom: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 6px 6px; }
+.tweet { border-bottom: 1px solid rgb(225, 232, 237); cursor: pointer; }
+.tweet p { word-wrap: break-word; }
+.tweet .details { display: inline-block; margin-right: 2px; }
+.tweet a .invisible, .dm-message a .invisible, .dm-notification a .invisible, .bio a .invisible { font-size: 0px; line-height: 0; }
+.tweet .stream-item-footer { font-size: 12px; padding-top: 3px; }
+.tweet .js-tweet-text { white-space: pre-wrap; }
+.tweet .with-icn .Icon { background: none repeat scroll 0% 0% transparent; font-size: 16px; position: relative; top: 2px; }
+.tweet > .context { margin-left: 58px; }
+.expand-action-wrapper { color: rgb(136, 153, 166); }
+.collapse-stream-item, .stream-item.open .expand-stream-item, .stream-item.open .simple-tweet .collapse-stream-item, .conversation-module .simple-tweet .collapse-stream-item, .stream-item.open .simple-tweet.opened-tweet .expand-stream-item, .conversation-module .simple-tweet.opened-tweet .expand-stream-item, .supplement.open .original-tweet .expand-stream-item { display: none; }
+.simple-details-link { display: none; color: rgb(136, 153, 166); }
+.discover-item .simple-tweet .simple-details-link, .permalink .simple-tweet .simple-details-link, .media-slideshow-tweet .tweet .simple-details-link, .recent-tweets .simple-tweet .simple-details-link, .trend-items .tweet .simple-details-link { display: inline; }
+.discover-item.open .simple-tweet .expand-stream-item, .discover-item.open .simple-tweet .collapse-stream-item, .permalink .simple-tweet .expand-stream-item, .permalink .simple-tweet .collapse-stream-item, .media-slideshow-tweet .expand-stream-item, .media-slideshow-tweet .collapse-stream-item, .recent-tweets .simple-tweet .expand-stream-item, .recent-tweets .simple-tweet .collapse-stream-item { display: none; }
+.discover-item .simple-tweet .details-icon, .permalink .simple-tweet .details-icon, .recent-tweets .simple-tweet .details-icon { display: none; }
+.tweet .time { color: rgb(136, 153, 166); }
+.tweet .time:before { content: "·"; }
+.tweet-actions { display: none; }
+.tweet-actions li { display: inline; }
+.tweet-actions a, .tweet-actions button { margin-left: 8px; }
+.tweet-actions a { color: rgb(136, 153, 166); }
+.tweet .tweet-actions .Icon { font-size: 12px; position: relative; top: 1px; width: auto; }
+.stream-item .bottom-tweet-actions, .stream .stream-item-footer { display: table; width: 100%; }
+.stream-item .bottom-tweet-actions .details, .stream .stream-item-footer .details { display: table-cell; margin: 0px; }
+.stream-item .bottom-tweet-actions .tweet-actions, .stream .stream-item-footer .tweet-actions { display: table-cell; text-align: right; }
+.proxy-tweet-container { display: none; }
+.tweet:hover { background-color: rgb(245, 248, 250); }
+.stream-items > .before-expanded.selected-stream-item:focus, .stream-items > .before-module.selected-stream-item:focus:not(.separation-module) { border-color: rgb(255, 255, 255); margin-bottom: 0px; }
+.after-expanded:not(.separation-module), .after-expanded .tweet:hover, .after-expanded .tweet.focus { border-radius: 6px 6px 0px 0px; }
+.simple-tweet:hover, .recent-tweets .tweet:hover, .stream-item-activity .tweet:hover, .twttr-dialog-reply-footer:hover { background-color: transparent; }
+.permalink-tweet:hover, .permalink-tweet.focus, .stream-item.open .original-tweet:hover, .stream-item.open .original-tweet.focus { background-color: rgb(255, 255, 255); }
+.tweet .unfavorite, .tweet.favorited .favorite, .tweet.retweeted .retweet, .tweet .undo-retweet, .tweet.my-tweet .action-rt-container, .tweet .tweet-actions .action-del-container, .tweet .cannot-retweet, .tweet.user-pinned .user-pin-tweet, .tweet .user-unpin-tweet { display: none; }
+.tweet.retweeted .undo-retweet, .tweet.favorited .unfavorite, .my-tweet .tweet-actions .action-del-container, .can-delete .tweet-actions .action-del-container, .opened-tweet .tweet-actions .close-tweet, .opened-tweet.original-tweet .tweet-actions b, .tweet.retweeted .cannot-retweet, .tweet.user-pinned .user-unpin-tweet, .tweet .user-pin-tweet { display: inline; }
+.expanded-content { position: relative; height: 0px; display: none; }
+.open .expanded-content, .opened-tweet .expanded-content, .animating .expanded-content { display: block; }
+.opened-tweet .expanded-content, .animating .opened-tweet .expanded-content { height: auto; }
+.tweet .metadata { overflow: hidden; }
+.client-and-actions { clear: both; margin-top: 10px; }
+.client-and-actions .metadata { line-height: 24px; }
+.permalink .replies-to .tweet, .in-reply-to .tweet { min-height: 54px; }
+.stream-end-item, .stream-end, .stream-loading, .stream-placeholder { border-right: 1px solid rgb(225, 232, 237); border-width: 0px 1px 1px; border-style: none solid solid; border-color: -moz-use-text-color rgb(225, 232, 237) rgb(225, 232, 237); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; border-radius: 0px 0px 6px 6px; }
+.stream-end, .stream-loading, .stream-placeholder, .content-placeholder, .back-to-top, .btn-link.back-to-top { font-size: 13px; color: rgb(136, 153, 166); text-align: center; }
+.stream-end-inner { padding: 15px 50px; background-color: rgb(255, 255, 255); border-radius: 0px 0px 5px 5px; }
+.stream-end p, .stream-placeholder p { margin-top: 5px; }
+.stream-end, .stream-loading, .stream-whale-end { margin-bottom: 14px; }
+.stream-fail-container { display: none; }
+.stream-placeholder h2, .content-placeholder h2 { font-weight: normal; }
+.username { direction: ltr; unicode-bidi: embed; }
+.inline-reply-tweetbox { position: relative; padding: 15px 12px 15px 70px; }
+.inline-reply-user-image { position: absolute; display: none; top: 16px; left: 28px; border-radius: 4px; }
+.spinner { display: block; width: 32px; height: 32px; margin: 0px auto; background: url('spinner-rosetta-gray-32x32.gif') no-repeat scroll 0px 0px transparent; }
+.spinner-bigger { display: inline-block; background: url('spinner-rosetta-gray-32x32.gif') no-repeat scroll 0px 0px transparent; height: 32px; width: 32px; }
+.expansion-container { overflow: visible; position: relative; }
+.timeline-end.has-items .empty-text { display: none; }
+.timeline-end .stream-loading { display: none; }
+@media not all, screen and (min-resolution: 192dpi) {
+}
+.stream-items > .stream-item.open:not(:first-child) .first-navigable-stream-item.selected-stream-item:focus, .after-expanded .first-navigable-stream-item.selected-stream-item:focus { border-radius: 6px 6px 0px 0px; }
+.stream-items > .stream-item.open:not(:last-child) .last-navigable-stream-item.selected-stream-item:focus, .before-expanded .last-navigable-stream-item.selected-stream-item:focus, .open .conversation-module > .selected-stream-item:last-child:focus { border-radius: 0px 0px 6px 6px; }
+#banners { width: auto; }
+.modal-container, .modal-overlay, .UserCompletionModule, .lihp-mobile-callout, .PermalinkOverlay, .Gallery, .gallery-overlay { display: none; }
+.modal .modal-tweet { padding: 0px; text-align: left; background-color: rgb(255, 255, 255); }
+.tweet-form .tweet-content { position: relative; margin-bottom: 8px; }
+.tweet-form.condensed .tweet-content { margin: 0px; }
+.tweet-form .tweet-box { width: auto; height: 80px; padding: 8px; vertical-align: top; overflow: hidden; text-shadow: none; }
+.tweet-form.condensed .tweet-box { height: 19px; color: rgb(136, 153, 166); }
+.tweet-form .tweet-box-shadow { display: none; }
+.tweet-form div.rich-editor { display: block; overflow-y: auto; word-wrap: break-word; }
+.tweet-form.condensed div.rich-editor { overflow-y: hidden; }
+.tweet-form.condensed .rich-editor, .tweet-form.condensed .rich-editor.notie p, .tweet-form.condensed .rich-editor.notie div { word-wrap: normal; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.rich-editor a, .rich-editor a.pretty-link:hover b { text-decoration: none ! important; }
+.rich-normalizer { position: absolute; visibility: hidden; }
+.currently-dragging.modal-enabled .modal .tweet-box, .currently-dragging:not(.modal-enabled) .tweet-content .tweet-box, body.supports-drag-and-drop .tweet-form.upload-photo-hover.drag-and-drop .tweet-box { border: 3px dashed rgb(81, 179, 241); width: auto; margin-bottom: -2px; padding-left: 6px; padding-top: 6px; overflow: hidden; color: rgb(238, 238, 238); }
+.currently-dragging.modal-enabled .modal .tweet-box, .currently-dragging:not(.modal-enabled) .tweet-content .tweet-box { box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 0px 15px rgba(81, 179, 241, 0.9); }
+.currently-dragging:not(.modal-enabled) .dashboard .tweet-content .tweet-box, body.supports-drag-and-drop .dashboard .tweet-form.upload-photo-hover.drag-and-drop .tweet-box { padding-top: 4px; }
+.currently-dragging.modal-enabled .modal .tweet-form .thumbnail-container, .currently-dragging:not(.modal-enabled) .tweet-form .thumbnail-container, body.supports-drag-and-drop .tweet-form.upload-photo-hover.drag-and-drop .thumbnail-container { bottom: 3px; left: 3px; right: 3px; width: auto; }
+.tweet-content .add-photo-icon { position: absolute; top: 5px; right: 5px; }
+.currently-dragging.modal-enabled .modal .add-photo-icon, .currently-dragging:not(.modal-enabled) .tweet-content .add-photo-icon { display: block; }
+.tweet-drag-help { position: absolute; width: 100%; text-align: center; top: 34px; font-size: 18px; font-weight: bold; color: rgb(204, 214, 221); }
+.tweet-or-drag-photo-here { color: rgb(170, 170, 170); text-shadow: 0px 0px 10px rgb(255, 255, 255), -3px -3px 3px rgb(255, 255, 255), 3px -3px 3px rgb(255, 255, 255), -3px 3px 3px rgb(255, 255, 255), 3px 3px 3px rgb(255, 255, 255); }
+.currently-dragging.modal-enabled .modal .tweet-drag-photo-here, .currently-dragging:not(.modal-enabled) .tweet-form:not(.condensed) .tweet-drag-photo-here { display: block; }
+.tweet-form.condensed .toolbar { display: none; }
+.tweet-form .tweet-box-extras { float: left; margin-top: 2px; }
+.tweet-form .photo-selector, .tweet-form .geo-picker, .tweet-form .lifeline-alert-status { position: relative; float: left; margin-right: 5px; }
+.photo-selector .Icon--camera { height: 24px; width: 20px; position: relative; top: -2px; }
+.photo-selector:hover:not(.disabled) .btn { border-color: rgb(0, 132, 180); color: rgb(0, 132, 180); }
+.photo-selector:hover:not(.disabled) .btn { background-color: rgba(255, 255, 255, 0.25); background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 132, 180, 0.1)); }
+.tweet-form .thumbnail-container { position: absolute; bottom: 1px; left: 1px; right: 1px; max-width: 100%; height: 0px; overflow: hidden; background-color: rgb(241, 241, 241); border-radius: 0px 0px 3px 3px; box-shadow: 0px 1px 0px rgb(204, 214, 221) inset; }
+.tweet-form .thumbnail-container .previews { position: absolute; bottom: 4px; left: 4px; max-width: 240px; overflow: hidden; }
+.tweet-form .thumbnail-container .preview.template { display: none; }
+.dm-tweetbox .thumbnail-container .previews, .dm-tweetbox.has-preview.has-thumbnail .thumbnail-container .previews { bottom: 12px; left: 12px; }
+.tweet-form .thumbnail-container .preview-message { position: absolute; top: 0px; right: 10px; font-size: 12px; line-height: 30px; color: rgb(170, 170, 170); }
+.image-selector { position: absolute; top: 0px; left: 0px; z-index: 10; height: 100%; width: 100%; overflow: hidden; cursor: pointer; }
+.image-selector .file-input { position: absolute; top: 0px; right: 0px; z-index: 10; width: 100%; height: 100%; font-size: 50px; cursor: pointer; opacity: 0; }
+.image-selector .swf-container { position: absolute; top: 0px; left: 0px; z-index: 11; cursor: pointer; }
+.tweet-form .toolbar .btn.focus, .tweet-form .toolbar .btn:focus { outline: 1px dotted rgb(0, 0, 0); }
+.tweet-post-iframe, .dm-post-iframe { display: none; }
+.tweet-form .spinner { background-image: url('spinner-rosetta-gray-14x14.gif'); display: none; height: 14px; margin-right: 10px; position: relative; top: 2px; width: 14px; }
+.tweet-form .tweet-button { float: right; }
+.tweet-form .tweet-button .tweet-counter { margin-right: 5px; }
+#geo-disabled-dropdown, #geo-enabled-dropdown { display: none; }
+.geo-picker .geo-status { display: inline; max-width: 250px; margin-left: 3px; overflow: hidden; color: inherit; text-overflow: ellipsis; white-space: nowrap; width: auto; }
+.inline-reply-tweetbox .geo-picker .geo-status { max-width: 145px; }
+.geo-picker .Icon--geo { height: 24px; width: 16px; position: relative; top: -2px; }
+.geo-query-location { position: relative; padding: 5px; margin: -4px 0px 6px; background-color: rgb(245, 248, 250); background-repeat: repeat-x; background-image: linear-gradient(rgb(255, 255, 255), rgb(245, 248, 250)); border-bottom: 1px solid rgb(225, 232, 237); border-radius: 4px 4px 0px 0px; }
+.geo-query-location input { width: 280px; padding-left: 24px; }
+.geo-query-location .generic-search { position: absolute; top: 12px; left: 13px; }
+.photo-tagging-container { position: absolute; width: 350px; background-color: rgb(255, 255, 255); right: -100px; margin-top: -12px; }
+.photo-tagging-container .typeahead-item { display: none; }
+.photo-tagging-container .dropdown-menu { display: block; width: 100%; box-shadow: 0px 1px 4px -2px rgba(0, 0, 0, 0.25); padding: 7px 0px 0px; }
+.photo-tagging-container .select-status { float: right; }
+.photo-tagging-container .select-status { display: none; }
+.photo-tagging-controls { margin: 0px 6px 3px; border-radius: 3px; border: 1px solid rgb(225, 232, 237); }
+.photo-tagging-controls .Icon { margin: 5px 2px 0px 8px; opacity: 0.5; }
+.photo-tagging-controls input { width: 290px; border: 0px none; background: none repeat scroll 0% 0% transparent; padding: 0px; }
+.photo-tagging-controls input:focus { border: 0px none; box-shadow: none; }
+.start-tagging.no-users { background-color: transparent; border: 0px none; }
+.start-tagging { border: 1px solid; border-radius: 5px; line-height: 24px; margin: 12px 0px 12px 12px; padding: 5px 10px; background: none repeat scroll 0% 0% transparent; }
+.typeahead-empty-suggestions { padding: 1px 10px 10px; color: rgb(102, 117, 127); font-weight: bold; font-size: 12px; }
+.tagged-users { margin-left: 4px; }
+.light-inline-actions .tweet .tweet-actions a, .light-inline-actions .tweet .action-more-container .btn-link { color: rgb(225, 232, 237); }
+.light-inline-actions .tweet:hover .tweet-actions a, .light-inline-actions .tweet:hover .action-more-container .btn-link, .light-inline-actions .selected-stream-item .tweet .tweet-actions a, .light-inline-actions .selected-stream-item .tweet .action-more-container .btn-link, .light-inline-actions .tweet.focus .tweet-actions a, .light-inline-actions .tweet.focus .action-more-container .btn-link { color: rgb(136, 153, 166); }
+.light-inline-actions .opened-tweet .tweet-actions a, .light-inline-actions .opened-tweet .action-more-container .btn-link { color: rgb(136, 153, 166); }
+.home-exp-tweetbox .tweet-form:not(.condensed) .tweet-box { height: 60px; }
+.home-exp-tweetbox .home-tweet-box .tweet-form:not(.condensed) .tweet-box { height: 77px; }
+.t1-form { font-size: 12px; margin-bottom: 0px; }
+.t1-legend { display: block; width: 100%; margin-bottom: 20px; font-size: 20px; line-height: 30px; color: rgb(41, 47, 51); border-bottom: 1px solid rgb(225, 232, 237); }
+.t1-label, input, textarea, div[contenteditable="true"], .t1-select { margin: 0px; font-size: 13px; line-height: 20px; }
+.t1-label { display: block; margin-bottom: 5px; color: rgb(41, 47, 51); cursor: pointer; }
+input, textarea, div[contenteditable="true"], .t1-select { display: inline-block; width: 210px; padding: 4px; margin: 0px; outline: 0px none; background-color: rgb(255, 255, 255); border: 1px solid rgb(225, 232, 237); border-radius: 3px; }
+input[type="checkbox"], input[type="radio"] { width: auto; height: auto; padding: 0px; margin: 3px 0px; line-height: normal; border: 0px none; background-color: transparent; cursor: pointer; }
+input[type="file"] { background-color: rgb(255, 255, 255); padding: initial; border: initial; line-height: initial; box-shadow: none; }
+.t1-select, input[type="file"] { height: 30px; line-height: 30px; }
+textarea { height: auto; }
+.radio, .checkbox { margin: 5px 0px; padding-left: 18px; line-height: 18px; }
+.radio input[type="radio"], .checkbox input[type="checkbox"] { float: left; margin-left: -18px; }
+input, textarea, div[contenteditable="true"] { transition: background 0.2s linear 0s; }
+input:focus, textarea:focus, div[contenteditable="true"]:focus, div.fake-focus[contenteditable="true"] { outline: 0px none; color: rgb(41, 47, 51); border-color: rgb(86, 180, 239); }
+input[type="file"]:focus, input[type="checkbox"]:focus, input[type="radio"]:focus, .t1-select:focus { outline: 1px dotted rgb(102, 117, 127); box-shadow: none; }
+.disabled, .disabled:hover, .disabled:focus, .disabled:active, input[disabled], .t1-select[disabled], textarea[disabled], input[readonly], .t1-select[readonly], textarea[readonly], div[contenteditable="true"][readonly] { background: none repeat scroll 0% 0% rgb(245, 248, 250); border-color: rgb(204, 214, 221); cursor: not-allowed; }
+.disabled.btn, .disabled.btn:active { cursor: default; box-shadow: none; }
+.input-block { display: block; width: 100%; padding: 7px 9px; margin-bottom: 5px; font-size: 14px; box-sizing: border-box; }
+.help-text { color: rgb(136, 153, 166); }
+.control-group { margin-bottom: 15px; }
+input::-moz-placeholder, textarea::-moz-placeholder { color: rgb(136, 153, 166); opacity: 1; }
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder { opacity: 0.6; }
+.Footer ul { line-height: 18px; }
+.Footer-item { display: inline; }
+.Footer-item, .Footer-link { color: rgb(136, 153, 166); }
+.Footer-item { float: left; padding-right: 8px; }
+.Footer:hover .Footer-link, .Footer-link:focus { color: rgb(136, 153, 166); }
+.Footer--slim { text-align: center; }
+.Footer--slim ul, .Footer--slim .Footer-item { display: inline-block; }
+.Footer--slim .Footer-item { line-height: 16px; float: none; }
+.Button::-moz-focus-inner { border: 0px none; padding: 0px; }
+.stream-container .tweet:hover .tweet-actions-sidebar a:not(:hover):not(.cannot-retweet), .stream-container .tweet:hover .tweet-actions-sidebar a:not(:hover) .tweet-action-count { color: rgb(136, 153, 166); }
+.stream-container .tweet:not(.gotham) .tweet-text { font-family: 'Helvetica Neue',Arial,sans-serif; }
+.stream-container .tweet.gotham:not(.descendant) { padding-top: 6px; padding-left: 10px; }
+#discover-stories .stream-container .tweet.gotham:not(.descendant) { padding-top: 10px; }
+.stream-container .tweet.gotham:not(.descendant) .stream-item-header .avatar { margin-left: -57px; }
+.stream-container .tweet.gotham:not(.descendent) > .context, .stream-container .tweet.gotham:not(.descendent) > .content { margin-left: 57px; }
+.stream-container .tweet.gotham.avatar-small:not(.descendant) > .context, .stream-container .tweet.gotham.avatar-small:not(.descendant) > .content { margin-left: 47px; }
+.stream-container .tweet.gotham:not(.descendant) .stream-item-header .avatar { margin-top: 0px; }
+.stream-container .tweet.gotham.avatar-small:not(.descendant) .stream-item-header .avatar { width: 38px; height: 38px; border-radius: 4px; margin-left: -47px; margin-top: 0px; }
+.AppContent { padding: 56px 14px 15px; position: relative; }
+body { font-family: "Gotham Narrow SSm",sans-serif,Arial; text-rendering: optimizelegibility; }
+.invisible { text-rendering: auto; }
+.stream-item, .profile-modal .tweet, .GalleryTweet, .modal-tweet { font-family: "Helvetica Neue",Arial,sans-serif; }
+.tweet-form .tweet-content { font-family: "Helvetica Neue",Arial,sans-serif; }
+/* ::::: https://abs.twimg.com/a/1401399173/css/t1/rosetta_gotham_more.bundle.css ::::: */
+
+.permalink { margin-bottom: 10px; }
+.wrapper-permalink { width: 642px; }
+.permalink-tweet { padding: 30px 40px; border-bottom: 0px none; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+.permalink-tweet, .permalink-tweet:hover { background-color: rgb(255, 255, 255); }
+.permalink-tweet .permalink-header .avatar { margin-top: 0px; }
+.permalink-header { height: 48px; margin-bottom: 15px; }
+.permalink .permalink-header .time { display: none; }
+.permalink-header .account-group { float: left; }
+.permalink-header .follow-combo, .permalink-header .follow-bar { float: right; }
+.permalink-header .fullname { display: block; padding-top: 2px; margin-top: 3px; font-size: 18px; line-height: 1.25; }
+.permalink-header .username { font-size: 14px; }
+.permalink-tweet p, .permalink-tweet p b { font-size: 28px; line-height: 34px; font-weight: 300; }
+.permalink-tweet p.tweet-text { font-family: inherit; }
+.permalink-tweet .tweet-actions { margin-top: 9px; display: inline-block; }
+.permalink-tweet .tweet-actions .action-reply-container a { margin-left: 0px; }
+.permalink .permalink-header .time { display: none; }
+.permalink-tweet .expanded-content { display: block; }
+.permalink-in-reply-tos .tweet, .permalink-replies .tweet { padding-left: 98px; padding-right: 40px; }
+.permalink .inline-reply-tweetbox { padding: 15px 40px; border-top: 1px solid rgb(225, 232, 237); border-radius: 0px 0px 5px 5px; }
+.permalink.has-replies .inline-reply-tweetbox, .permalink.stream-uncapped .replies-to li:last-child .tweet { border-bottom: 1px solid rgb(225, 232, 237); border-radius: 0px; }
+.permalink .replies-to li:last-child .tweet { border-bottom: 0px none; }
+.permalink .in-reply-to .tweet, .permalink .replies-to .tweet { border-bottom: 1px solid rgb(225, 232, 237); }
+.permalink .stream-end, .permalink .stream-loading, .permalink .stream-whale-end { margin-bottom: 0px; border: 0px none; }
+.permalink .stream-end-inner { background: none repeat scroll 0% 0% transparent; }
+.permalink .stream-end .Icon--logo { color: rgb(204, 214, 221); }
+.permalink .stream-loading .spinner { display: block; background: url('spinner-rosetta-gray-32x32.gif') no-repeat scroll 0px 0px transparent; }
+.permalink .hidden-replies-container { display: none; }
+.route-permalink .inline-reply-tweetbox .geo-picker .geo-status { max-width: 135px; }
+.route-permalink .permalink-tweet .tweet-actions .Icon { font-size: 12px; top: 1px; }
+.tweet-counter { background-color: transparent; color: rgb(136, 153, 166); display: inline-block; width: 35px; border: 0px none; padding: 0px 3px; position: relative; vertical-align: top; top: 7px; text-align: right; font-size: 14px; text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75); }
+#archive-drilldown .time-ranges > a:nth-child(2n) .date-container { visibility: hidden; }
+.twttr-dialog-header { overflow: hidden; padding: 15px; border-radius: 6px 6px 0px 0px; }
+.twttr-dialog-inside { position: relative; z-index: 1; }
+.draggable .twttr-dialog-header, .draggable .profile-modal-header { cursor: move; }
+.twttr-dialog-header h3 { float: left; font-size: 18px; font-weight: bold; line-height: 1; }
+.twttr-dialog-content { position: relative; }
+.twttr-dialog-body { padding: 0px 15px 15px; }
+.twttr-dialog-footer { padding: 15px; background-color: rgb(238, 238, 238); border-top: 1px solid rgb(225, 232, 237); border-radius: 0px 0px 6px 6px; }
+.twttr-dialog p { margin-bottom: 0px; }
+.list-editor hr { display: none; }
+.list-editor .help-text { display: block; font-size: 11px; color: rgb(136, 153, 166); margin-left: 120px; }
+.list-editor .field { clear: both; display: block; margin: 0px 0px 15px; }
+.list-editor label { float: left; text-align: right; width: 105px; padding-right: 15px; margin-bottom: 15px; }
+.list-editor input.text, .list-editor textarea { width: 290px; }
+.list-editor textarea { resize: none; height: 36px; }
+.list-editor .options { float: left; width: 290px; }
+.list-editor .options label, .list-editor .options input { float: none; text-align: left; display: inline-block; width: auto; margin-bottom: 5px; font-size: 12px; color: rgb(136, 153, 166); }
+.list-editor .options input { margin: 0px; }
+.list-editor .options label b { color: rgb(41, 47, 51); }
+.list-editor .list-editor-save { margin: 15px 0px 0px 120px; clear: both; }
+.sensitive-confirmation, .verify-email-text { margin-top: 15px; }
+.dm-dialog .twttr-dialog-inside { height: 426px; overflow: hidden; }
+.dm-dialog .twttr-dialog-content { overflow: hidden; }
+.dm-dialog .twttr-dialog-header, .dm-dialog .twttr-dialog-footer { background-color: rgb(238, 238, 238); }
+.dm-dialog .twttr-dialog-header { padding: 15px 15px 14px; border-bottom: 1px solid rgb(225, 232, 237); height: 18px; }
+.dm-dialog .modal-close { top: 8px; right: 4px; border-left: medium none; box-shadow: none; }
+.dm-dialog .modal-close:hover { background-color: transparent; }
+.dm-dialog .twttr-dialog-footer { padding: 10px 15px; font-size: 12px; color: rgb(136, 153, 166); text-align: center; text-shadow: 0px 1px 0px rgb(255, 255, 255); box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5) inset; }
+.dm-toolbar { float: right; margin: -6px 26px 0px 0px; }
+.mark-all-read { margin-right: 5px; width: 45px; }
+.mark-read-confirm { margin-right: -4px; }
+.dm-dialog .twttr-dialog-body { padding: 0px; }
+.show-mark-read .twttr-dialog-close, .show-mark-read .mark-read, .mark-read-confirm { display: none; }
+.dm-threads { height: 387px; overflow-x: hidden; }
+.dm-convo-placeholder { position: relative; height: 216px; background-color: rgb(245, 248, 250); }
+.dm-delete-confirm, .dm-spam-confirm, .dm-abuse-confirm { display: none; }
+.dm-delete-confirm, .dm-spam-confirm, .dm-abuse-confirm { padding-bottom: 5px; text-align: center; text-shadow: 0px 1px 0px rgb(255, 255, 255); }
+.dm-delete-confirm p, .dm-spam-confirm p, .dm-abuse-confirm p { color: rgb(41, 47, 51); }
+.dm-delete-confirm .btn, .dm-spam-confirm .btn, .dm-abuse-confirm .btn { font-size: 14px; font-weight: normal; }
+.twttr-dialog.dm-dialog .tweet-box { padding-top: 0px; }
+.dm-tweetbox { height: 123px; padding: 15px 15px 21px; background-color: rgb(238, 238, 238); border-top: 1px solid rgb(225, 232, 237); box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5) inset; border-radius: 0px 0px 6px 6px; }
+.dm-tweetbox .tweet-button { font-size: 14px; }
+.dm-to { position: relative; z-index: 13; padding: 10px 15px 9px; background-color: rgb(238, 238, 238); border-bottom: 1px solid rgb(225, 232, 237); box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5) inset; }
+.dm-to-input { width: 435px; padding-left: 30px; border-color: rgb(204, 214, 221); }
+.dm-to > .avatar { position: absolute; top: 13px; left: 18px; }
+.dm-error { position: absolute; top: 0px; right: 0px; left: 0px; display: none; z-index: 12; padding: 7px 15px; color: rgb(255, 255, 255); background-color: rgb(196, 60, 53); box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1) inset; }
+.dm-error-text { margin-right: 25px; }
+.dm-error .close { float: right; margin-top: 5px; }
+.dm-error button.dismiss { margin-top: 0px; }
+.dm-placeholder-empty { padding: 20px 80px; }
+.dm-placeholder-empty p { color: rgb(102, 117, 127); text-align: center; text-shadow: 0px 1px 0px rgb(255, 255, 255); }
+.dm-media-preview { text-align: center; background-color: rgb(245, 248, 250); border-radius: 0px 0px 6px 6px; }
+#dm_dialog_conversation_list, #dm_dialog_conversation, #dm_dialog_new { display: none; }
+.dm-conversation-list #dm_dialog_conversation_list, .dm-conversation #dm_dialog_conversation, .dm-new #dm_dialog_new { display: block; }
+#dm_dialog_conversation .twttr-dialog-content { height: 266px; }
+.dm-dialog .dm-tweetbox .tweet-content .tweet-box { padding: 9px; height: 56px; width: 470px; }
+.dm-dialog .dm-no-messages { display: none; }
+.embed-code-container .embed-destination-wrapper { position: relative; }
+.embed-code-container .embed-overlay { display: none; width: 100%; text-align: center; }
+.embed-code-container .embed-overlay-spinner { position: absolute; top: 0px; left: 0px; z-index: 3; }
+.embed-code-container .embed-overlay-content { display: inline-block; }
+.embed-code-container .embed-overlay-spinner .embed-overlay-content { background: url('spinner-rosetta-gray-14x14.gif') no-repeat scroll 0px 0px transparent; margin-top: 20px; width: 14px; height: 14px; }
+.embed-code-container .embed-overlay-error .embed-overlay-content { width: 100%; margin: 0px; padding: 17px 9px 18px; color: rgb(102, 117, 127); font-size: 12px; background-color: rgb(249, 249, 249); border: 1px solid rgb(204, 214, 221); box-sizing: border-box; border-radius: 0px 3px 3px; }
+.embed-code-container textarea { width: 100%; padding: 7px 9px; font-size: 14px; color: rgb(102, 117, 127); line-height: 21px; overflow: hidden; height: 55px; display: block; white-space: nowrap; border: 1px solid rgb(204, 214, 221); position: relative; z-index: 2; resize: none; box-sizing: border-box; border-radius: 0px 3px 3px; }
+.embed-code-container textarea:focus { border-color: rgb(86, 180, 239); }
+.embed-code-container p { font-size: 12px; margin-top: -10px; }
+.embed-code-container p a, .embed-code-container p a:hover { color: rgb(136, 153, 166); }
+.embed-options { margin-top: 8px; }
+.embed-preview h3 { font-weight: bold; margin-bottom: 5px; }
+.modal-body .embed-code-container p { font-size: 12px; }
+.modal-body .embed-code-container form p { color: rgb(136, 153, 166); }
+.embed-code-container .embed-preview { margin-top: 15px; }
+.modal-container { display: none; position: fixed; overflow-y: auto; overflow-x: hidden; top: 0px; right: 0px; bottom: 0px; left: 0px; z-index: 5000; }
+.modal-overlay, .profile-header-mask, .grid-overlay, .gallery-overlay { display: none; position: fixed; top: 0px; right: 0px; bottom: 0px; left: 0px; z-index: 4000; background: none repeat scroll 0% 0% rgba(41, 47, 51, 0.9); }
+.gallery-overlay { z-index: 2000; background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.8); }
+.close-modal-background-target, .grid-close-target, .Gallery-closeTarget { position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; }
+.modal-content { position: relative; background-color: rgb(255, 255, 255); border-radius: 6px; background-clip: padding-box; box-shadow: 0px 4px 15px rgba(32, 47, 51, 0.2); }
+.modal-header, .modal-footer, .modal-body { padding: 15px; }
+.modal-header { background: none repeat scroll 0% 0% rgb(255, 255, 255); border-bottom: 1px solid rgb(225, 232, 237); border-radius: 6px 6px 0px 0px; cursor: move; padding-top: 8px; padding-bottom: 8px; }
+.modal-header .modal-title { width: 75%; margin: 0px auto; overflow: hidden; font-size: 16px; font-weight: normal; line-height: 22px; color: rgb(136, 153, 166); text-align: center; text-overflow: ellipsis; white-space: nowrap; }
+.modal-btn { background-color: transparent; cursor: pointer; }
+.modal-btn:hover { background-color: transparent; }
+.modal-close { height: 20px; padding: 0px; position: absolute; right: 10px; top: 9px; width: 20px; }
+.modal-close .Icon--close { color: rgb(136, 153, 166); font-size: 12px; }
+.modal-footer { text-align: right; border-top: 1px solid rgb(254, 246, 248); }
+.modal-small { width: 370px; }
+.modal-small .modal-title { width: 75%; }
+.modal-medium { width: 500px; }
+.modal-body p { margin-bottom: 9px; font-size: 14px; color: rgb(41, 47, 51); }
+.modal-container.has-content .loading, .modal-container .tweet-loading { display: none; }
+.modal-container .loading, .modal-container .error { text-align: center; margin: 50px 0px; }
+#activity-popup-dialog .modal-content { background: none repeat scroll 0% 0% rgb(235, 240, 243); overflow: visible; }
+#activity-popup-dialog .modal-body { padding: 0px; margin-bottom: 6px; }
+#activity-popup-dialog .modal { width: 520px; overflow: visible; }
+#activity-popup-dialog .modal-header { background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+#goto-user-dialog .goto-user-form { position: relative; }
+#goto-user-dialog input { width: 100%; box-sizing: border-box; }
+.dm-media { position: relative; display: inline-block; vertical-align: middle; min-width: 520px; min-height: 338px; padding: 0px; background-color: rgb(0, 0, 0); border-radius: 6px; }
+.dm-media-preview { position: relative; text-align: center; }
+.dm-media-preview:before { content: ""; height: 100%; display: inline-block; vertical-align: middle; }
+.share-via-email-form .field-label { display: inline-block; padding: 4px 0px; font-weight: bold; font-size: 13px; line-height: 20px; }
+.share-via-email-form .field-label.to-label { margin: 0px 11px 0px 0px; }
+.share-via-email-form .field-text { padding: 4px 0px; font-size: 13px; line-height: 20px; }
+.share-via-email-form .reply-to-checkbox-wrapper { text-align: center; }
+.share-via-email-form .reply-to-checkbox input { vertical-align: middle; }
+.share-via-email-form .reply-to-checkbox p.legal-text { font-size: 11px; color: rgb(136, 153, 166); display: inline-block; margin-left: 5px; margin-bottom: 10px; }
+.share-via-email-form .share-tweet-to input { width: 442px; height: 20px; color: rgb(41, 47, 51); }
+.share-via-email-form .share-tweet-to { margin-bottom: 10px; }
+.modal-body .share-via-email-form p { margin-bottom: 0px; }
+.share-via-email-form .comment-box textarea { color: rgb(41, 47, 51); width: 470px; height: 40px; padding: 8px; vertical-align: top; resize: none; overflow: hidden; border: 0px none; box-shadow: none; }
+.share-via-email-form .comment-box textarea:focus { border-color: rgb(0, 0, 0); box-shadow: none; }
+.share-via-email-form .comment-box .modal-tweet { background-color: rgb(255, 255, 255); margin-bottom: 1px; }
+.share-via-email-form .comment-box { border: 1px solid rgb(204, 214, 221); border-radius: 4px; margin-bottom: 10px; }
+.share-via-email-form .comment-box .social-proof { display: block; word-wrap: break-word; margin-left: 68px; font-size: 12px; color: rgb(136, 153, 166); }
+.share-via-email-form .comment-box .sm-reply { display: none; float: left; margin-left: 45px; margin-top: 2px; }
+.block-or-report-dialog .abuse-title, .block-or-report-dialog .report-tweet-next-button, .block-or-report-dialog.already-blocking .block-section, .block-or-report-dialog.abuse-dialog .report-title, .block-or-report-dialog.abuse-dialog .report-form, .block-or-report-dialog .report-tweet-block-button, .block-or-report-dialog.abuse-selected .report-tweet-report-button, .block-or-report-dialog.block-selected .report-tweet-report-button, .block-or-report-dialog.block-selected.abuse-selected .report-tweet-block-button, .block-or-report-dialog.block-selected.already-blocking .report-tweet-block-button, .block-or-report-dialog .abuse-type { display: none; }
+.block-or-report-dialog.abuse-dialog .abuse-title, .block-or-report-dialog.abuse-selected .report-tweet-next-button, .block-or-report-dialog.abuse-selected .abuse-type, .block-or-report-dialog.block-selected .report-tweet-block-button, .block-or-report-dialog .report-tweet-report-button { display: block; }
+.block-or-report-dialog .report-type-section, .block-or-report-dialog .block-section { border-bottom: 1px solid rgb(225, 232, 237); padding-bottom: 0px; }
+.block-or-report-dialog .submit-section { background-color: rgb(245, 248, 250); border-radius: 0px 0px 6px 6px; }
+.block-or-report-dialog .label-head, .block-or-report-dialog .label-title { font-weight: bold; font-size: 14px; }
+.block-or-report-dialog .label-title { color: rgb(136, 153, 166); margin-bottom: 18px; }
+.block-or-report-dialog .label-warning { color: red; }
+.block-or-report-dialog p { font-size: 12px; color: rgb(136, 153, 166); }
+.block-or-report-dialog .btn { float: right; }
+.block-or-report-dialog .abuse-type p { margin-right: 30px; }
+#global-tweet-dialog .modal-tweet-form-container { padding: 15px; }
+.dm-dialog .modal-close { right: 10px; top: 13px; }
+.dm-toolbar { margin: 0px; position: relative; right: 35px; }
+.dm-toolbar .mark-all-read { padding-bottom: 3px; }
+.dm-toolbar .dm-header-new { position: relative; top: -2px; }
+.dm-delete-confirm p, .dm-spam-confirm p, .dm-abuse-confirm p { padding-bottom: 3px; }
+.dm-delete-confirm .caution-btn, .dm-spam-confirm .caution-btn, .dm-abuse-confirm .caution-btn { margin-left: 5px; }
+#spoonbill-outer { position: fixed; right: 0px; bottom: 0px; margin: 22px; z-index: 10; }
+.modal-body .age-gate-container p { font-size: 14px; line-height: 20px; }
+.modal-body .age-gate-error { font-size: 14px; color: rgb(207, 79, 83); float: right; margin-top: 12px; margin-right: 5px; }
+.modal-body .age-gate-error .icon { margin-right: 4px; margin-top: 2px; }
+.modal-body .age-gate-container select { width: auto; }
+.modal-body .age-gate-container .age-gate-bottom { margin-top: 15px; margin-bottom: 0px; }
+.modal-body .age-gate-container a { font-size: 14px; }
+.modal-body .age-gate-container .age-gate-header p { font-weight: bold; font-size: 14px; margin-top: 15px; margin-bottom: 8px; }
+.modal-footer.age-gate-footer { padding: 12px; margin-right: 5px; }
+#leadgen-confirm-dialog iframe { width: 100%; height: 250px; overflow: hidden; border: 0px none; }
+.Gallery { display: none; position: fixed; overflow-y: auto; overflow-x: hidden; top: 0px; right: 0px; bottom: 0px; left: 0px; z-index: 3000; text-align: center; }
+.Gallery:before { content: ""; height: 100%; display: inline-block; vertical-align: middle; }
+.Gallery-content { position: relative; display: inline-block; vertical-align: middle; min-width: 520px; min-height: 338px; background-color: rgb(255, 255, 255); border-radius: 7px; }
+.Gallery .modal-close { right: -30px; padding: 0px; height: auto; }
+.Gallery .modal-close .Icon--close { color: white; font-size: 21px; }
+.Gallery-media { position: relative; text-align: center; background: none repeat scroll 0% 0% black; overflow: hidden; border-radius: 6px 6px 0px 0px; }
+.Gallery-content:hover .GalleryNav-handle--prev, .Gallery-content:focus .GalleryNav-handle--prev, .Gallery-content.show-controls .GalleryNav-handle--prev, .Gallery-content:hover .GalleryNav-handle--next, .Gallery-content:focus .GalleryNav-handle--next, .Gallery-content.show-controls .GalleryNav-handle--next { opacity: 0.3; -moz-user-select: none; }
+.GalleryNav { position: absolute; z-index: 1; top: 0px; height: 100%; }
+.GalleryNav--prev { left: 0px; width: 33%; }
+.GalleryNav--next { right: 0px; width: 67%; }
+.GalleryNav-handle { position: absolute; top: 35%; width: 50px; height: 200px; margin-top: -17px; display: block; opacity: 0; transition: opacity 0.05s ease-in-out 0s; color: white; background: none repeat scroll 0px center transparent; line-height: 200px; }
+.GalleryNav-handle--prev { left: -50px; }
+.GalleryNav-handle--next { right: -50px; }
+.GalleryTweet { position: relative; z-index: 2; bottom: 0px; color: rgb(41, 47, 51); width: 100%; margin: 0px; background: none repeat scroll 0% 0% rgb(255, 255, 255); border: 0px none; border-radius: 0px 0px 6px 6px; }
+.GalleryTweet a.with-icn:not(:hover) .Icon, .GalleryTweet .account-group .fullname, .GalleryTweet .account-group:hover .fullname, .GalleryTweet .tweet-actions > li:not(:hover) b { color: rgb(41, 47, 51); }
+.ProfilePopupContainer .modal { min-height: 200px; width: 520px; overflow: visible; }
+.ProfilePopupContainer .modal-content { overflow: visible; }
+.ProfilePopupContainer .modal-body { padding: 0px; }
+.ProfileAlerts .signup input, .ProfileAlerts .signinfrm input:not([type="checkbox"]) { padding: 9px 10px; margin: 10px 0px; color: rgb(136, 153, 166); font-size: 15px; width: 100%; border-radius: 4px; display: inline; max-width: 427px; box-shadow: 0px 1px 0px rgb(238, 238, 238) inset, 0px 1px 0px rgb(255, 255, 255); }
+@media all and (max-width: 1015px) {
+	.ProfileAlerts .signup input, .ProfileAlerts .signinfrm input:not([type="checkbox"]), .ProfileAlerts .alerts-signup .password, .ProfileAlerts .alerts-signup .email { max-width: 356px; }
+}
+@media all and (max-width: 880px) {
+}
+@media all and (max-width: 560px) {
+	.ProfileAlerts .signup input, .ProfileAlerts .signinfrm input:not([type="checkbox"]), .ProfileAlerts .alerts-signup .password, .ProfileAlerts .alerts-signup .email { max-width: 298px; }
+}
+@media all and (max-width: 325px) {
+}
+.ProfileCardFollowList-item:nth-child(3n) { margin-right: 0px; }
+@media not all {
+}
+body:not(.ie8) .FollowPopover-arrow { position: absolute; border-color: rgb(225, 232, 237); border-style: solid; border-width: 1px 0px 0px 1px; transform: rotate(315deg); width: 15px; height: 15px; top: 15px; left: -8px; background-color: rgb(255, 255, 255); display: block; }
+/* ::::: https://abs.twimg.com/a/1401399173/css/t1/highline_more.bundle.css ::::: */
+
+.ProfilePage-editingButtons, .ProfilePage-editingOverlay, .ProfilePage .ProfileHeaderCardEditing, .ProfilePage .ProfileAvatarEditing, .ProfilePage .ProfileHeaderEditing, .ProfilePage-testForEditingCss { display: none; }
+.ExplorePage-header h1 a, .ExplorePage-filters :not(.active) a, .ExplorePage-header + .ExplorePage-subTopics li a { color: rgb(136, 153, 166); }
+/* ::::: https://abs.twimg.com/font/gotham-narrow-v3.css ::::: */
+
+@font-face {
+	font-family: "Gotham Narrow SSm";
+	font-style: normal;
+	font-weight: normal;
+	src: url('undefined');
+}
+@font-face {
+	font-family: "Gotham Narrow SSm";
+	font-style: normal;
+	font-weight: 500;
+	src: url('undefined');
+}
+@font-face {
+	font-family: "Gotham Narrow SSm";
+	font-style: normal;
+	font-weight: bold;
+	src: url('undefined');
+}
+a, a:hover, a:focus, a:active { color: rgb(0, 143, 21); }
+.u-textUserColor, .u-textUserColorHover:hover, .u-textUserColorHover:focus { color: rgb(0, 143, 21) ! important; }
+.u-borderUserColorLight, .u-borderUserColorLightFocus:focus, .u-borderUserColorLightHover:hover, .u-borderUserColorLightHover:focus { border-color: rgb(153, 210, 161) ! important; }
+a, .btn-link, .btn-link:focus, .icon-btn, .pretty-link b, .pretty-link:hover s, .pretty-link:hover b, .pretty-link:focus s, .pretty-link:focus b, .metadata a:hover, .metadata a:focus, .account-group:hover .fullname, .account-group:focus .fullname, .account-summary:focus .fullname, .message .message-text a, .stats a strong, .plain-btn:hover, .plain-btn:focus, .dropdown.open .user-dropdown.plain-btn, .open > .plain-btn, #global-actions .new:before, .module .list-link:hover, .module .list-link:focus, .UserCompletionModule-step:hover, .stats a:hover, .stats a:hover strong, .stats a:focus, .stats a:focus strong, .profile-modal-header .fullname a:hover, .profile-modal-header .username a:hover, .profile-modal-header .fullname a:focus, .profile-modal-header .username a:focus, .story-article:hover .metadata, .story-article .metadata a:focus, .find-friends-sources li:hover .source, .stream-item a:hover .fullname, .stream-item a:focus .fullname, .stream-item .view-all-supplements:hover, .stream-item .view-all-supplements:focus, .tweet .time a:hover, .tweet .time a:focus, .tweet-actions a, .tweet .details.with-icn b, .tweet .details.with-icn .Icon, .tweet .tweet-geo-text a:hover, .stream-item:hover .original-tweet .expand-action-wrapper, .stream-item .original-tweet.focus .expand-action-wrapper, .opened-tweet.original-tweet .expand-action-wrapper, .stream-item:hover .original-tweet .details b, .stream-item .original-tweet.focus .details b, .stream-item.open .original-tweet .details b, .simple-tweet:hover .details b, .simple-tweet.focus .details b, .simple-tweet.open .details b, .simple-tweet:hover .details .expand-action-wrapper, .simple-tweet.focus .details .expand-action-wrapper, .simple-tweet.open .details .collapse-action-wrapper, .simple-tweet:hover .details .simple-details-link, .simple-tweet.focus .details .simple-details-link, .client-and-actions a:hover, .client-and-actions a:focus, .dismiss-promoted:hover b, .tweet .context .pretty-link:hover s, .tweet .context .pretty-link:hover b, .tweet .context .pretty-link:focus s, .tweet .context .pretty-link:focus b, .list .username a:hover, .list .username a:focus, .list-membership-container .create-a-list, .list-membership-container .create-a-list:hover, .story-header:hover .view-tweets, .card .list-details a:hover, .card .list-details a:focus, .card .card-body:hover .attribution, .card .card-body .attribution:focus, .events-card .card-body:hover .attribution, .events-card .card-body .attribution:focus, .new-tweets-bar, .onebox .soccer ul.ticker a:hover, .onebox .soccer ul.ticker a:focus, .discover-item-actions a, .disco-stream-item.disco_exp_actions_on_btm .more-tweet-actions .btn-link, .disco-stream-item.disco_exp_actions_on_btm_without_stats .more-tweet-actions .btn-link, .remove-background-btn, .stream-item-activity-me .latest-tweet .tweet-row a:hover, .stream-item-activity-me .latest-tweet .tweet-row a:focus, .stream-item-activity-me .latest-tweet .tweet-row a:hover b, .stream-item-activity-me .latest-tweet .tweet-row a:focus b, .tweet-actions-sidebar a:hover .tweet-action-count, .tweet-actions-sidebar a:focus .tweet-action-count { color: rgb(0, 143, 21); }
+#global-actions > li > a { border-bottom-color: rgb(0, 143, 21); }
+#global-actions > li:hover > a, #global-actions > li > a:focus, .nav.right-actions > li > a:hover, .nav.right-actions > li > button:hover, .nav.right-actions > li > a:focus, .nav.right-actions > li > button:focus { color: rgb(0, 143, 21); }
+.photo-selector:hover:not(.disabled) .btn, .icon-btn:hover, .icon-btn:active, .icon-btn.active, .icon-btn.enabled { border-color: rgba(0, 143, 21, 0.5); color: rgb(0, 143, 21); }
+.photo-selector:hover:not(.disabled) .btn, .icon-btn:hover { background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 143, 21, 0.1)); }
+.tweet-btn, .tweet-btn:focus { background: none repeat scroll 0% 0% rgba(0, 143, 21, 0.8); }
+.tweet-btn:hover, .tweet-btn:active, .tweet-btn.active { background-color: rgb(0, 143, 21); }
+.tweet-btn.btn.disabled, .tweet-btn.btn.disabled:hover, .tweet-btn.btn[disabled], .tweet-btn.btn[aria-disabled="true"] { background: none repeat scroll 0% 0% rgb(0, 143, 21); }
+.btn:focus, .btn.focus, .Button:focus { box-shadow: 0px 0px 0px 1px rgb(255, 255, 255), 0px 0px 0px 3px rgba(0, 143, 21, 0.5); }
+.global-nav .people .count .count-inner { background: none repeat scroll 0% 0% rgb(0, 143, 21); }
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-menu .dropdown-link:hover, .dropdown-menu .dropdown-link:focus, .dropdown-menu li:hover .dropdown-link, .dropdown-menu li:focus .dropdown-link, .dropdown-menu .typeahead-recent-search-item.selected, .dropdown-menu .typeahead-saved-search-item.selected, .dropdown-menu .selected a, .dropdown-menu .dropdown-link.selected { background-color: rgb(0, 143, 21); }
+.home-tweet-box, .dm-tweetbox, .WebToast-box--altColor, .content-main .conversations-enabled .expansion-container .inline-reply-tweetbox { background-color: rgb(229, 243, 231); }
+.tweet-box[contenteditable="true"] { border-color: rgba(0, 143, 21, 0.25); }
+input:focus, textarea:focus, div[contenteditable="true"]:focus, div.fake-focus[contenteditable="true"] { border-color: rgb(102, 187, 114); box-shadow: 0px 0px 0px 1px rgba(0, 143, 21, 0.7) inset; }
+.currently-dragging.modal-enabled .modal .tweet-box, .currently-dragging:not(.modal-enabled) .tweet-content .tweet-box, body.supports-drag-and-drop .tweet-form.upload-photo-hover.drag-and-drop .tweet-box, .tweet-box[contenteditable="true"]:focus { border-color: rgb(153, 210, 161); box-shadow: none; }
+s, .pretty-link:hover s, .pretty-link:focus s, .stream-item-activity-me .latest-tweet .tweet-row a:hover s, .stream-item-activity-me .latest-tweet .tweet-row a:focus s { color: rgb(102, 187, 114); }
+#global-tweet-dialog .modal-header { border-bottom: 1px solid rgba(0, 143, 21, 0.25); }
+#global-tweet-dialog .modal-tweet-form-container { background: none repeat scroll 0% 0% rgba(0, 143, 21, 0.1); }
+.inline-reply-tweetbox { background-color: rgb(229, 243, 231); }
+a, a:hover, a:focus, a:active { color: rgb(0, 118, 192); }
+.u-textUserColor, .u-textUserColorHover:hover, .u-textUserColorHover:focus { color: rgb(0, 118, 192) ! important; }
+.u-borderUserColorLight, .u-borderUserColorLightFocus:focus, .u-borderUserColorLightHover:hover, .u-borderUserColorLightHover:focus { border-color: rgb(153, 200, 229) ! important; }
+a, .btn-link, .btn-link:focus, .icon-btn, .pretty-link b, .pretty-link:hover s, .pretty-link:hover b, .pretty-link:focus s, .pretty-link:focus b, .metadata a:hover, .metadata a:focus, .account-group:hover .fullname, .account-group:focus .fullname, .account-summary:focus .fullname, .message .message-text a, .stats a strong, .plain-btn:hover, .plain-btn:focus, .dropdown.open .user-dropdown.plain-btn, .open > .plain-btn, #global-actions .new:before, .module .list-link:hover, .module .list-link:focus, .UserCompletionModule-step:hover, .stats a:hover, .stats a:hover strong, .stats a:focus, .stats a:focus strong, .profile-modal-header .fullname a:hover, .profile-modal-header .username a:hover, .profile-modal-header .fullname a:focus, .profile-modal-header .username a:focus, .story-article:hover .metadata, .story-article .metadata a:focus, .find-friends-sources li:hover .source, .stream-item a:hover .fullname, .stream-item a:focus .fullname, .stream-item .view-all-supplements:hover, .stream-item .view-all-supplements:focus, .tweet .time a:hover, .tweet .time a:focus, .tweet-actions a, .tweet .details.with-icn b, .tweet .details.with-icn .Icon, .tweet .tweet-geo-text a:hover, .stream-item:hover .original-tweet .expand-action-wrapper, .stream-item .original-tweet.focus .expand-action-wrapper, .opened-tweet.original-tweet .expand-action-wrapper, .stream-item:hover .original-tweet .details b, .stream-item .original-tweet.focus .details b, .stream-item.open .original-tweet .details b, .simple-tweet:hover .details b, .simple-tweet.focus .details b, .simple-tweet.open .details b, .simple-tweet:hover .details .expand-action-wrapper, .simple-tweet.focus .details .expand-action-wrapper, .simple-tweet.open .details .collapse-action-wrapper, .simple-tweet:hover .details .simple-details-link, .simple-tweet.focus .details .simple-details-link, .client-and-actions a:hover, .client-and-actions a:focus, .dismiss-promoted:hover b, .tweet .context .pretty-link:hover s, .tweet .context .pretty-link:hover b, .tweet .context .pretty-link:focus s, .tweet .context .pretty-link:focus b, .list .username a:hover, .list .username a:focus, .list-membership-container .create-a-list, .list-membership-container .create-a-list:hover, .story-header:hover .view-tweets, .card .list-details a:hover, .card .list-details a:focus, .card .card-body:hover .attribution, .card .card-body .attribution:focus, .events-card .card-body:hover .attribution, .events-card .card-body .attribution:focus, .new-tweets-bar, .onebox .soccer ul.ticker a:hover, .onebox .soccer ul.ticker a:focus, .discover-item-actions a, .disco-stream-item.disco_exp_actions_on_btm .more-tweet-actions .btn-link, .disco-stream-item.disco_exp_actions_on_btm_without_stats .more-tweet-actions .btn-link, .remove-background-btn, .stream-item-activity-me .latest-tweet .tweet-row a:hover, .stream-item-activity-me .latest-tweet .tweet-row a:focus, .stream-item-activity-me .latest-tweet .tweet-row a:hover b, .stream-item-activity-me .latest-tweet .tweet-row a:focus b, .tweet-actions-sidebar a:hover .tweet-action-count, .tweet-actions-sidebar a:focus .tweet-action-count { color: rgb(0, 118, 192); }
+#global-actions > li > a { border-bottom-color: rgb(0, 118, 192); }
+#global-actions > li:hover > a, #global-actions > li > a:focus, .nav.right-actions > li > a:hover, .nav.right-actions > li > button:hover, .nav.right-actions > li > a:focus, .nav.right-actions > li > button:focus { color: rgb(0, 118, 192); }
+.photo-selector:hover:not(.disabled) .btn, .icon-btn:hover, .icon-btn:active, .icon-btn.active, .icon-btn.enabled { border-color: rgba(0, 118, 192, 0.5); color: rgb(0, 118, 192); }
+.photo-selector:hover:not(.disabled) .btn, .icon-btn:hover { background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 118, 192, 0.1)); }
+.tweet-btn, .tweet-btn:focus { background: none repeat scroll 0% 0% rgba(0, 118, 192, 0.8); }
+.tweet-btn:hover, .tweet-btn:active, .tweet-btn.active { background-color: rgb(0, 118, 192); }
+.tweet-btn.btn.disabled, .tweet-btn.btn.disabled:hover, .tweet-btn.btn[disabled], .tweet-btn.btn[aria-disabled="true"] { background: none repeat scroll 0% 0% rgb(0, 118, 192); }
+.btn:focus, .btn.focus, .Button:focus { box-shadow: 0px 0px 0px 1px rgb(255, 255, 255), 0px 0px 0px 3px rgba(0, 118, 192, 0.5); }
+.global-nav .people .count .count-inner { background: none repeat scroll 0% 0% rgb(0, 118, 192); }
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-menu .dropdown-link:hover, .dropdown-menu .dropdown-link:focus, .dropdown-menu li:hover .dropdown-link, .dropdown-menu li:focus .dropdown-link, .dropdown-menu .typeahead-recent-search-item.selected, .dropdown-menu .typeahead-saved-search-item.selected, .dropdown-menu .selected a, .dropdown-menu .dropdown-link.selected { background-color: rgb(0, 118, 192); }
+.home-tweet-box, .dm-tweetbox, .WebToast-box--altColor, .content-main .conversations-enabled .expansion-container .inline-reply-tweetbox { background-color: rgb(229, 241, 248); }
+.tweet-box[contenteditable="true"] { border-color: rgba(0, 118, 192, 0.25); }
+input:focus, textarea:focus, div[contenteditable="true"]:focus, div.fake-focus[contenteditable="true"] { border-color: rgb(102, 172, 217); box-shadow: 0px 0px 0px 1px rgba(0, 118, 192, 0.7) inset; }
+.currently-dragging.modal-enabled .modal .tweet-box, .currently-dragging:not(.modal-enabled) .tweet-content .tweet-box, body.supports-drag-and-drop .tweet-form.upload-photo-hover.drag-and-drop .tweet-box, .tweet-box[contenteditable="true"]:focus { border-color: rgb(153, 200, 229); box-shadow: none; }
+s, .pretty-link:hover s, .pretty-link:focus s, .stream-item-activity-me .latest-tweet .tweet-row a:hover s, .stream-item-activity-me .latest-tweet .tweet-row a:focus s { color: rgb(102, 172, 217); }
+#global-tweet-dialog .modal-header { border-bottom: 1px solid rgba(0, 118, 192, 0.25); }
+#global-tweet-dialog .modal-tweet-form-container { background: none repeat scroll 0% 0% rgba(0, 118, 192, 0.1); }
+.inline-reply-tweetbox { background-color: rgb(229, 241, 248); }
+body.user-style-davereid { background-image: url('bg.png'); background-position: left 40px; background-attachment: fixed; background-repeat: no-repeat; background-color: rgb(2, 35, 48); }
