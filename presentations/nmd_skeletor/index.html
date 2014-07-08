@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>NMD-SKELETOR</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="../../core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="../../extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="../../extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="../../extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="../../extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="../../extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="../../themes/style/web-2.0.css">
+  <link rel="stylesheet" media="screen" href="../../themes/style/nmd.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="../../themes/transition/fade.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="../../core/print.css">
+
+  <!-- Custom presentation styles -->
+  <link rel="stylesheet" media="screen" href="assets/custom.css">
+
+  <!-- Required Modernizr file -->
+  <script src="../../modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <section class="slide">
+      <div class="multi-line">
+        <h1>NMD-SKELETOR</h1>
+        <img width="25%" src="assets/images/skeletor.png" />
+        <p class="author" style="color:#ffffff;">Drupal DevOps Meetup<br />David Arnold | @davidxarnold<br />DevOps Practitioner | @newmediadenver</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>NMD-SKELETOR</h2>
+      <ul>
+        <li class="slide deck-current">What is it?</li>
+        <li class="slide deck-next">That is nice and all.... but why not just use built in tools such as knife?</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+      <h2>NMD-SKELETOR</h2>
+      <ul>
+        <h3>Chef recipe base skeleton components:</h3>
+        <li class="slide deck-current">Bundler</li>
+        <li class="slide deck-next">Rake</li>
+        <li class="slide deck-next">Test Kitchen</li>
+        <li class="slide deck-next">Rspec / ChefSpec</li>
+        <li class="slide deck-next">ServerSpec</li>
+        <li class="slide deck-next">TravisCI</li>
+        <li class="slide deck-next">Ruby linters – Rubocop & Foodcritic</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+        <span><img src="http://bundler.io/images/gembundler.png" /></span>
+        <p>Skeletor uses bundler to disable the use of shared Gems and installs them into vendor/bundle</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Rake: Ruby Build Tool</h2>
+      <ul>
+        <li class="slide deck-next">Build Readme from metadata</li>
+        <li class="slide deck-next">Run RSpec tests</li>
+        <li class="slide deck-next">Run Ruby linters</li>
+        <img src="assets/images/rake_tasks.png" />
+      </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Test Kitchen</h2>
+      <ul>
+        <h3>Leverages vagrant to test your code in isolation :</h3>
+        <li class="slide deck-current">Supports loads of virtualzation technologies: Amazon EC2, Blue Box, CloudStack, Digital Ocean, Rackspace, OpenStack, Vagrant, Docker .....</li>
+        <li class="slide deck-next">Testing frameworks: Bats, shUnit2, <em>RSpec, Serverspec</em></li>
+        <li class="slide deck-next">Provides a fast and efficient way to define cookbooks, attributes and run full suite of tests against multiple different environments with chefsolo.</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Testing</h2>
+      <ul>
+        <h3>Rspec / ChefSpec</h3>
+        <li class="slide deck-next">Creates an in-memory system and runs defined tests. </li>
+        <li class="slide deck-next">We primarily used it to test that attributes and variables are set as expected.</li>
+        <li class="slide deck-next">Invaluable when using multiple recipes (Helps catch errors that might be overwriting or overriding the same values).</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Testing</h2>
+      <ul>
+        <h3>ServerSpec</h3>
+        <li class="slide deck-next">Integration testing framework that can easily be configured to run tests against local/remote/development/production servers.</li>
+        <li class="slide deck-next">Confirms hat everything defined in tests has been accomplished by looking at a live system.</li>
+        <li class="slide deck-next">Validates that our defined system is all there and set the way we expect it to.</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Testing</h2>
+      <ul>
+        <h3>TravisCI</h3>
+        <li class="slide deck-next">Hosted, distributed continuous integration service used to build and test projects hosted on GitHub</li>
+        <li class="slide deck-next">It is awesome!!</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+        <h2>Ruby linters – Rubocop & Foodcritic</h2>
+        <p class="slide deck-current">Tracks down coding errors, confusing (and sometimes inefficient) code.</p>
+        <p class="slide deck-current">Helps write code that follows community style guidelines</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+        <h1>What does it all do?</h1>
+        <p class="slide deck-current">and what does it get me?</p>
+      </div>
+    </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous"></a>
+      <a href="#" class="deck-next-link" title="Next"></a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="../../jquery.min.js"></script>
+<script src="../../core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="../../extensions/menu/deck.menu.js"></script>
+<script src="../../extensions/goto/deck.goto.js"></script>
+<script src="../../extensions/status/deck.status.js"></script>
+<script src="../../extensions/navigation/deck.navigation.js"></script>
+<script src="../../extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
