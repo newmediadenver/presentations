@@ -40,6 +40,7 @@
       <div class="multi-line">
         <h1>NMD-SKELETOR</h1>
         <img width="25%" src="assets/images/skeletor.png" />
+        <h3>https://github.com/newmediadenver/nmd-skeletor</h3>
         <p class="author" style="color:#ffffff;">Drupal DevOps Meetup<br />David Arnold | @davidxarnold<br />DevOps Practitioner | @newmediadenver</p>
       </div>
     </section>
@@ -47,8 +48,9 @@
     <section class="slide">
       <h2>NMD-SKELETOR</h2>
       <ul>
-        <li class="slide deck-current">What is it?</li>
-        <li class="slide deck-next">That is nice and all.... but why not just use built in tools such as knife?</li>
+        <li class="slide deck-current">What is it?
+        <img src="assets/images/skeletor_folders.png" /></li>
+        <li class="slide deck-next">That is nice and all.... but why not use built-in tools such as knife?</li>
         </ul>
     </section>
 
@@ -56,40 +58,56 @@
       <h2>NMD-SKELETOR</h2>
       <ul>
         <h3>Chef recipe base skeleton components:</h3>
-        <li class="slide deck-current">Bundler</li>
-        <li class="slide deck-next">Rake</li>
-        <li class="slide deck-next">Test Kitchen</li>
-        <li class="slide deck-next">Rspec / ChefSpec</li>
-        <li class="slide deck-next">ServerSpec</li>
-        <li class="slide deck-next">TravisCI</li>
-        <li class="slide deck-next">Ruby linters – Rubocop & Foodcritic</li>
+        <li>Bundler</li>
+        <li>Rake</li>
+        <li>Test Kitchen</li>
+        <li>Rspec / ChefSpec</li>
+        <li>ServerSpec</li>
+        <li>TravisCI</li>
+        <li>Ruby linters – Rubocop & Foodcritic</li>
         </ul>
     </section>
 
     <section class="slide">
       <div class="multi-line">
         <span><img src="http://bundler.io/images/gembundler.png" /></span>
-        <p>Skeletor uses bundler to disable the use of shared Gems and installs them into vendor/bundle</p>
+        <p>Skeletor uses bundler to disable the use of shared Gems and installs them into the vendor/bundle directory.</p>
+        <p>"bundle install" </p>
+        <li class="slide deck-next"><img src="assets/images/bundle_example.png" /><img src="assets/images/gem_example.png" /></li>
+
       </div>
     </section>
 
     <section class="slide">
-      <h2>Rake: Ruby Build Tool</h2>
+      <h2>Rake: Ruby Build Tool<br></h2>
+      <h3>https://github.com/jimweirich/rake</h3>
       <ul>
         <li class="slide deck-next">Build Readme from metadata</li>
         <li class="slide deck-next">Run RSpec tests</li>
         <li class="slide deck-next">Run Ruby linters</li>
-        <img src="assets/images/rake_tasks.png" />
       </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Rake task<br></h2>
+      <img src="assets/images/rake_rubocop.png" />
+      <img src="assets/images/rake_example.png" />
+    </section>
+
+    <section class="slide">
+        <h2> Rake Tasks </h2>
+        <h3>"rake -D"</h3>
+        <img src="assets/images/rake_tasks.png" />
     </section>
 
     <section class="slide">
         <h2>Test Kitchen</h2>
       <ul>
         <h3>Leverages vagrant to test your code in isolation :</h3>
-        <li class="slide deck-current">Supports loads of virtualzation technologies: Amazon EC2, Blue Box, CloudStack, Digital Ocean, Rackspace, OpenStack, Vagrant, Docker .....</li>
+        <li class="slide deck-current">Supports many virtualzation technologies: Amazon EC2, Blue Box, CloudStack, Digital Ocean, Rackspace, OpenStack, Vagrant, Docker .....</li>
         <li class="slide deck-next">Testing frameworks: Bats, shUnit2, <em>RSpec, Serverspec</em></li>
-        <li class="slide deck-next">Provides a fast and efficient way to define cookbooks, attributes and run full suite of tests against multiple different environments with chefsolo.</li>
+        <li class="slide deck-next">Provides a fast and efficient way to define virtual servers, cookbooks, attributes and run full suite of tests against multiple different environments with chefsolo.</li>
+        <li class="slide deck-next">Not just for Chef. Supports many other tools such as Puppet and Salt.</li>
         </ul>
     </section>
 
@@ -100,7 +118,13 @@
         <li class="slide deck-next">Creates an in-memory system and runs defined tests. </li>
         <li class="slide deck-next">We primarily used it to test that attributes and variables are set as expected.</li>
         <li class="slide deck-next">Invaluable when using multiple recipes (Helps catch errors that might be overwriting or overriding the same values).</li>
+        <img src="assets/images/rspec_example.png" />
         </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Rspec</h2>
+        <img src="assets/images/rspec_test.png" />
     </section>
 
     <section class="slide">
@@ -109,8 +133,14 @@
         <h3>ServerSpec</h3>
         <li class="slide deck-next">Integration testing framework that can easily be configured to run tests against local/remote/development/production servers.</li>
         <li class="slide deck-next">Confirms that everything defined in tests has been accomplished by looking at a live system.</li>
-        <li class="slide deck-next">Validates that our defined system is all there and set the way we expect it to.</li>
+        <li class="slide deck-next">Validates that our defined system is set the way we expect it to be.</li>
+        <img src="assets/images/serverspec_example.png" />
         </ul>
+    </section>
+
+    <section class="slide">
+      <h2>ServerSpec</h2>
+        <img src="assets/images/serverspec_test.png" />
     </section>
 
     <section class="slide">
@@ -119,14 +149,20 @@
         <h3>TravisCI</h3>
         <li class="slide deck-next">Hosted, distributed continuous integration service used to build and test projects hosted on GitHub</li>
         <li class="slide deck-next">It is awesome!!</li>
+        <li class="slide deck-next"> Can be used to test php for drupal module development </li>
         </ul>
+    </section>
+
+    <section class="slide">
+      <img src="assets/images/travisci_example.png" />
     </section>
 
     <section class="slide">
       <div class="multi-line">
         <h2>Ruby linters – Rubocop & Foodcritic</h2>
-        <p class="slide deck-current">Tracks down coding errors, confusing (and sometimes inefficient) code.</p>
-        <p class="slide deck-current">Helps write code that follows community style guidelines</p>
+        <p>Tracks down coding errors, confusing (and sometimes inefficient) code.</p>
+        <p>Helps write code that follows community style guidelines</p>
+        <p> Similar to the drupal coder module</p>
       </div>
     </section>
 
@@ -134,6 +170,15 @@
       <div class="multi-line">
         <h1>What does it all do?</h1>
         <p class="slide deck-current">and what does it get me?</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+        <h1>NMD-SKELETOR</h1>
+        <img width="25%" src="assets/images/skeletor.png" />
+        <h3>https://github.com/newmediadenver/nmd-skeletor</h3>
+        <p class="author" style="color:#ffffff;">David Arnold | @davidxarnold<br /><br />https://github.com/davidxarnold</p>
       </div>
     </section>
 
