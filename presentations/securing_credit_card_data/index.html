@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Securing Credit Card Data</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="../../core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="../../extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="../../extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="../../extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="../../extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="../../extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="../../themes/style/web-2.0.css">
+  <link rel="stylesheet" media="screen" href="../../themes/style/nmd.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="../../themes/transition/fade.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="../../core/print.css">
+
+  <!-- Custom presentation styles -->
+  <link rel="stylesheet" media="screen" href="assets/custom.css">
+
+  <!-- Required Modernizr file -->
+  <script src="../../modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <section class="slide">
+      <div class="multi-line">
+        <h1>Securing Credit Card Data</h1>
+        <img width="25%" src="assets/images/credit-card.png" />
+        <p class="author" style="color:#ffffff;">DrupalCamp Colorado 2014<br />Rick Manelius | @rickmanelius<br />Director of Operations | @newmediadenver</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+        <h1>Sponsors</h1>
+        <p>I'd like to take a moment to thank the following...</p>
+        <ul>
+          <li>CARD.com</li>
+          <li>Applied Trust</li>
+          <li>Cross Functional</li>
+          <li>NEWMEDIA</li>
+          <li>Commerce Guys</li>
+          <li>Townsend Security</li>
+          <li>HostedPCI</li>
+          <li>Copperly</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+        <h1>Is This Talk for You?</h1>
+        <ul>
+          <li class="slide deck-next">HEAVY focus on security for eCommerce.</li>
+          <li class="slide deck-next">This may keep you up at night...</li>
+          <li class="slide deck-next">...ok it's not SO scary...</li>
+          <li class="slide deck-next">...unless something goes wrong.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+        <h1>Let's Get to Know Each Other!</h1>
+        <ul>
+          <li class="slide deck-next">How many first time DrupalCampers?</li>
+          <li class="slide deck-next">How many build, own, or operate eCommerce sites?</li>
+          <li class="slide deck-next">How many of you registered on site today?</li>
+          <li class="slide deck-next">How many of you donated to the DrupalCamp charities?</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+        <h1>Let's Play a Game!</h1>
+        <ul>
+          <li class="slide deck-next">How many people have admin access to the site?</li>
+          <li class="slide deck-next">Answer: 24</li>
+          <li class="slide deck-next">How many people have admin access to the server?</li>
+          <li class="slide deck-next">Answer: 10+</li>
+          <li class="slide deck-next">How easily could I have copied credit cards?</li>
+          <li class="slide deck-next">Answer: Just add JavaScript Key Logger!</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+        <h1>Demo Time!</h1>
+        <ul>
+          <li class="slide deck-next">Setup: Drupal Commerce with Stripe.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+        <h1>Stealing Credit Cards<br />Let Me Count the Ways</h1>
+        <ul>
+          <li class="slide deck-next">JS Key Loggers</li>
+          <li class="slide deck-next">Hook Form Alters</li>
+          <li class="slide deck-next">Module modifications</li>
+          <li class="slide deck-next">Drush user-login</li>
+          <li class="slide deck-next">PHP module</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+        <h1>These Attack Vectors Are Not Atypical</h1>
+        <ul>
+          <li class="slide deck-next">Tight Budgets</li>
+          <li class="slide deck-next">Short Timelines</li>
+          <li class="slide deck-next">Lack of Awareness</li>
+          <li class="slide deck-next">Lack of Know How</li>
+          <li class="slide deck-next">Quantity of People Involved</li>
+          <li class="slide deck-next">End to End Stack</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+        <h1>Security Breaches Hurt</h1>
+        <img width="40%" src="assets/images/adobe2.png" />
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+        <h1>Security Breaches Hurt</h1>
+        <img width="33%" src="assets/images/target.png" />
+      </div>
+    </section>
+
+   <section class="slide">
+      <div class="multi-line">
+        <h1>Security Breaches Hurt</h1>
+        <img width="50%" src="assets/images/smartphone.png" />
+      </div>
+    </section>
+
+   <section class="slide">
+      <div class="multi-line">
+        <h1>Security Breaches Hurt</h1>
+        <ul>
+          <li>Target - 98 million customer records.</li>
+          <li>Adobe - 2.9 million customer records.</li>
+          <li>Sony Playstation Network - $77 Million.</li>
+          <li>$25-$215 / Breached Record. (1)</li>
+          <li>Small merchants — 80+% of breaches. (2)</li>
+          <li>One strike rule for PCI Level 1.</li>
+        </ul>
+        <p><br />
+          1. 2010 Annual Study: U.S. Cost of a Data Breach (symantec.com)<br />
+          2. In Data Leaks, Culprits Often Are Mom (Online Wall Street Journal)
+        </p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+        <h1>So... What Can We Do?</h1>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+        <h1>Let's Go Back to the Basics</h1>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+        <h1>Let's Go Back to the Basics</h1>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+        <h1>Journey of a Credit Card Transaction</h1>
+        <ul>
+        </ul>
+      </div>
+    </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous"></a>
+      <a href="#" class="deck-next-link" title="Next"></a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="../../jquery.min.js"></script>
+<script src="../../core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="../../extensions/menu/deck.menu.js"></script>
+<script src="../../extensions/goto/deck.goto.js"></script>
+<script src="../../extensions/status/deck.status.js"></script>
+<script src="../../extensions/navigation/deck.navigation.js"></script>
+<script src="../../extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
