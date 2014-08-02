@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Your deck.js Presentation</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="../../core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="../../extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="../../extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="../../extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="../../extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="../../extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="../../themes/style/web-2.0.css">
+  <link rel="stylesheet" media="screen" href="../../themes/style/nmd.css">
+  <link rel="stylesheet" media="screen" href="style.css"
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="../../themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="../../core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="../../modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+      <h1>SCSSy Wild West</h1>
+    </section>
+
+    <section class="slide">
+      <h2>Formalities</h2>
+      <ul>
+          <li>Name: Tim Whitney</li>
+          <li>Organization: New Media</li>
+          <li>Position: Web Developer, Front End</li>
+          <li>Social: timodwhit</li>
+          <li>Theme of choice: Bare</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h1>Truth be told...</h1>
+    </section>
+
+    <section class="slide">
+      <h1>No one cares.</h1>
+    </section>
+
+    <section class="slide">
+      <h1>SCSS Partials</h1>
+    </section>
+
+    <section class="slide">
+      <h2>Goals of the Talk</h2>
+      <ul>
+        <li>A "better" way to organize</li>
+        <li>Figure out...</li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h1>"Where the fuck is my style"</h1>
+    </section>
+    
+    <section class="slide">
+      <h2>Wayback</h2>
+      <ul>
+        <li>CSS was King</li>
+        <li>SCSS was coming on the scene</li>
+        <ul>
+          <li>Organizing bacsed on CSS principles</li>
+        </ul>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>One File to Rule them all</h2>
+      <ul>
+        <li>4500+ lines of styles</li>
+        <li>But look, it is nested</li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>Intro to Partials</h2>
+      <ul>
+        <li>Small Manageable files for SCSS</li>
+        <li>Goal is to break down design into components</li>
+        <li>But how?</li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h1>Wild West</h1>
+    </section>
+
+    <section class="slide">
+      <h2>Partial Organization</h2>
+      <ul>
+        <li>Designers</li>
+        <li>Developers</li>
+        <ul>
+          <li>Frontend</li>
+          <li>Backend</li>
+          <li>Site Builders</li>
+        </ul>
+        <li>"Someone go back to town and get me a shit load of dimes"</li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>Pinpointing the Pain</h2>
+      <ul>
+        <li>Communication</li>
+        <li>Partial Organization != CSS Organization approach</li>
+        <li>The project you are working on, is not yours. </li>
+        <li><ul>
+            <li>Unless it is actually yours</li>
+        </ul></li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h1>Mitigating the Pain</h1>
+    </section>
+    
+    <section class="slide">
+      <h2>Community Proposed Systems</h2>
+      <ul>
+        <li>SMACSS</li>
+        <li>OOCSS</li>
+        <li>BEM</li>
+        <li>OSTSCSS <ul>
+          <li>Oh Shit, Time to SCSS</li>
+        </ul></li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h1>Brief Overview</h1>
+    </section>
+    
+    <section class="slide">
+      <h2>SMACSS</h2>
+      <ul>
+        <li>modular styles</li>
+        <li>class based</li>
+        <li>semantic classes</li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>SMACSS example</h2>
+      <ul>
+        <li>.slide</li>
+        <li>.slide--title</li>
+        <li>.slide--content</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>OOCSS</h2>
+      <ul>
+        <li>Object Oriented Styling</li>
+        <li>Base classes that can be extended</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>OOCSS Example</h2>
+      <ul>
+        <li>.box { styles }</li>
+        <li>.media { styles }</li>
+        <li>.leftCol { styles } // Actual Example</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>BEM</h2>
+      <ul>
+        <li>Block. Element. Modifier</li>
+        <li>Communication is Key</li>
+        <li>Blocks should be agnostic</li>
+        <li>Modify where necessary</li>
+        <li>Most Drupal-y</li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>BEM Example</h2>
+      <img>
+    </section>
+    
+    <section class="slide">
+      <h2>OSTSCSS</h2>
+      <ul>
+        <li>Last Minute</li>
+        <li>Never Organized</li>
+        <li>QA Bastardizations</li>
+        <li>Never Maintainable</li>
+        <li>All dreams went here, and died.</li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>OSTSCSS Example</h2>
+      <ul>
+        <li>node-type-blog .field-type-image.field-name-reallypretty-imgae .field-content > img:first-child{}</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>OSTSCSS issues</h2>
+      <ul>
+        <li>node-type-blog .field-type-image.field-name-reallypretty-imgae .field-content > img:first-child{}</li>
+        <li>It is SCSS but not nested...</li>
+        <li>Really?! I mean.... really?</li>
+        <li>Now try to override.</li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>Issues with every other system </h2>
+      <ul>
+        <li>Technical Debt</li>
+        <li>Communication</li>
+        <li>Drupal is not yours to do what you want</li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h1>Tangential Confession</h1>
+    </section>
+    
+    <section class="slide">
+      <h1>I don't mind Drupal's Markup</h1>
+    </section>
+    
+    <section class="slide">
+      <h2>Why?</h2>
+      <ul>
+        <li>It is consistent</li>
+        <li>It isn't me</li>
+        <li>It is fairly logical <ul>
+          <li>I understand why it was written that way</li>
+        </ul></li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>What I don't like?</h2>
+      <ul>
+        <li>It is bloated</li>
+        <li>Some seems completely unnecessary</li>
+        <li>But does it matter?</li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h1>Yes</h1>
+    </section>
+    
+    <section class="slide">
+      <h1>No</h1>
+    </section>
+    
+    <section class="slide">
+      <h2>Matters</h2>
+      <ul>
+        <li>True; It should be semantic</li>
+        <li>False: loadtime is not suffering, that much</li>
+        <li>True: it can lead to bad practices</li>
+        <li>False: Cleaning it up isn't always better</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h1>What does this have to do with Partials?</h1>
+    </section>
+    
+    <section class="slide">
+      <h1>Exactly!</h1>
+    </section>
+    
+    <section class="slide">
+      <h2>SMACSS in Drupal</h2>
+      <ul>
+        <li>Shit</li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>OOCSS in drupal</h2>
+      <ul>
+        <li>closer</li>
+        <li>still shit</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>BEM</h2>
+      <ul>
+        <li>a lot closer</li>
+        <li>potential for sharknado disaster</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>OSTCSS</h2>
+      <ul>
+        <li>Nowehere even close to ideal</li>
+        <li>come on... </li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>All of them</h2>
+      <ul>
+        <li>Howdahell? <ul>
+          <li>template override</li>
+          <li>theme override</li>
+          <li>hook_ah_not_again_alter()</li>
+          <li>rewrite all the views</li>
+        </ul></li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>All of theme</h2>
+      <ul>
+        <li>Require technical debt</li>
+        <li>maintenance nightmares</li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h1>How to proceed?</h1>
+    </section>
+    
+    <section class="slide">
+      <h1>Let's Talk</h1>
+    </section>
+    
+    <section class="slide">
+      <h2>Your Project</h2>
+      <ul>
+        <li>Is the dictator</li>
+        <li>Until it is dead</li>
+        <li>Completely dead</li>
+        <li>Like Zombies have agreed it is dead, dead</li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>You are</h2>
+      <ul>
+        <li>the loyal companion</li>
+        <li>Whisper directions</li>
+        <li>Communicate</li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>You are NOT</h2>
+      <ul>
+        <li>Your project</li>
+        <li>The Dictator</li>
+        <li>#sorrynotsorry</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h1>What about the partials?!</h1>
+    </section>
+
+    <section class="slide">
+      <h1>Exactly!</h1>
+    </section>
+    
+    <section class="slide">
+      <h2>Truth</h2>
+      <ul>
+        <li>I can't tell you</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Proposal</h2>
+      <ul>
+        <li>SCSS Skeleton</li>
+        <li>https://github.com/timodwhit/scss-skeleton</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Folder Structure</h2>
+      <ul>
+        <li>base</li>
+        <li>styleguide</li>
+        <li>layout</li>
+        <li>design</li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>base</h2>
+      <ul>
+        <li>_libraries.scss</li>
+        <li>_variables.scss</li>
+        <li>_mixins.scss</li>
+        <li>_extends.scss</li>
+        <li>_functions.scss</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>styleguide</h2>
+      <ul>
+        <li>_icons.scss</li>
+        <li>_text.scss</li>
+        <li>_ui.scss</li>
+        <li>_etc...</li>
+        <li>Based off of styleguide module </li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>layout</h2>
+      <ul>
+        <li>_layout.scss</li>
+        <li>Holds the layout of the site and different layouts</li>
+        <li>After the initial setup, almost never touched</li>
+        <li>No! Your skin doesn't belong here, Dohmer</li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>design</h2>
+      <ul>
+        <li>_design.scss</li>
+        <li>The rest...</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h1>The rest is complicated</h1>
+    </section>
+    <section class="slide">
+      <h2>My Proposal</h2>
+      <ul>
+        <li>Structure your partials, how your site is structured</li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>design example</h2>
+      <ul>
+        <li>components</li>
+        <li>regions</li>
+        <li>system</li>
+        <li>fields</li>
+        <li>nodes</li>
+        <li>views</li>
+        <li>blocks</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>regions expanded</h2>
+      <ul>
+        <li>_regions.scss</li>
+        <li>_sidebar_second.scss</li>
+        <li>_sidebar_first.scss</li>
+        <li>_l_content.scss</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>components</h2>
+      <ul>
+        <li>reusable styles and components of the site</li>
+        <li>Ex: _tile_teaser.scss <ul>
+          <li>Written: %tile-teaser { styles }</li>
+          <li>.tile-teaser { @extend %tile-teaser; }</li>
+        </ul></li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h2>Questions</h2>
+      <ul>
+        <li>What if the structure of my site changes?</li>
+        <li>Is this maintainable?</li>
+        <li>How does this translate to devs brought on the project?</li>
+        <li>Why?!</li>
+      </ul>
+    </section>
+    
+    <section class="slide">
+      <h1>Moment of Truth</h1>
+    </section>
+
+    <section class="slide">
+      <h1>What do you think?</h1>
+    </section>
+    
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous"></a>
+      <a href="#" class="deck-next-link" title="Next"></a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="../../jquery.min.js"></script>
+<script src="../../core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="../../extensions/menu/deck.menu.js"></script>
+<script src="../../extensions/goto/deck.goto.js"></script>
+<script src="../../extensions/status/deck.status.js"></script>
+<script src="../../extensions/navigation/deck.navigation.js"></script>
+<script src="../../extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
