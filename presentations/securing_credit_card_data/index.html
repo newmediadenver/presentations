@@ -40,15 +40,19 @@
       <div class="multi-line">
         <h1>Securing Credit Card Data</h1>
         <img width="25%" src="assets/images/credit-card.png" />
+        <h3>drupalpcicompliance.org</h3>
+        <br />
         <p class="author" style="color:#ffffff;">DrupalCamp Colorado 2014<br />Rick Manelius | @rickmanelius<br />Director of Operations | @newmediadenver</p>
       </div>
     </section>
 
     <section class="slide">
       <div class="multi-line">
-        <h1>Sponsors</h1>
+        <h1>Co-Authors and Sponsors</h1>
         <p>I'd like to take a moment to thank the following...</p>
         <ul>
+          <li>Ned McClain</li>
+          <li>Greg Knaddison</li>
           <li>CARD.com</li>
           <li>Applied Trust</li>
           <li>Cross Functional</li>
@@ -235,39 +239,223 @@
       <div class="multi-line">
         <h1>Dirty Dozen</h1>
         <ul>
-          <li>1. Install and Maintain a Firewall</li>
-          <li>2. Do Not Use Vendor Supplied Default Passwords</li>
-          <li>3. Protect Stored Data</li>
-          <li>4. Encrypt transmission of cardholder data across open, public networks</li>
-          <li>5. Use and regularly update anti-virus software or programs</li>
-          <li>6. Develop and maintain secure systems and applications</li>
-          <li>7. Restrict access to cardholder data by business need-to-know</li>
-          <li>8. Assign a unique ID to each person with computer access</li>
-          <li>9. Restrict physical access to cardholder data</li>
-          <li>10. Track and monitor all access to network resources and cardholder data</li>
-          <li>11. Regularly test security systems and processes</li>
-          <li>12. Maintain a policy that addresses information security for all personnel</li>
+          <li>1. Install and Maintain a Firewall.</li>
+          <li>2. Do Not Use Vendor Supplied Default Passwords.</li>
+          <li>3. Protect Stored Data.</li>
+          <li>4. Encrypt transmission of cardholder data across open, public networks.</li>
+          <li>5. Use and regularly update anti-virus software or programs.</li>
+          <li>6. Develop and maintain secure systems and applications.</li>
+          <li>7. Restrict access to cardholder data by business need-to-know.</li>
+          <li>8. Assign a unique ID to each person with computer access.</li>
+          <li>9. Restrict physical access to cardholder data.</li>
+          <li>10. Track and monitor all access to network resources and cardholder data.</li>
+          <li>11. Regularly test security systems and processes.</li>
+          <li>12. Maintain a policy that addresses information security for all personnel.</li>
         </ul>
       </div>
     </section>
 
     <section class="slide">
       <div class="multi-line">
-        <h1>Dirty Dozen</h1>
+        <h1>Not Optional</h1>
         <ul>
-          <li>1. Install and Maintain a Firewall</li>
+          <li>Accepting payment card transactions is a privelege, not a right.</li>
+          <li>PCI-DSS compliance is a contractual obligation.</li>
+          <li>Recommendation: treat PCI compliance as a minimum security policy.</li>
         </ul>
       </div>
     </section>
 
-
     <section class="slide">
       <div class="multi-line">
-    
-      
+      <h2>So... How Do I Get Started?</h2>
+      <ul>
+        <li>Key Factors:  Volume & Validation Type.</li>
+        <li>Volume determines PCI Level (1, 2, 3, or 4)</li>
+        <li>Validation type determines SAQ (A, A-EP, B, C, C-VT, D)
+        <li>SAQ = Self Assessment Questionnaires</li>
+        <li>Provides checklist for 12 requirements.</li>
+      </ul>
       </div>
     </section>
 
+    <section class="slide">
+      <div class="multi-line">
+      <h1>Volume</h1>
+      <img width="40%" src="assets/images/PCI-levels-visa-cardbrand-2013-06-10.png" />
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+      <h1>Validation Type</h1>
+      <img width="40%" src="assets/images/PCI-saq-breakdown.png" />
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+      <h1>Validation Type (English Please!)</h1>
+      <ul>
+        <li>SAQ A: Fully outsourced handling of sensitive data.</li>
+        <li>SAQ A-EP: "Mostly" outsourced handling of sensitive data.</li>
+        <li>SAC D: Storing sensitive data.</li>
+      </ul>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+      <h1>Merchant Managed</h1>
+        <ul>
+          <li>SAQ D (Danger)</li>
+          <li>Signficant liability on the merchant.</li>
+          <li>327 security controls.</li>
+          <li>Unfortunately, MANY options out there for Drupal.</li>
+          <li>Basically, Drupal touches the card data.</li>
+        </ul> 
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+      <h1>Shared Management</h1>
+        <ul>
+          <li>SAQ A or A-EP</li>
+          <li>Signficant less risk.</li>
+          <li>14-139 security controls.</li>
+          <li>Let's Review...</li>
+        </ul> 
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+      <h1>Direct Post</h1>
+        <ul>
+          <li>SAQ A-EP</li>
+          <li>Form Action or JavaScript</li>
+          <li>Tokenization</li>
+        </ul> 
+        <img src="assets/images/shared-management-direct-post.png" />
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+      <h1>Hosted Payment Page</h1>
+        <ul>
+          <li>SAQ A</li>
+          <li>Redirect via HTML Form Action</li>
+        </ul> 
+        <img src="assets/images/shared-management-hosted-payment-page.png" />
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+      <h1>iFrame</h1>
+        <ul>
+          <li>SAQ A</li>
+          <li>Essentially an Inline Hosted Payment Page</li>
+        </ul> 
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+      <h1>iFrame</h1>
+        <ul>
+          <li>SAQ A</li>
+          <li>Essentially an Inline Hosted Payment Page</li>
+        </ul> 
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+      <h1>Shared-Management Vulnerabilities</h1>
+        <ul>
+          <li>Direct Post: Key Logger</li>
+          <li>Hosted Payment Page: Form Action Change</li>
+          <li>iFrame: Replace iFrame</li>
+        </ul> 
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+      <h1>Best Practices</h1>
+        <ul>
+          <li class="slide deck-next">Used Hosted Payment Page or iFrame Payment Gateways</li>
+          <li class="slide deck-next">Version Control</li>
+          <li class="slide deck-next">Password Policy</li>
+          <li class="slide deck-next">Role Assign</li>
+          <li class="slide deck-next">Features/Strongarm</li>
+          <li class="slide deck-next">Lock Configurations in Settings.php</li>
+          <li class="slide deck-next">Two Factor Authentication</li>
+          <li class="slide deck-next">Harden Servers</li>
+          <li class="slide deck-next">Audit audit audit</li>
+          <li class="slide deck-next">Vigilance</li>
+        </ul> 
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+      <h1>We Kinda Suck as This...</h1>
+        <ul>
+          <li class="slide deck-next">...but we're still becoming aware of the problem.</li>
+          <li class="slide deck-next">Drupal makes it trivial to launch an eCommerce site.</li>
+          <li class="slide deck-next">We still need guidance on how to get there.</li>
+        </ul> 
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+      <h1>Suggested Reading</h1>
+        <ul>
+          <li class="slide deck-next">Drupal PCI Compliance White Paper</li>
+          <li class="slide deck-next">Drupal Security Report.</li>
+          <li class="slide deck-next">Cracking Drupal.</li>
+        </ul> 
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+      <h1>Checklist Coming</h1>
+        <ul>
+          <li class="slide deck-next">Due to demand of specific next steps...</li>
+        </ul> 
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+      <h1>Summarizing</h1>
+        <ul>
+          <li class="slide deck-next">Securing credit card transactions is hard...</li>
+          <li class="slide deck-next">...often overlooked...</li>
+          <li class="slide deck-next">...and mandatory.</li>
+          <li class="slide deck-next">The tools are there!</li>
+          <li class="slide deck-next">We need to make this a common practice in the community</li>
+        </ul> 
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+      <h1>Thank You!</h1>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="multi-line">
+      <h1>Questions?</h1>
+      </div>
+    </section>
 
     <!-- End slides. -->
 
