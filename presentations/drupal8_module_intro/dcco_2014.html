@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Drupal 8: Introduction to Module Development</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="../../core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="../../extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="../../extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="../../extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="../../extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="../../extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="../../themes/style/web-2.0.css">
+  <link rel="stylesheet" media="screen" href="../../themes/style/nmd.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="../../themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="../../core/print.css">
+
+  <!-- Custom presentation styles -->
+  <link rel="stylesheet" media="screen" href="assets/custom.css">
+
+  <!-- Required Modernizr file -->
+  <script src="../../modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+      <div class="multi-line">
+        <h1>Drupal 8</h1>
+        <p class="h1-line2">Introduction to Module Development</p>
+        <p class="author">Brandon Williams (crazysix)</p>
+      </div>
+    </section>
+
+    <!-- Introduction -->
+
+    <section class="slide">
+      <h2>Discussion</h2>
+      <ul class="slide deck-current">
+        <li>OOP</li>
+        <li>Symfony</li>
+        <li>Drupal 8</li>
+        <li>D8 Module Development</li>
+        <li>Status/Usefulness</li>
+        <li>Helpful Resources</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>The Challenge of Change</h2>
+      <ul class="slide deck-current">
+        <li>New Technology</li>
+        <li>New Processes</li>
+        <li>Learning Curve</li>
+        <li>Bugs</li>
+        <li>Extending (contrib Modules)</li>
+        <li>Time</li>
+        <li>Value</li>
+        <li>Why fix what's not broken?</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Preparation, Planning, Time</h2>
+      <div class="vs">
+        <p>It makes all the difference.</p>
+        <img class="left" src="assets/images/good.jpg" />
+        <img class="right" src="assets/images/evil.jpg" />
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Object Oriented <span class="red">Programming</span> (OO<span class="red">P</span>)</h2>
+      <ul>
+        <li class="slide deck-current">It is still programming.</li>
+        <li class="slide deck-next">It is still PHP.</li>
+        <li class="slide deck-next">Yes, you can do it without OOP.</li>
+        <li class="slide deck-next">It is not an issue like it was.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2><span class="red">Object</span> Oriented Programming (<span class="red">O</span>OP)</h2>
+      <p>The Car Class</p>
+      <div class="slide deck-current">
+        <xmp>
+          class Car {
+            public $make;
+            public $model;
+            public $color;
+          }
+
+          public function __construct($make, $model, $color) {
+            $this->make = $make;
+            $this->model = $model;
+            $this->color = $color;
+          }
+
+          public function valueEstimate() {
+            ...
+          }
+        </xmp>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2><span class="red">Object</span> Oriented Programming (<span class="red">O</span>OP)</h2>
+      <p>$car = new Car('Toyota', 'Corolla', 'black');</p>
+      <img class="slide deck-current" src="assets/images/car2.jpg" />
+    </section>
+
+    <section class="slide">
+      <h2><span class="red">Object</span> Oriented Programming (<span class="red">O</span>OP)</h2>
+      <p>$car = new Car('Chevrolet', 'Camaro Z28', 'White');</p>
+      <img class="slide deck-current" src="assets/images/car.jpg" />
+    </section>
+
+    <section class="slide">
+      <h2>Object Oriented Programming (OOP)</h2>
+      <p>Why use it?</p>
+      <ul class="slide deck-current">
+        <li>Data/Object Approach</li>
+        <li>Structure</li>
+        <li>Consistency</li>
+        <li>Readability</li>
+        <li>Private/Protected Data</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Symfony</h2>
+      <p>Why use a framework?</p>
+      <p class="slide deck-current">Why do you use Drupal?</p>
+      <ul class="slide deck-next">
+        <li>Deliver the message</li>
+        <li>Community support</li>
+        <li>Documentation</li>
+        <li>Extendable</li>
+        <li>Collaborative</li>
+        <li>Modules</li>
+        <li>Improvements/upgrades</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Symfony</h2>
+      <p>"Why would you have a custom piece of furniture made if you could find one that perfectly matches your décor, right off the shelf?"<br /> - Symphony</p>
+      <ul class="slide deck-current">
+        <li>Faster and less greedy</li>
+        <li>Unlimited flexibility</li>
+        <li>Expandable</li>
+        <li>Stable and suystainable</li>
+        <li>Documentation</li>
+      </ul>
+      <p class="slide deck-next"><a href="http://symfony.com/in-five-minutes" target="_blank">Symfony in 5 minutes</a></p>
+    </section>
+
+    <section class="slide">
+      <h2>Drupal 8</h2>
+      <img src="assets/images/d8.jpg" />
+    </section>
+
+    <section class="slide">
+      <h2>Drupal 8</h2>
+      <p>Why all the big changes?</p>
+      <div class="slide deck-current">
+        <p>I cannot speak for the community at large or the Drupal association, but this is what I think.</p>
+        <ul>
+          <li>The support of a proven framework with ongoing development</li>
+          <li>Mobile</li>
+          <li>Web Services</li>
+          <li>Theming improvements</li>
+          <li>Fields</li>
+          <li>Industry Standards</li>
+          <li>Recruiting</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>And?</h2>
+      <div class="vs">
+        <p>This is where we choose how to look at the challenges ahead.</p>
+        <img class="left" src="assets/images/good.jpg" />
+        <img class="right" src="assets/images/evil.jpg" />
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Let's Dive In</h2>
+      <p class="slide deck-current">Keep in mind, things are still evolving!</p>
+    </section>
+
+    <section class="slide">
+      <h2>Google Analytics</h2>
+      <ul class="slide deck-current">
+        <li>Legacy Code</li>
+        <li>Settings Form</li>
+        <li>Menu</li>
+        <li>Routing</li>
+        <li>Menu links</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Examples</h2>
+      <ul>
+        <li class="slide deck-current">Block
+          <ul>
+            <li>Controller</li>
+            <li>Plugin</li>
+          </ul>
+        </li>
+        <li class="slide deck-next">DBTNG
+          <ul>
+            <li>Configure &gt; AddForm</li>
+            <li>Menu</li>
+            <li>Routing</li>
+          </ul>
+        </li>
+        <li class="slide deck-next">Page
+          <ul>
+            <li>Controller</li>
+          </ul>
+        </li>
+        <li class="slide deck-next">Email
+          <ul>
+            <li>Functions</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Woohoo, let's stop using D7 now!</h2>
+      <p class="slide deck-current">No, not anytime soon.</p>
+      <ul class="slide deck-next">
+        <li>Keep playing</li>
+        <li>Keep learning</li>
+        <li>Watch the change logs and announcements</li>
+        <li>Early adapters go for it</li>
+        <li>Consider challenges and stability for new projects</li>
+        <li>If you need modules, make sure a stable D8 version has been released</li>
+        <li>Contribute!!!!</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Helpful Resources</h2>
+      <ul class="slide deck-current">
+        <li><a href="https://drupal.org" target="_blank">Drupal.org</a>
+          <ul>
+            <li><a href="https://drupal.org/developing/modules/8" target="_blank">Creating a Drupal 8 Module</a></li>
+            <li><a href="https://drupal.org/update/modules/7/8" target="_blank">Convert a D7 Module to D8</a></li>
+            <li><a href="https://drupal.org/list-changes/published" target="_blank">Change records for Drupal core</a></li>
+            <li><a href="https://groups.drupal.org/node/313408" target="_blank">Outstanding Drupal 8 API changes</a></li>
+            <li><a href="https://drupal.org/node/2118095" target="_blank">Debugging D8 module upgrades</a></li>
+          </ul>
+        </li>
+        <li><a href="http://symfony.com/in-five-minutes" target="_blank">Symfony in 5 minutes (symfony.com/in-five-minutes)</a></li>
+        <li><a href="http://buildamodule.com/blog/new-videos-on-making-a-custom-symfony-based-framework-hum" target="_blank">Buildamodule.com video</a></li>
+        <li>Twitter
+          <ul>
+            <li>@buildamodule</li>
+            <li>@drupal8</li>
+            <li>@drupal8changes</li>
+            <li>@brandon_crazy6</li>
+          </ul>
+        </li>
+        <li>IRC
+          <ul>
+            <li>#drupal</li>
+            <li>#drupal-infrastructure</li>
+            <li>#drupal-colorado</li>
+            <li>#drupal-contribute</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous"></a>
+      <a href="#" class="deck-next-link" title="Next"></a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="../../jquery.min.js"></script>
+<script src="../../core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="../../extensions/menu/deck.menu.js"></script>
+<script src="../../extensions/goto/deck.goto.js"></script>
+<script src="../../extensions/status/deck.status.js"></script>
+<script src="../../extensions/navigation/deck.navigation.js"></script>
+<script src="../../extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
