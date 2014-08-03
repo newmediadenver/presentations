@@ -1,0 +1,197 @@
+SCSS Partials
+  - Formalitites
+  - Truth be Told
+  - No one cares
+  - SCSS Partials
+    - Goals of the Talk
+      - A "better" way to organize
+      - Figure out...
+    - "Where the Fuck is my style"
+    - Wayback:
+      - CSS was king
+      - SCSS was coming on the scene
+        - Still using CSS principles
+    - One File to Rule them all
+      - 4500+ lines of styles 
+      - But look, it is nested.
+    - Intro to Partials
+      - Small manageable files for SCSS
+      - Goal is to brak down the design into components
+      - But How should we break it down
+    - Wild West
+      - Partial organization is based on:
+        - Designers
+        - Developers
+          - Frontend
+          - Backend
+          - Site Builders
+      - "Someone go back to town and get me a shit load of dimes"
+    - Pinpointing the Pain
+      - Communication
+      - Partial Organzation != CSS Organization approach
+      - The project you are working on, is not yours.
+        - Unless it is actually yours. 
+    - Mitigating the Pain
+      - Community Proposed Systems
+        - SMACSS
+        - OOCSS
+        - BEM
+        - OSTSCSS
+          - Oh Shit, Time to SCSS
+    - Brief overview
+    - SMACSS
+      - modular styles
+      - class based
+      - semantic classes 
+    - SMACSS example
+      - .slide 
+      - .slide--title
+      - .slide--content
+      - .slide--content--title
+      - .slide--content--content
+    - OOCSS
+      - Object Oriented Styling
+      - Base classes that can be extended. 
+        - (All CSS is therefore OOCSS)
+    - OOCSS example  
+      - .box { styles }
+      - .media { styles }
+      - .leftCol { styles } //Yes, this is one of their examples
+    - BEM
+      - Block. Element. Modifier
+      - Communication is Key
+      - Blocks can be placed anywhere on the page
+      - Styles should always be relevant
+      - Modify where necessary
+      - Most Drupal-y
+    - BEM Example
+      - Images from github repo
+    - OSTSCSS
+      - Last Minute
+      - Never Organized.
+      - QA Bastardizations
+      - Never Maintainable
+      - All dreams went here, and died. 
+    - OSTSCSS example
+      - .node-type-blog .field-type-image.field-name-reallypretty-imgae .field-content > img:first-child{}
+    - OSTSCSS issues
+      - .node-type-blog .field-type-image.field-name-reallypretty-imgae .field-content > img:first-child{}
+      - It is SCSS but no nesting, just appended
+      - Really lengthy
+      - And really? > with a :first-child? 
+    - Issues with Every other system
+      - Technical Debt 
+      - Communication
+      - Drupal is not yours to do what you want
+    - Tangential Confession... 
+    - I don't mind Drupal's Markup...
+    - Why?
+      - It is consistent
+      - It isn't me
+      - It is fairly logical
+        - I understand why it was written that way
+    - What I don't like?
+      - It is bloated
+      - Some seems completely unnecessary
+      - But does it matter?
+    - Yes
+    - No
+    - Matters
+      - True: It should be more semantic
+      - False: loadtime is not suffering, that much 
+      - True: It can lead to bad practices
+      - False: Cleaning it up, isn't always better.
+    - What does this have to do with Partials?
+    - Exactly!
+    - SMACSS in drupal
+      - shit
+    - OOCSS in drupal
+      - closer
+      - still shit
+    - BEM in drupal
+      - a lot closer
+      - potential for sharknado disaster
+    - OSTSCSS 
+      - Nowhere even close
+    - All of them 
+      - Howdahell
+        - template override
+        - theme overrides
+        - hook_alter_ah_not_again()
+        - Rewrite all the views
+    - All of them
+      - require technical debt 
+      - maintenance nightmares
+    - How do we proceed?
+    - Let's talk
+    - Your project 
+      - Is the dictator
+      - Until it is dead.
+      - Completely dead.
+      - Like Zombies have agreed it is dead
+    - You are 
+      - the loyal companion
+      - whisper directions
+      - communicate
+      - You are not your project. 
+      - You are not the dictator. #sorrynotsorry
+    - What about the partials?
+    - Exactly!
+    - Truth
+      - I can't tell you
+    - Proposal:
+      - SCSS Skeleton
+    - Folder Structure Overview
+      - base
+      - styleguide
+      - layout
+      - design 
+    - base
+      - _libraries.scss
+      - _variables.scss
+      - _mixins.scss
+      - _extends.scss
+      - _functions.scss
+    - styleguide
+      - _icons.scss
+      - _text.scss
+      - _ui.scss
+      - _etc....
+      - Based off of the styleguide module
+        - Use it
+    - layout
+      - _layout.scss
+      - Holds the layout of the site and different layouts
+      - After initial setup, almost never touched.
+      - No! Your skin doesn't belong here, Dohmer.
+    - design
+      - _design.scss
+      - The rest...
+    - The Rest is complicated, right now
+    - My proposal
+      - Structure your partials how your site is structured
+    - design example
+      - components
+      - regions
+        - _regions.scss
+        - _sidebar_second.scss
+        - _sidebar_first.scss
+        - _l_content.scss
+      - system
+        - _system.scss
+        - _main_menu.scss
+      - fields
+      - nodes 
+      - views
+      - blocks
+    - components
+      - reusable styles and components of the site
+      - Ex: _tile-teaser 
+        - written %tile-teaser { styles }
+        - .tile-teaser { @extend %tile-teaser; }
+    - Questions?
+      - What if the structure of my site changes?
+      - Is this maintainable?
+      - How does this translate to devs brought on the project?
+      - What if we change the backend?
+      - Why?
