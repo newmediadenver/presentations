@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=1024, user-scalable=no">
 
-  <title>Drupal 8: Introduction to Module Development</title>
+  <title>Drupal 8 Module Development: Just the Basics</title>
 
   <!-- Required stylesheet -->
   <link rel="stylesheet" media="screen" href="../../core/deck.core.css">
@@ -40,8 +40,8 @@
 
     <section class="slide">
       <div class="multi-line">
-        <h1>Drupal 8</h1>
-        <p class="h1-line2">Introduction to Module Development</p>
+        <h1>Drupal 8 Module Development</h1>
+        <p class="h1-line2">Just the Basics</p>
         <p class="author">Brandon Williams (crazysix)</p>
       </div>
     </section>
@@ -49,95 +49,27 @@
     <!-- Introduction -->
 
     <section class="slide">
+      <h2>D8 is almost here!</h2>
+      <img src="assets/images/Emotes.jpg" />
+    </section>    
+
+    <section class="slide">
       <h2>Discussion</h2>
       <ul class="slide deck-current">
-        <li>OOP</li>
+        <li>What is different?</li>
         <li>Symfony</li>
-        <li>Drupal 8</li>
-        <li>D8 Module Development</li>
+        <li>The D8 Module</li>
         <li>Status/Usefulness</li>
         <li>Helpful Resources</li>
       </ul>
     </section>
 
     <section class="slide">
-      <h2>The Challenge of Change</h2>
+      <h2>What is the difference?</h2>
       <ul class="slide deck-current">
-        <li>New Technology</li>
-        <li>New Processes</li>
-        <li>Learning Curve</li>
-        <li>Bugs</li>
-        <li>Extending (contrib Modules)</li>
-        <li>Time</li>
-        <li>Value</li>
-        <li>Why fix what's not broken?</li>
-      </ul>
-    </section>
-
-    <section class="slide">
-      <h2>Preparation, Planning, Time</h2>
-      <div class="vs">
-        <p>It makes all the difference.</p>
-        <img class="left" src="assets/images/good.jpg" />
-        <img class="right" src="assets/images/evil.jpg" />
-      </div>
-    </section>
-
-    <section class="slide">
-      <h2>Object Oriented <span class="red">Programming</span> (OO<span class="red">P</span>)</h2>
-      <ul>
-        <li class="slide deck-current">It is still programming.</li>
-        <li class="slide deck-next">It is still PHP.</li>
-        <li class="slide deck-next">Yes, you can do it without OOP.</li>
-        <li class="slide deck-next">It is not an issue like it was.</li>
-      </ul>
-    </section>
-
-    <section class="slide">
-      <h2><span class="red">Object</span> Oriented Programming (<span class="red">O</span>OP)</h2>
-      <p>The Car Class</p>
-      <div class="slide deck-current">
-        <xmp>
-          class Car {
-            public $make;
-            public $model;
-            public $color;
-          }
-
-          public function __construct($make, $model, $color) {
-            $this->make = $make;
-            $this->model = $model;
-            $this->color = $color;
-          }
-
-          public function valueEstimate() {
-            ...
-          }
-        </xmp>
-      </div>
-    </section>
-
-    <section class="slide">
-      <h2><span class="red">Object</span> Oriented Programming (<span class="red">O</span>OP)</h2>
-      <p>$car = new Car('Toyota', 'Corolla', 'black');</p>
-      <img class="slide deck-current" src="assets/images/car2.jpg" />
-    </section>
-
-    <section class="slide">
-      <h2><span class="red">Object</span> Oriented Programming (<span class="red">O</span>OP)</h2>
-      <p>$car = new Car('Chevrolet', 'Camaro Z28', 'White');</p>
-      <img class="slide deck-current" src="assets/images/car.jpg" />
-    </section>
-
-    <section class="slide">
-      <h2>Object Oriented Programming (OOP)</h2>
-      <p>Why use it?</p>
-      <ul class="slide deck-current">
-        <li>Data/Object Approach</li>
-        <li>Structure</li>
-        <li>Consistency</li>
-        <li>Readability</li>
-        <li>Private/Protected Data</li>
+        <li>OOP</li>
+        <li><a href ="http://php.net/manual/en/language.namespaces.rationale.php" target="_blank">Namespaces</a></li>
+        <li>YAML</li>
       </ul>
     </section>
 
@@ -181,10 +113,10 @@
         <p>I cannot speak for the community at large or the Drupal association, but this is what I think.</p>
         <ul>
           <li>The support of a proven framework with ongoing development</li>
-          <li>Mobile</li>
-          <li>Web Services</li>
-          <li>Theming improvements</li>
-          <li>Fields</li>
+          <li><a href="https://groups.drupal.org/mobile/drupal-8" target="_blank">Mobile</a></li>
+          <li><a href="http://drupalize.me/blog/201401/introduction-restful-web-services-drupal-8" target="_blank">Web Services</a></li>
+          <li>Theming improvements (Twig)</li>
+          <li>Fields (more out of the box)</li>
           <li>Industry Standards</li>
           <li>Recruiting</li>
         </ul>
@@ -192,17 +124,9 @@
     </section>
 
     <section class="slide">
-      <h2>And?</h2>
-      <div class="vs">
-        <p>This is where we choose how to look at the challenges ahead.</p>
-        <img class="left" src="assets/images/good.jpg" />
-        <img class="right" src="assets/images/evil.jpg" />
-      </div>
-    </section>
-
-    <section class="slide">
       <h2>Let's Dive In</h2>
       <p class="slide deck-current">Keep in mind, things are still evolving!</p>
+      <p class="slide deck-next">And, I 99.3745% sure things have changed since this material was prepared.</p>
     </section>
 
     <section class="slide">
